@@ -10,7 +10,6 @@
         <!--Расписание-->
         <scene sceneID="Y3w-hr-RMp">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="AED-nD-gG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
                 <viewController id="FXg-Kg-jQw" customClass="ViewController" customModule="rtuJOY" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="lj5-fE-5gq">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -21,28 +20,28 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <subviews>
                                     <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" axis="vertical" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="zF0-Fo-sNX">
-                                        <rect key="frame" x="0.0" y="0.0" width="375" height="314"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
                                         <subviews>
                                             <tableView clipsSubviews="YES" contentMode="scaleToFill" ambiguous="YES" alwaysBounceVertical="YES" dataMode="prototypes" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="oXH-Wm-5sw">
-                                                <rect key="frame" x="0.0" y="0.0" width="375" height="314"/>
-                                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Понедельник, 6 июля" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ABD-Ro-b33">
-                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="375" height="493"/>
+                                                <label key="tableHeaderView" opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Понедельник, 6 июля" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ABD-Ro-b33">
+                                                    <rect key="frame" x="0.0" y="0.0" width="375" height="25"/>
                                                     <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="17"/>
+                                                    <fontDescription key="fontDescription" name=".AppleSystemUIFont" family=".AppleSystemUIFont" pointSize="18"/>
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
+                                                    <size key="shadowOffset" width="0.0" height="0.0"/>
                                                 </label>
                                                 <prototypes>
                                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="95" id="fy0-2U-bHi">
-                                                        <rect key="frame" x="15" y="85.5" width="345" height="95"/>
+                                                        <rect key="frame" x="15" y="80.5" width="345" height="95"/>
                                                         <autoresizingMask key="autoresizingMask"/>
                                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fy0-2U-bHi" id="7B7-U5-0rq">
                                                             <rect key="frame" x="0.0" y="0.0" width="345" height="95"/>
                                                             <autoresizingMask key="autoresizingMask"/>
                                                             <subviews>
                                                                 <stackView opaque="NO" contentMode="scaleToFill" fixedFrame="YES" spacing="7" translatesAutoresizingMaskIntoConstraints="NO" id="njH-F6-1vq">
-                                                                    <rect key="frame" x="15" y="6" width="283.5" height="80"/>
+                                                                    <rect key="frame" x="15" y="6" width="299" height="80"/>
                                                                     <subviews>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" spacing="39" translatesAutoresizingMaskIntoConstraints="NO" id="DAy-xi-WEi">
                                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -65,7 +64,7 @@
                                                                             <rect key="frame" x="50.5" y="0.0" width="10" height="80"/>
                                                                         </imageView>
                                                                         <stackView opaque="NO" contentMode="scaleToFill" ambiguous="YES" axis="vertical" alignment="top" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="9pp-Nh-Viq">
-                                                                            <rect key="frame" x="67.5" y="0.0" width="216" height="80"/>
+                                                                            <rect key="frame" x="67.5" y="0.0" width="231.5" height="80"/>
                                                                             <subviews>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C32-hm-miw">
                                                                                     <rect key="frame" x="0.0" y="0.0" width="43" height="15.5"/>
@@ -74,8 +73,8 @@
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
                                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Линейная Алгебра и АГ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="feC-ff-bym">
-                                                                                    <rect key="frame" x="0.0" y="25.5" width="216" height="24"/>
-                                                                                    <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                                                                    <rect key="frame" x="0.0" y="25.5" width="231.5" height="24"/>
+                                                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
                                                                                     <nil key="textColor"/>
                                                                                     <nil key="highlightedColor"/>
                                                                                 </label>
@@ -106,14 +105,15 @@
                     </view>
                     <navigationItem key="navigationItem" title="Расписание" id="5lO-tB-rPv"/>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="AED-nD-gG2" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="3076" y="69.715142428785612"/>
         </scene>
-        <!--Item-->
+        <!--Расписание-->
         <scene sceneID="h6e-NV-9vy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gDY-50-Zkn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Item" id="0Lb-ad-Jmg"/>
+                    <tabBarItem key="tabBarItem" title="Расписание" image="doc.plaintext" catalog="system" id="0Lb-ad-Jmg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xlD-bH-eK0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -148,6 +148,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
         <image name="moms-1" width="10" height="80"/>
     </resources>
 </document>
