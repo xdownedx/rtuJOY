@@ -7,7 +7,7 @@
 //
 
 import UIKit
-
+let days = ["Сегодня", "Завтра", "Послезавтра"]
 class TableViewController: UITableViewController {
     
     
@@ -15,8 +15,22 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
 
     }
+    
+    
+    
+    // Получим количество секций в таблице
+    override func numberOfSections(in tableView: UITableView) -> Int {
+        return 1
+    }
+    
+    //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return 1
+    }
+    
+    // Получим заголовок для секции
+    override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return days[section]
     }
     
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
@@ -29,10 +43,7 @@ class TableViewController: UITableViewController {
         return cell
     }
     
-    override func numberOfSections(in tableView: UITableView) -> Int {
-        // #warning Incomplete implementation, return the number of sections
-        return 1
-    }
+  
     
     /*
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
