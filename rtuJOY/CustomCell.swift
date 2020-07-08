@@ -9,10 +9,15 @@
 import UIKit
 
 class CustomCell: UITableViewCell {
- 
+    
     @IBOutlet weak var timeStart: UILabel!
     @IBOutlet weak var timeEnd: UILabel!
     @IBOutlet weak var typeLesson: UILabel!
     @IBOutlet weak var nameLesson: UILabel!
     @IBOutlet weak var numberAudince: UILabel!
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+    }
+    
 }
