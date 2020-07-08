@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */; };
 		72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */; };
 		72A1EBAA24B32ACC00BDD9DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBA824B32ACC00BDD9DA /* Main.storyboard */; };
@@ -17,6 +18,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		72A1EB9F24B32ACC00BDD9DA /* rtuJOY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rtuJOY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,6 +63,7 @@
 				72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */,
 				72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */,
 				72A1EBBE24B3363800BDD9DA /* ViewController.swift */,
+				7236729D24B6487400844118 /* CustomCell.swift */,
 				72A1EBB824B32CD400BDD9DA /* Data.swift */,
 				72A1EBA824B32ACC00BDD9DA /* Main.storyboard */,
 				72A1EBAB24B32AD000BDD9DA /* Assets.xcassets */,
@@ -143,6 +146,7 @@
 			files = (
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
+				7236729E24B6487400844118 /* CustomCell.swift in Sources */,
 				72A1EBBF24B3363800BDD9DA /* ViewController.swift in Sources */,
 				72A1EBB924B32CD400BDD9DA /* Data.swift in Sources */,
 			);

@@ -33,7 +33,7 @@ struct SectionDataModel : Identifiable {
 
 class UserData : ObservableObject {
     
-    @Published var timetableKTCO0119 : [SectionDataModel] = [
+     var timetableKTCO0119 : [SectionDataModel] = [
         SectionDataModel(letter: "Понедельник", quotes: [
             QuoteDataModel(name: "Линейная Алгебра и АГ", teacher: "Cазонов А.И.", classroom: "А-173", time: "9:00"),
             QuoteDataModel(name: "Линейная Алгебра и АГ", teacher: "Cазонов А.И.", classroom: "А-173", time: "10:40"),
