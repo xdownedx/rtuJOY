@@ -8,24 +8,26 @@
 
 import UIKit
 let days = ["Сегодня", "Завтра", "Послезавтра"]
-var idCell = 0
+let rows = [2,3,1]
+var idCell = -1
 class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        tableView.register(CustomCell.self, forCellReuseIdentifier: "CellID")
+        //tableView.register(CustomCell.self, forCellReuseIdentifier: "CellID")
+        tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
     }
     
     
     
     // Получим количество секций в таблице
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 3
+        return rows.count
     }
     
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 3
+        return rows[section]
     }
     
     // Получим заголовок для секции
@@ -35,17 +37,18 @@ class TableViewController: UITableViewController {
     
     //Заполнение ячеек
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath) as! CustomCell
-    
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
+        
         cell.timeStart?.text = "10:00"
         cell.nameLesson?.text = "Линейная Алгебра и АГ"
         cell.timeEnd?.text = "10:40"
         cell.typeLesson?.text = "лекция"
         cell.numberAudince?.text = "А-12"
         return cell
+        
     }
     
-  
+    
     
     /*
      override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
