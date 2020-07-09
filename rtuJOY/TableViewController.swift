@@ -7,7 +7,11 @@
 //
 
 import UIKit
-let days = ["Сегодня", "Завтра", "Послезавтра"]
+let days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
+let date = Date()
+let calendar = Calendar.current
+var weekday = calendar.component(.weekday, from: date)
+
 let rows = [2,3,1]
 var idCell = -1
 class TableViewController: UITableViewController {
@@ -22,7 +26,10 @@ class TableViewController: UITableViewController {
     
     // Получим количество секций в таблице
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return rows.count
+        guard weekday>1 else {
+            return 2
+        }
+        return 3
     }
     
     //получим количество ячеек в секции
@@ -32,7 +39,29 @@ class TableViewController: UITableViewController {
     
     // Получим заголовок для секции
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return days[section]
+        guard weekday>1 else {
+            switch section {
+            case 0:
+                return days[weekday-1]
+            case 2:
+                return days[weekday]
+            default:
+                return "error"
+            }
+            
+        }
+                
+        switch section {
+        case 0:
+            return days[weekday-2]
+        case 1:
+            return days[weekday-1]
+        case 2:
+            return days[weekday]
+        default:
+            return "error"
+        }
+        
     }
     
     //Заполнение ячеек
