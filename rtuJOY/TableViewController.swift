@@ -8,24 +8,24 @@
 
 import UIKit
 let days = ["Сегодня", "Завтра", "Послезавтра"]
+var idCell = 0
 class TableViewController: UITableViewController {
-    
     
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        tableView.register(CustomCell.self, forCellReuseIdentifier: "CellID")
     }
     
     
     
     // Получим количество секций в таблице
     override func numberOfSections(in tableView: UITableView) -> Int {
-        return 1
+        return 3
     }
     
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return 3
     }
     
     // Получим заголовок для секции
@@ -33,8 +33,10 @@ class TableViewController: UITableViewController {
         return days[section]
     }
     
+    //Заполнение ячеек
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as! CustomCell
+        let cell = tableView.dequeueReusableCell(withIdentifier: "CellID", for: indexPath) as! CustomCell
+    
         cell.timeStart?.text = "10:00"
         cell.nameLesson?.text = "Линейная Алгебра и АГ"
         cell.timeEnd?.text = "10:40"
