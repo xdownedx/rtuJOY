@@ -36,9 +36,9 @@ class TableViewController: UITableViewController {
         guard weekday>1 else {
             switch section {
             case 0:
-                return "\(days[weekday-1]), \(curDayInMonth+1) \(monthTable[curMonth-1])"
+                return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
             case 1:
-                return "\(days[weekday]), \(curDayInMonth+2) \(monthTable[curMonth-1])"
+                return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
             default:
                 return "error"
             }
@@ -50,18 +50,18 @@ class TableViewController: UITableViewController {
             case 6:
                 switch section {
                 case 0:
-                    return "\(days[weekday-2]), \(curDayInMonth) \(monthTable[curMonth-1])"
+                    return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
                 case 1:
-                    return "\(days[weekday-1]), \(curDayInMonth+1) \(monthTable[curMonth-1])"
+                    return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
                 default:
                     return "error"
                 }
             case 7:
                 switch section {
                 case 0:
-                    return "\(days[weekday-2]), \(curDayInMonth) \(monthTable[curMonth-1])"
+                    return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
                 case 1:
-                    return "\(days[0]), \(curDayInMonth+2) \(monthTable[curMonth-1])"
+                    return "\(days[0]), \(currentData(day: curDayInMonth+2, month: curMonth))"
                 default:
                     return "error"
                 }
@@ -73,11 +73,11 @@ class TableViewController: UITableViewController {
     
     switch section {
     case 0:
-    return "\(days[weekday-2]), \(curDayInMonth) \(monthTable[curMonth-1])"
+    return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
     case 1:
-    return "\(days[weekday-1]), \(curDayInMonth+1) \(monthTable[curMonth-1])"
+    return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
     case 2:
-    return "\(days[weekday]), \(curDayInMonth+2) \(monthTable[curMonth-1])"
+    return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
     default:
     return "error"
     }
