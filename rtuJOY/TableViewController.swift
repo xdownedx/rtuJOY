@@ -7,10 +7,6 @@
 //
 
 import UIKit
-let days = ["Понедельник", "Вторник", "Среда", "Четверг", "Пятница", "Суббота"]
-let date = Date()
-let calendar = Calendar.current
-var weekday = calendar.component(.weekday, from: date)
 
 let rows = [2,3,1]
 var idCell = -1
@@ -18,7 +14,6 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        //tableView.register(CustomCell.self, forCellReuseIdentifier: "CellID")
         tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
     }
     
@@ -26,9 +21,8 @@ class TableViewController: UITableViewController {
     
     // Получим количество секций в таблице
     override func numberOfSections(in tableView: UITableView) -> Int {
-        guard weekday>1 else {
-            return 2
-        }
+        guard (weekday>1)&&(weekday<6) else{
+            return 2}
         return 3
     }
     
@@ -42,96 +36,122 @@ class TableViewController: UITableViewController {
         guard weekday>1 else {
             switch section {
             case 0:
-                return days[weekday-1]
-            case 2:
-                return days[weekday]
+                return "\(days[weekday-1]), \(curDayInMonth+1) \(monthTable[curMonth-1])"
+            case 1:
+                return "\(days[weekday]), \(curDayInMonth+2) \(monthTable[curMonth-1])"
             default:
                 return "error"
             }
             
         }
-                
-        switch section {
-        case 0:
-            return days[weekday-2]
-        case 1:
-            return days[weekday-1]
-        case 2:
-            return days[weekday]
-        default:
-            return "error"
+        guard weekday<6 else{
+            
+            switch weekday {
+            case 6:
+                switch section {
+                case 0:
+                    return "\(days[weekday-2]), \(curDayInMonth) \(monthTable[curMonth-1])"
+                case 1:
+                    return "\(days[weekday-1]), \(curDayInMonth+1) \(monthTable[curMonth-1])"
+                default:
+                    return "error"
+                }
+            case 7:
+                switch section {
+                case 0:
+                    return "\(days[weekday-2]), \(curDayInMonth) \(monthTable[curMonth-1])"
+                case 1:
+                    return "\(days[0]), \(curDayInMonth+2) \(monthTable[curMonth-1])"
+                default:
+                    return "error"
+                }
+            default:
+                return "error"
+            }
         }
-        
+    
+    
+    switch section {
+    case 0:
+    return "\(days[weekday-2]), \(curDayInMonth) \(monthTable[curMonth-1])"
+    case 1:
+    return "\(days[weekday-1]), \(curDayInMonth+1) \(monthTable[curMonth-1])"
+    case 2:
+    return "\(days[weekday]), \(curDayInMonth+2) \(monthTable[curMonth-1])"
+    default:
+    return "error"
     }
     
-    //Заполнение ячеек
-    override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
-        
-        cell.timeStart?.text = "10:00"
-        cell.nameLesson?.text = "Линейная Алгебра и АГ"
-        cell.timeEnd?.text = "10:40"
-        cell.typeLesson?.text = "лекция"
-        cell.numberAudince?.text = "А-12"
-        return cell
-        
-    }
+}
+
+//Заполнение ячеек
+override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
     
+    cell.timeStart?.text = "10:00"
+    cell.nameLesson?.text = "Линейная Алгебра и АГ"
+    cell.timeEnd?.text = "10:40"
+    cell.typeLesson?.text = "лекция"
+    cell.numberAudince?.text = "А-12"
+    return cell
     
-    
-    /*
-     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-     let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
-     
-     // Configure the cell...
-     
-     return cell
-     }
-     */
-    
-    /*
-     // Override to support conditional editing of the table view.
-     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the specified item to be editable.
-     return true
-     }
-     */
-    
-    /*
-     // Override to support editing the table view.
-     override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
-     if editingStyle == .delete {
-     // Delete the row from the data source
-     tableView.deleteRows(at: [indexPath], with: .fade)
-     } else if editingStyle == .insert {
-     // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-     }
-     }
-     */
-    
-    /*
-     // Override to support rearranging the table view.
-     override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
-     
-     }
-     */
-    
-    /*
-     // Override to support conditional rearranging of the table view.
-     override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
-     // Return false if you do not want the item to be re-orderable.
-     return true
-     }
-     */
-    
-    /*
-     // MARK: - Navigation
-     
-     // In a storyboard-based application, you will often want to do a little preparation before navigation
-     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-     // Get the new view controller using segue.destination.
-     // Pass the selected object to the new view controller.
-     }
-     */
-    
+}
+
+
+
+/*
+ override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+ let cell = tableView.dequeueReusableCell(withIdentifier: "reuseIdentifier", for: indexPath)
+ 
+ // Configure the cell...
+ 
+ return cell
+ }
+ */
+
+/*
+ // Override to support conditional editing of the table view.
+ override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
+ // Return false if you do not want the specified item to be editable.
+ return true
+ }
+ */
+
+/*
+ // Override to support editing the table view.
+ override func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+ if editingStyle == .delete {
+ // Delete the row from the data source
+ tableView.deleteRows(at: [indexPath], with: .fade)
+ } else if editingStyle == .insert {
+ // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
+ }
+ }
+ */
+
+/*
+ // Override to support rearranging the table view.
+ override func tableView(_ tableView: UITableView, moveRowAt fromIndexPath: IndexPath, to: IndexPath) {
+ 
+ }
+ */
+
+/*
+ // Override to support conditional rearranging of the table view.
+ override func tableView(_ tableView: UITableView, canMoveRowAt indexPath: IndexPath) -> Bool {
+ // Return false if you do not want the item to be re-orderable.
+ return true
+ }
+ */
+
+/*
+ // MARK: - Navigation
+ 
+ // In a storyboard-based application, you will often want to do a little preparation before navigation
+ override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+ // Get the new view controller using segue.destination.
+ // Pass the selected object to the new view controller.
+ }
+ */
+
 }
