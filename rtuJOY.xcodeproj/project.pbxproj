@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		723672A624B66B9700844118 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723672A524B66B9700844118 /* TableViewController.swift */; };
+		725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F565224B9CACD007930A6 /* modelTimeTable.swift */; };
 		727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727F0C2F24B6FB190029A4D3 /* CustomCell.xib */; };
 		72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */; };
 		72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */; };
@@ -22,6 +23,7 @@
 /* Begin PBXFileReference section */
 		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		723672A524B66B9700844118 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		725F565224B9CACD007930A6 /* modelTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelTimeTable.swift; sourceTree = "<group>"; };
 		727F0C2F24B6FB190029A4D3 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		72A1EB9F24B32ACC00BDD9DA /* rtuJOY.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = rtuJOY.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -68,6 +70,7 @@
 				72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */,
 				723672A524B66B9700844118 /* TableViewController.swift */,
 				72D1710624BB23BA0015CC8C /* CalendarMethod.swift */,
+				725F565224B9CACD007930A6 /* modelTimeTable.swift */,
 				7236729D24B6487400844118 /* CustomCell.swift */,
 				727F0C2F24B6FB190029A4D3 /* CustomCell.xib */,
 				72A1EBB824B32CD400BDD9DA /* Data.swift */,
@@ -152,6 +155,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */,
+				725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */,
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
 				723672A624B66B9700844118 /* TableViewController.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
@@ -303,6 +307,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SPANA493T;
 				INFOPLIST_FILE = rtuJOY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -321,6 +326,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 7SPANA493T;
 				INFOPLIST_FILE = rtuJOY/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 13.5;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
