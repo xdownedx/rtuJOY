@@ -15,14 +15,16 @@ class Shedule {
     var typeLesson:String
     var nameLesson:String?
     var numberAudince:String?
+    var nameTeacher:String?
     var addressCampus:String?
     
-    init(timeStart:String,timeEnd:String,typeLesson:String,nameLesson:String,numberAudince:String, addressCampus:String) {
+    init(timeStart:String,timeEnd:String,typeLesson:String,nameLesson:String,numberAudince:String,nameTeacher:String, addressCampus:String) {
         self.timeStart = timeStart
         self.timeEnd = timeEnd
         self.typeLesson = typeLesson
         self.nameLesson = nameLesson
         self.numberAudince = numberAudince
+        self.nameTeacher = nameTeacher
         self.addressCampus = addressCampus
     }
 }
