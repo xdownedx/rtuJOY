@@ -14,7 +14,7 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
-        parsingJson()
+        pars()
     }
     
     
@@ -89,10 +89,10 @@ class TableViewController: UITableViewController {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
         
         cell.timeStart?.text = "10:00"
-        cell.nameLesson?.text = gg
+        cell.nameLesson?.text = "Физика"
         cell.timeEnd?.text = "10:40"
-        cell.typeLesson?.text = "лекция"
-        cell.numberAudince?.text = "А-12"
+        cell.typeLesson?.text = "семинар"
+        cell.numberAudince?.text = "ауд. А-12"
         return cell
         
     }
