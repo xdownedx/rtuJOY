@@ -11,12 +11,12 @@ import UIKit
 
 
 struct schedulePerWeek {
-    var monday: Array<task?> = []
-    var tuesday: Array<task?> = []
-    var wednesday: Array<task?> = []
-    var thursday: Array<task?> = []
-    var friday: Array<task?> = []
-    var saturday: Array<task?> = []
+    var monday: Array<task> = []
+    var tuesday: Array<task> = []
+    var wednesday: Array<task> = []
+    var thursday: Array<task> = []
+    var friday: Array<task> = []
+    var saturday: Array<task> = []
     
     
     init?(tempSchedule:gg){
@@ -26,48 +26,53 @@ struct schedulePerWeek {
         while(i<(tempSchedule.schedule.count-1)){
             switch tempSchedule.schedule[i].day {
             case 1:
-                
-                monday[tempSchedule.schedule[i].number]!.timeStart=tempSchedule.schedule[i].interval.startTime
-                monday[tempSchedule.schedule[i].number]!.timeEnd=tempSchedule.schedule[i].interval.endTime
-                monday[tempSchedule.schedule[i].number]!.nameLesson=tempSchedule.schedule[i].info[0].name
-                monday[tempSchedule.schedule[i].number]!.typeLesson=tempSchedule.schedule[i].info[0].type
-                monday[tempSchedule.schedule[i].number]!.nameTeacher=tempSchedule.schedule[i].info[0].professor
-                monday[tempSchedule.schedule[i].number]!.numberAudince=tempSchedule.schedule[i].info[0].room
+                monday.append(.init())
+                monday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
+                monday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                monday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
+                monday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
+                monday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
+                monday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
             case 2:
-                tuesday[tempSchedule.schedule[i].number]!.timeStart+=tempSchedule.schedule[i].interval.startTime
-                tuesday[tempSchedule.schedule[i].number]!.timeEnd+=tempSchedule.schedule[i].interval.endTime
-                tuesday[tempSchedule.schedule[i].number]!.nameLesson+=tempSchedule.schedule[i].info[0].name
-                tuesday[tempSchedule.schedule[i].number]!.typeLesson+=tempSchedule.schedule[i].info[0].type
-                tuesday[tempSchedule.schedule[i].number]!.nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                tuesday[tempSchedule.schedule[i].number]!.numberAudince+=tempSchedule.schedule[i].info[0].room
+                tuesday.append(.init())
+                tuesday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
+                tuesday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                tuesday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
+                tuesday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
+                tuesday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
+                tuesday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
             case 3:
-                wednesday[tempSchedule.schedule[i].number]!.timeStart+=tempSchedule.schedule[i].interval.startTime
-                wednesday[tempSchedule.schedule[i].number]!.timeEnd+=tempSchedule.schedule[i].interval.endTime
-                wednesday[tempSchedule.schedule[i].number]!.nameLesson+=tempSchedule.schedule[i].info[0].name
-                wednesday[tempSchedule.schedule[i].number]!.typeLesson+=tempSchedule.schedule[i].info[0].type
-                wednesday[tempSchedule.schedule[i].number]!.nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                wednesday[tempSchedule.schedule[i].number]!.numberAudince+=tempSchedule.schedule[i].info[0].room
+                wednesday.append(.init())
+                wednesday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
+                wednesday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                wednesday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
+                wednesday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
+                wednesday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
+                wednesday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
             case 4:
-                thursday[tempSchedule.schedule[i].number]!.timeStart+=tempSchedule.schedule[i].interval.startTime
-                thursday[tempSchedule.schedule[i].number]!.timeEnd+=tempSchedule.schedule[i].interval.endTime
-                thursday[tempSchedule.schedule[i].number]!.nameLesson+=tempSchedule.schedule[i].info[0].name
-                thursday[tempSchedule.schedule[i].number]!.typeLesson+=tempSchedule.schedule[i].info[0].type
-                thursday[tempSchedule.schedule[i].number]!.nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                thursday[tempSchedule.schedule[i].number]!.numberAudince+=tempSchedule.schedule[i].info[0].room
+                thursday.append(.init())
+                thursday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
+                thursday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                thursday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
+                thursday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
+                thursday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
+                thursday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
             case 5:
-                friday[tempSchedule.schedule[i].number]!.timeStart+=tempSchedule.schedule[i].interval.startTime
-                friday[tempSchedule.schedule[i].number]!.timeEnd+=tempSchedule.schedule[i].interval.endTime
-                friday[tempSchedule.schedule[i].number]!.nameLesson+=tempSchedule.schedule[i].info[0].name
-                friday[tempSchedule.schedule[i].number]!.typeLesson+=tempSchedule.schedule[i].info[0].type
-                friday[tempSchedule.schedule[i].number]!.nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                friday[tempSchedule.schedule[i].number]!.numberAudince+=tempSchedule.schedule[i].info[0].room
+                friday.append(.init())
+                friday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
+                friday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                friday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
+                friday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
+                friday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
+                friday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
             case 6:
-                saturday[tempSchedule.schedule[i].number]!.timeStart+=tempSchedule.schedule[i].interval.startTime
-                saturday[tempSchedule.schedule[i].number]!.timeEnd+=tempSchedule.schedule[i].interval.endTime
-                saturday[tempSchedule.schedule[i].number]!.nameLesson+=tempSchedule.schedule[i].info[0].name
-                saturday[tempSchedule.schedule[i].number]!.typeLesson+=tempSchedule.schedule[i].info[0].type
-                saturday[tempSchedule.schedule[i].number]!.nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                saturday[tempSchedule.schedule[i].number]!.numberAudince+=tempSchedule.schedule[i].info[0].room
+                saturday.append(.init())
+                saturday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
+                saturday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                saturday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
+                saturday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
+                saturday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
+                saturday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
             default:
                 return
             }
