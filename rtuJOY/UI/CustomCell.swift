@@ -15,5 +15,5 @@ class CustomCell: UITableViewCell {
     @IBOutlet weak var typeLesson: UILabel!
     @IBOutlet weak var nameLesson: UILabel!
     @IBOutlet weak var numberAudince: UILabel!
-    
+    @IBOutlet weak var nameTeacher: UILabel!
 }

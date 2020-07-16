@@ -93,6 +93,7 @@ class TableViewController: UITableViewController {
         cell.timeEnd?.text = "10:40"
         cell.typeLesson?.text = "семинар"
         cell.numberAudince?.text = "ауд. А-12"
+        cell.nameTeacher?.text = "Пыркин А.Ю."
         return cell
         
     }

@@ -11,7 +11,7 @@ import Foundation
         let task = session.dataTask(with: url){data, response, error in
             if let data=data{
                 let schedule = parseJSON(with: data)
-                print(schedule?.tuesday.count)
+                print(schedule?.friday[2].week)
             }
         }
         task.resume()
