@@ -1,8 +1,11 @@
 import Foundation
 
 
-//struct parsing {
-func pars(group: String){
+struct ParsingData {
+    
+    var onCompletion: ((schedulePerWeek)->Void)?
+    
+    func broadcastData(group: String){
         let urlString="http://api.mirea-assistant.ru/schedule?group=\(group)"
         guard let url=URL(string: urlString) else {
             return
@@ -10,15 +13,16 @@ func pars(group: String){
         let session=URLSession(configuration: .default)
         let task = session.dataTask(with: url){data, response, error in
             if let data=data{
-                let schedule = parseJSON(with: data)
-                print(schedule?.monday[0])
+                if let scheduleForWeek = self.parseJSON(with: data){
+                    self.onCompletion?(scheduleForWeek)
+                }
             }
         }
         task.resume()
     }
     
     
-     func parseJSON(with data:Data)->schedulePerWeek?{
+    func parseJSON(with data:Data)->schedulePerWeek?{
         let decoder = JSONDecoder()
         do {
             let tempSchedule = try decoder.decode(gg.self, from: data)
@@ -33,9 +37,9 @@ func pars(group: String){
         }
         return nil
     }
-//}
+}
 
-   
-    
+
+
 
 
