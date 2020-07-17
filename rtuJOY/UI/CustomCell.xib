@@ -16,12 +16,12 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="hq1-Kc-SSU">
-                        <rect key="frame" x="10" y="8" width="302.5" height="80"/>
+                        <rect key="frame" x="10" y="8" width="288.5" height="80"/>
                         <subviews>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Drl-1r-2ak">
                                 <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
                                 <subviews>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="10:00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-3H-G6y">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="10:00" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LQe-3H-G6y">
                                         <rect key="frame" x="0.0" y="0.0" width="43.5" height="26"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -39,22 +39,22 @@
                                 <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wic-5V-FHK">
-                                <rect key="frame" x="65.5" y="0.0" width="237" height="80"/>
+                                <rect key="frame" x="65.5" y="0.0" width="223" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33f-93-r9S">
-                                        <rect key="frame" x="0.0" y="0.0" width="237" height="19.5"/>
-                                        <fontDescription key="fontDescription" type="system" weight="light" pointSize="15"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="19.5"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.16442847250000001" green="0.54919213060000005" blue="0.93386751410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Линейная алгебра и АГ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRt-fl-SG4">
-                                        <rect key="frame" x="0.0" y="27.5" width="237" height="24"/>
-                                        <fontDescription key="fontDescription" type="system" weight="heavy" pointSize="20"/>
+                                        <rect key="frame" x="0.0" y="27.5" width="223" height="24"/>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Cha-Rm-JKd">
-                                        <rect key="frame" x="0.0" y="59.5" width="237" height="20.5"/>
+                                        <rect key="frame" x="0.0" y="59.5" width="223" height="20.5"/>
                                         <subviews>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Сазонов А.И." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cEN-pl-GTg">
                                                 <rect key="frame" x="0.0" y="0.0" width="104.5" height="20.5"/>
@@ -63,8 +63,8 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="ауд. A-12" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FUv-1b-yWY">
-                                                <rect key="frame" x="112.5" y="0.0" width="124.5" height="20.5"/>
-                                                <fontDescription key="fontDescription" type="system" weight="thin" pointSize="17"/>
+                                                <rect key="frame" x="112.5" y="0.0" width="110.5" height="20.5"/>
+                                                <fontDescription key="fontDescription" type="system" weight="light" pointSize="17"/>
                                                 <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                 <nil key="highlightedColor"/>
                                             </label>

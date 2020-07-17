@@ -21,134 +21,199 @@ struct schedulePerWeek {
     
     init?(tempSchedule:gg){
         var i=0
-        
+        let decimalCharacters = CharacterSet.decimalDigits
+        var idMn=0
+        var idTd=0
+        var idWd=0
+        var idTh=0
+        var idFd=0
+        var idSt=0
         
         while(i<(tempSchedule.schedule.count-1)){
             switch tempSchedule.schedule[i].day {
             case 1:
-                monday.append(.init())
-                monday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
-                monday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
-                monday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
-                monday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
-                monday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                monday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
-                //monday[tempSchedule.schedule[i].number].week+=tempSchedule.schedule[i].info[0].weeks+","+tempSchedule.schedule[i].info[2].weeks
-                
-                var j = 0
-                while  j<tempSchedule.schedule[i].info.count {
-                    if (tempSchedule.schedule[i].info[j].weeks != "odd")&&(tempSchedule.schedule[i].info[j].weeks != "even"){
-                        let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
-                        monday[tempSchedule.schedule[i].number].week+=StringRecordedArr.map { Int($0)!}
-                        monday[tempSchedule.schedule[i].number].week.sort()
+                var k=0
+                while (k < tempSchedule.schedule[i].info.count-1){
+                    if tempSchedule.schedule[i].info[k].name != ""{
+                        monday.append(.init())
+                        monday[idMn].timeStart+=tempSchedule.schedule[i].interval.startTime
+                        monday[idMn].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                        monday[idMn].nameLesson+=tempSchedule.schedule[i].info[k].name
+                        monday[idMn].typeLesson+=tempSchedule.schedule[i].info[k].type
+                        monday[idMn].nameTeacher+=tempSchedule.schedule[i].info[k].professor
+                        monday[idMn].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        var j = 0
+                        while  (j<tempSchedule.schedule[i].info.count-1) {
+                            if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
+                                let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
+                                monday[idMn].week+=StringRecordedArr.map { Int($0)!}
+                                monday[idMn].week.sort()
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                                monday[idMn].isEven=true
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                    monday[idMn].isOdd=true
+                            }
+                            j+=1
+                        }
+                        idMn+=1
+                        break
                     }
-                    j+=1
-                    
+                    k+=1
                 }
-                
                 
             case 2:
-                tuesday.append(.init())
-                tuesday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
-                tuesday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
-                tuesday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
-                tuesday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
-                tuesday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                tuesday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
-                //tuesday[tempSchedule.schedule[i].number].week+=tempSchedule.schedule[i].info[0].weeks+","+tempSchedule.schedule[i].info[1].weeks
-                
-                var j = 0
-                while  j<tempSchedule.schedule[i].info.count {
-                    if (tempSchedule.schedule[i].info[j].weeks != "odd")&&(tempSchedule.schedule[i].info[j].weeks != "even"){
-                        let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
-                        tuesday[tempSchedule.schedule[i].number].week+=StringRecordedArr.map { Int($0)!}
-                        tuesday[tempSchedule.schedule[i].number].week.sort()
+                var k=0
+                while (k != tempSchedule.schedule[i].info.count-1){
+                    if tempSchedule.schedule[i].info[k].name != ""{
+                        tuesday.append(.init())
+                        tuesday[idTd].timeStart+=tempSchedule.schedule[i].interval.startTime
+                        tuesday[idTd].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                        tuesday[idTd].nameLesson+=tempSchedule.schedule[i].info[k].name
+                        tuesday[idTd].typeLesson+=tempSchedule.schedule[i].info[k].type
+                        tuesday[idTd].nameTeacher+=tempSchedule.schedule[i].info[k].professor
+                        tuesday[idTd].numberAudince+=tempSchedule.schedule[i].info[k].room
+
+                        var j = 0
+                        while  (j<tempSchedule.schedule[i].info.count-1) {
+                            if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
+                                let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
+                                tuesday[idTd].week+=StringRecordedArr.map { Int($0)!}
+                                tuesday[idTd].week.sort()
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                                tuesday[idTd].isEven=true
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                   tuesday[idTd].isOdd=true
+                            }
+                            j+=1
+                        }
+                        idTd+=1
+
+                        break
                     }
-                    j+=1
-                    
+                    k+=1
                 }
             case 3:
-                wednesday.append(.init())
-                wednesday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
-                wednesday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
-                wednesday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
-                wednesday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
-                wednesday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                wednesday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
-                var j = 0
-                while  j<tempSchedule.schedule[i].info.count {
-                    if (tempSchedule.schedule[i].info[j].weeks != "odd")&&(tempSchedule.schedule[i].info[j].weeks != "even"){
-                        let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
-                        wednesday[tempSchedule.schedule[i].number].week+=StringRecordedArr.map { Int($0)!}
-                        wednesday[tempSchedule.schedule[i].number].week.sort()
+                var k=0
+                while (k != tempSchedule.schedule[i].info.count-1){
+                    if tempSchedule.schedule[i].info[k].name != ""{
+                        wednesday.append(.init())
+                        wednesday[idWd].timeStart+=tempSchedule.schedule[i].interval.startTime
+                        wednesday[idWd].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                        wednesday[idWd].nameLesson+=tempSchedule.schedule[i].info[k].name
+                        wednesday[idWd].typeLesson+=tempSchedule.schedule[i].info[k].type
+                        wednesday[idWd].nameTeacher+=tempSchedule.schedule[i].info[k].professor
+                        wednesday[idWd].numberAudince+=tempSchedule.schedule[i].info[k].room
+
+                        var j = 0
+                        while  (j<tempSchedule.schedule[i].info.count-1) {
+                            if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
+                                let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
+                                wednesday[idWd].week+=StringRecordedArr.map { Int($0)!}
+                                wednesday[idWd].week.sort()
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                                wednesday[idWd].isEven=true
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     wednesday[idWd].isOdd=true
+                            }
+                            j+=1
+                            
+                        }
+                        idWd+=1
+                        break
                     }
-                    j+=1
-                    
+                    k+=1
                 }
-            //wednesday[tempSchedule.schedule[i].number].week+=tempSchedule.schedule[i].info[0].weeks+","+tempSchedule.schedule[i].info[2].weeks
             case 4:
-                thursday.append(.init())
-                thursday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
-                thursday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
-                thursday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
-                thursday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
-                thursday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                thursday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
-                var j = 0
-                while  j<tempSchedule.schedule[i].info.count {
-                    if (tempSchedule.schedule[i].info[j].weeks != "odd")&&(tempSchedule.schedule[i].info[j].weeks != "even"){
-                        let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
-                        thursday[tempSchedule.schedule[i].number].week+=StringRecordedArr.map { Int($0)!}
-                        thursday[tempSchedule.schedule[i].number].week.sort()
+                var k=0
+                while (k != tempSchedule.schedule[i].info.count-1){
+                    if tempSchedule.schedule[i].info[k].name != ""{
+                        thursday.append(.init())
+                        thursday[idTh].timeStart+=tempSchedule.schedule[i].interval.startTime
+                        thursday[idTh].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                        thursday[idTh].nameLesson+=tempSchedule.schedule[i].info[k].name
+                        thursday[idTh].typeLesson+=tempSchedule.schedule[i].info[k].type
+                        thursday[idTh].nameTeacher+=tempSchedule.schedule[i].info[k].professor
+                        thursday[idTh].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        var j = 0
+                        while  (j<tempSchedule.schedule[i].info.count-1) {
+                            if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
+                                let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
+                                thursday[idTh].week+=StringRecordedArr.map { Int($0)!}
+                                thursday[idTh].week.sort()
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                                thursday[idTh].isEven=true
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     thursday[idTh].isOdd=true
+                            }
+                            j+=1
+                            
+                        }
+                        idTh+=1
+                        break
                     }
-                    j+=1
-                    
+                    k+=1
                 }
-            //thursday[tempSchedule.schedule[i].number].week+=tempSchedule.schedule[i].info[0].weeks+","+tempSchedule.schedule[i].info[2].weeks
+                
             case 5:
-                friday.append(.init())
-                friday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
-                friday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
-                friday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
-                friday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
-                friday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                friday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
-               var j = 0
-                while  j<tempSchedule.schedule[i].info.count {
-                    if (tempSchedule.schedule[i].info[j].weeks != "odd")&&(tempSchedule.schedule[i].info[j].weeks != "even"){
-                        let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
-                        friday[tempSchedule.schedule[i].number].week+=StringRecordedArr.map { Int($0)!}
-                        friday[tempSchedule.schedule[i].number].week.sort()
+                var k=0
+                var id=0
+                while (k != tempSchedule.schedule[i].info.count-1){
+                    if tempSchedule.schedule[i].info[k].name != ""{
+                        friday.append(.init())
+                        friday[idFd].timeStart+=tempSchedule.schedule[i].interval.startTime
+                        friday[idFd].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                        friday[idFd].nameLesson+=tempSchedule.schedule[i].info[k].name
+                        friday[idFd].typeLesson+=tempSchedule.schedule[i].info[k].type
+                        friday[idFd].nameTeacher+=tempSchedule.schedule[i].info[k].professor
+                        friday[idFd].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        var j = 0
+                        while  (j<tempSchedule.schedule[i].info.count-1) {
+                            if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
+                                let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
+                                friday[id].week+=StringRecordedArr.map { Int($0)!}
+                                friday[id].week.sort()
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                                friday[idFd].isEven=true
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     friday[idFd].isOdd=true
+                            }
+                            j+=1
+                            
+                        }
+                        idFd+=1
+                        break
                     }
-                    j+=1
+                    k+=1
                     
                 }
-            //friday[tempSchedule.schedule[i].number].week+=tempSchedule.schedule[i].info[0].weeks+","+tempSchedule.schedule[i].info[2].weeks
             case 6:
-                saturday.append(.init())
-                saturday[tempSchedule.schedule[i].number].timeStart+=tempSchedule.schedule[i].interval.startTime
-                saturday[tempSchedule.schedule[i].number].timeEnd+=tempSchedule.schedule[i].interval.endTime
-                saturday[tempSchedule.schedule[i].number].nameLesson+=tempSchedule.schedule[i].info[0].name
-                saturday[tempSchedule.schedule[i].number].typeLesson+=tempSchedule.schedule[i].info[0].type
-                saturday[tempSchedule.schedule[i].number].nameTeacher+=tempSchedule.schedule[i].info[0].professor
-                saturday[tempSchedule.schedule[i].number].numberAudince+=tempSchedule.schedule[i].info[0].room
-                var j = 0
-                while  j<tempSchedule.schedule[i].info.count {
-                    if (tempSchedule.schedule[i].info[j].weeks != "odd")&&(tempSchedule.schedule[i].info[j].weeks != "even"){
-                        let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
-                        saturday[tempSchedule.schedule[i].number].week+=StringRecordedArr.map { Int($0)!}
-                        saturday[tempSchedule.schedule[i].number].week.sort()
+                var k=0
+                while (k != tempSchedule.schedule[i].info.count-1){
+                    if tempSchedule.schedule[i].info[k].name != ""{
+                        saturday.append(.init())
+                        saturday[idSt].timeStart+=tempSchedule.schedule[i].interval.startTime
+                        saturday[idSt].timeEnd+=tempSchedule.schedule[i].interval.endTime
+                        saturday[idSt].nameLesson+=tempSchedule.schedule[i].info[k].name
+                        saturday[idSt].typeLesson+=tempSchedule.schedule[i].info[k].type
+                        saturday[idSt].nameTeacher+=tempSchedule.schedule[i].info[k].professor
+                        saturday[idSt].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        var j = 0
+                        while  (j<tempSchedule.schedule[i].info.count-1) {
+                            if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
+                                let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
+                                saturday[idSt].week+=StringRecordedArr.map { Int($0)!}
+                                saturday[idSt].week.sort()
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                                saturday[idSt].isEven=true
+                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     saturday[idSt].isOdd=true
+                            }
+                            j+=1
+                            
+                        }
+                        idSt+=1
+                        break
                     }
-                    j+=1
-                    
+                    k+=1
                 }
-            //saturday[tempSchedule.schedule[i].number].week+=tempSchedule.schedule[i].info[0].weeks+","+tempSchedule.schedule[i].info[2].weeks
             default:
                 return
             }
             i+=1
-            
-            
         }
     }
 }
@@ -160,10 +225,14 @@ struct task {
     var nameLesson:String
     var numberAudince:String
     var nameTeacher:String
+    var isOdd:Bool
+    var isEven:Bool
     var week: Array<Int>
     init() {
         timeStart=""
         timeEnd=""
+        isOdd=false
+        isEven=false
         typeLesson=""
         nameLesson=""
         numberAudince=""

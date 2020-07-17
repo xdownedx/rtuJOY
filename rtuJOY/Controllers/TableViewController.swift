@@ -14,7 +14,8 @@ class TableViewController: UITableViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
-        pars()
+        let group="ktso-01-17"
+        pars(group: group)
     }
     
     
@@ -88,9 +89,9 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
         
-        cell.timeStart?.text = "10:00"
+        cell.timeStart?.text = "9:00"
         cell.nameLesson?.text = "Физика"
-        cell.timeEnd?.text = "10:40"
+        cell.timeEnd?.text = "10:30"
         cell.typeLesson?.text = "семинар"
         cell.numberAudince?.text = "ауд. А-12"
         cell.nameTeacher?.text = "Пыркин А.Ю."

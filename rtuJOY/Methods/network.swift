@@ -2,8 +2,8 @@ import Foundation
 
 
 //struct parsing {
-    func pars(){
-        let urlString="http://api.mirea-assistant.ru/schedule?group=ktso-01-19"
+func pars(group: String){
+        let urlString="http://api.mirea-assistant.ru/schedule?group=\(group)"
         guard let url=URL(string: urlString) else {
             return
         }
@@ -11,7 +11,7 @@ import Foundation
         let task = session.dataTask(with: url){data, response, error in
             if let data=data{
                 let schedule = parseJSON(with: data)
-                print(schedule?.friday[2].week)
+                print(schedule?.monday[0])
             }
         }
         task.resume()
