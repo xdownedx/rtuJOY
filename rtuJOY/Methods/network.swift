@@ -5,6 +5,7 @@ struct ParsingData {
     
     var onCompletion: ((schedulePerWeek)->Void)?
     
+    
     func broadcastData(group: String){
         let urlString="http://api.mirea-assistant.ru/schedule?group=\(group)"
         guard let url=URL(string: urlString) else {
@@ -19,6 +20,7 @@ struct ParsingData {
             }
         }
         task.resume()
+        return
     }
     
     

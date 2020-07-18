@@ -9,24 +9,12 @@
 import UIKit
 
 let week = 1
+var iJil=0
 class TableViewController: UITableViewController {
     
     var parsingData = ParsingData()
-    //var schedule:Array<task> = []
-
-    override func viewDidLoad() {
-        super.viewDidLoad()
-        tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
-        let group="xebo-01-17"
-
-        parsingData.onCompletion = {scheduleForWeek in
-            print(scheduleForWeek.monday[1].nameLesson)
-            var schedule = self.schedeleForConclusion(schudele:scheduleForWeek)
-        }
-        parsingData.broadcastData(group: group)
-
-        
-    }
+    var arrForConclusion:Array<Array<task>> = []
+    
     
     
     
@@ -39,7 +27,7 @@ class TableViewController: UITableViewController {
     
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return schedule.count
+        return arrForConclusion.count
     }
     
     // Получим заголовок для секции
@@ -99,8 +87,8 @@ class TableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
         
-        cell.timeStart?.text = "9:00"
-        cell.nameLesson?.text = "Физика"
+        cell.timeStart?.text = "Говно"
+        cell.nameLesson?.text = "говна"
         cell.timeEnd?.text = "10:30"
         cell.typeLesson?.text = "семинар"
         cell.numberAudince?.text = "ауд. А-12"
@@ -111,39 +99,55 @@ class TableViewController: UITableViewController {
     
     
     
-    func schedeleForConclusion(schudele:schedulePerWeek)->Array<task>{
-        var arrForConclusion:Array<task> = []
-        switch weekday {
-        case 0:
+     func schedeleForConclusion(schudele:schedulePerWeek){
+        guard iJil == 0 else {
+            return
+        }
+        switch calendar.component(.weekday, from: date) {
+        case 7:
             var i=0
             var id=0
-            arrForConclusion.append(.init())
             while(i<schudele.monday.count-1){
+                
                 if(schudele.monday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.monday[i]
                     id+=1
                 } else if(schudele.monday[i].week.isEmpty)&&(schudele.monday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.monday[i]
                     id+=1
                 } else if (schudele.monday[i].week.isEmpty)&&(schudele.monday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.monday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
+            id=0
             
+
             while(i<schudele.tuesday.count-1){
+                
                 if(schudele.tuesday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.tuesday[i]
                     id+=1
                 } else if(schudele.tuesday[i].week.isEmpty)&&(schudele.monday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.tuesday[i]
                     id+=1
                 } else if (schudele.tuesday[i].week.isEmpty)&&(schudele.monday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.tuesday[i]
                     id+=1
                 }
                 i+=1
@@ -151,50 +155,71 @@ class TableViewController: UITableViewController {
         case 1:
             var i=0
             var id=0
-            arrForConclusion.append(.init())
             while(i<schudele.monday.count-1){
+                
                 if(schudele.monday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.monday[i]
                     id+=1
                 } else if(schudele.monday[i].week.isEmpty)&&(schudele.monday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.monday[i]
                     id+=1
                 } else if (schudele.monday[i].week.isEmpty)&&(schudele.monday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.monday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.tuesday.count-1){
+                
+
                 if(schudele.tuesday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.tuesday[i]
                     id+=1
                 } else if(schudele.tuesday[i].week.isEmpty)&&(schudele.tuesday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.tuesday[i]
                     id+=1
                 } else if (schudele.tuesday[i].week.isEmpty)&&(schudele.tuesday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.tuesday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.thursday.count-1){
+                
                 if(schudele.thursday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.thursday[i]
                     id+=1
                 } else if(schudele.thursday[i].week.isEmpty)&&(schudele.thursday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.thursday[i]
                     id+=1
                 } else if (schudele.thursday[i].week.isEmpty)&&(schudele.thursday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.thursday[i]
                     id+=1
                 }
                 i+=1
@@ -202,50 +227,68 @@ class TableViewController: UITableViewController {
         case 2:
             var i=0
             var id=0
-            arrForConclusion.append(.init())
             while(i<schudele.tuesday.count-1){
+                arrForConclusion.append(Array<task>())
+                arrForConclusion[0].append(.init())
                 if(schudele.tuesday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion[0][id]=schudele.tuesday[i]
                     id+=1
                 } else if(schudele.tuesday[i].week.isEmpty)&&(schudele.tuesday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion[0][id]=schudele.tuesday[i]
                     id+=1
                 } else if (schudele.tuesday[i].week.isEmpty)&&(schudele.tuesday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion[0][id]=schudele.tuesday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.thursday.count-1){
+                
+
                 if(schudele.thursday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.thursday[i]
                     id+=1
                 } else if(schudele.thursday[i].week.isEmpty)&&(schudele.thursday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.thursday[i]
                     id+=1
                 } else if (schudele.thursday[i].week.isEmpty)&&(schudele.thursday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.thursday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.wednesday.count-1){
+                
+
                 if(schudele.wednesday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.wednesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.wednesday[i]
                     id+=1
                 } else if(schudele.wednesday[i].week.isEmpty)&&(schudele.wednesday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.wednesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.wednesday[i]
                     id+=1
                 } else if (schudele.wednesday[i].week.isEmpty)&&(schudele.wednesday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.wednesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.wednesday[i]
                     id+=1
                 }
                 i+=1
@@ -253,50 +296,75 @@ class TableViewController: UITableViewController {
         case 3:
             var i=0
             var id=0
-            arrForConclusion.append(.init())
             while(i<schudele.thursday.count-1){
+               
+
                 if(schudele.thursday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                                   arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.thursday[i]
                     id+=1
                 } else if(schudele.thursday[i].week.isEmpty)&&(schudele.thursday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                                   arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.thursday[i]
                     id+=1
                 } else if (schudele.thursday[i].week.isEmpty)&&(schudele.thursday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                                   arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.thursday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.wednesday.count-1){
+               
                 if(schudele.wednesday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.wednesday[i]
+                    arrForConclusion.append(Array<task>())
+                                   arrForConclusion[1].append(.init())
+
+                    arrForConclusion[1][id]=schudele.wednesday[i]
                     id+=1
                 } else if(schudele.wednesday[i].week.isEmpty)&&(schudele.wednesday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                                   arrForConclusion[1].append(.init())
+
+                    arrForConclusion[1][id]=schudele.wednesday[i]
                     id+=1
                 } else if (schudele.wednesday[i].week.isEmpty)&&(schudele.wednesday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.thursday[i]
+                    arrForConclusion.append(Array<task>())
+                                   arrForConclusion[1].append(.init())
+
+                    arrForConclusion[1][id]=schudele.wednesday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.friday.count-1){
+                
+
                 if(schudele.friday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.friday[i]
                     id+=1
                 } else if(schudele.friday[i].week.isEmpty)&&(schudele.friday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.friday[i]
                     id+=1
                 } else if (schudele.friday[i].week.isEmpty)&&(schudele.friday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.friday[i]
                     id+=1
                 }
                 i+=1
@@ -304,50 +372,73 @@ class TableViewController: UITableViewController {
         case 4:
             var i=0
             var id=0
-            arrForConclusion.append(.init())
             while(i<schudele.wednesday.count-1){
+                
+
                 if(schudele.wednesday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.wednesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.wednesday[i]
                     id+=1
                 } else if(schudele.wednesday[i].week.isEmpty)&&(schudele.wednesday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.tuesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.wednesday[i]
                     id+=1
                 } else if (schudele.wednesday[i].week.isEmpty)&&(schudele.wednesday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.wednesday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.wednesday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.friday.count-1){
+                
+
                 if(schudele.friday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.friday[i]
                     id+=1
                 } else if(schudele.friday[i].week.isEmpty)&&(schudele.friday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.friday[i]
                     id+=1
                 } else if (schudele.friday[i].week.isEmpty)&&(schudele.friday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.friday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.saturday.count-1){
+              
+
                 if(schudele.saturday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.saturday[i]
+                    arrForConclusion.append(Array<task>())
+                                  arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.saturday[i]
                     id+=1
                 } else if(schudele.saturday[i].week.isEmpty)&&(schudele.saturday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                                  arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.saturday[i]
                     id+=1
                 } else if (schudele.saturday[i].week.isEmpty)&&(schudele.saturday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.saturday[i]
+                    arrForConclusion.append(Array<task>())
+                                  arrForConclusion[2].append(.init())
+                    arrForConclusion[2][id]=schudele.saturday[i]
                     id+=1
                 }
                 i+=1
@@ -356,31 +447,48 @@ class TableViewController: UITableViewController {
             var i=0
             var id=0
             while(i<schudele.friday.count-1){
+                
+                
+
                 if(schudele.friday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.friday[i]
                     id+=1
                 } else if(schudele.friday[i].week.isEmpty)&&(schudele.friday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.friday[i]
                     id+=1
                 } else if (schudele.friday[i].week.isEmpty)&&(schudele.friday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.friday[i]
                     id+=1
                 }
                 i+=1
             }
             
             i=0
-            arrForConclusion.append(.init())
-            
+            id=0
+
             while(i<schudele.saturday.count-1){
+                
+
                 if(schudele.saturday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.saturday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.saturday[i]
                     id+=1
                 } else if(schudele.saturday[i].week.isEmpty)&&(schudele.saturday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.saturday[i]
                     id+=1
                 } else if (schudele.saturday[i].week.isEmpty)&&(schudele.saturday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.saturday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.saturday[i]
                     id+=1
                 }
                 i+=1
@@ -388,42 +496,69 @@ class TableViewController: UITableViewController {
         case 6:
             var i=0
             var id=0
-            arrForConclusion.append(.init())
             while(i<schudele.saturday.count-1){
+                
+
                 if(schudele.saturday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.saturday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.saturday[i]
                     id+=1
                 } else if(schudele.saturday[i].week.isEmpty)&&(schudele.saturday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.friday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.saturday[i]
                     id+=1
                 } else if (schudele.saturday[i].week.isEmpty)&&(schudele.saturday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.saturday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[0].append(.init())
+                    arrForConclusion[0][id]=schudele.saturday[i]
                     id+=1
                 }
                 i+=1
             }
             i=0
-            arrForConclusion.append(.init())
+            id=0
             while(i<schudele.monday.count-1){
+                
+
                 if(schudele.monday[i].week.contains(week)){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.monday[i]
                     id+=1
                 } else if(schudele.monday[i].week.isEmpty)&&(schudele.monday[i].isOdd)&&(week%2==1){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.monday[i]
                     id+=1
                 } else if (schudele.monday[i].week.isEmpty)&&(schudele.monday[i].isEven)&&(week%2==0){
-                    arrForConclusion[id]=schudele.monday[i]
+                    arrForConclusion.append(Array<task>())
+                    arrForConclusion[1].append(.init())
+                    arrForConclusion[1][id]=schudele.monday[i]
                     id+=1
                 }
                 i+=1
             }
             
         default:
-            arrForConclusion.append(.init())
+            return
         }
-        
-        
-        
-        return arrForConclusion
+        print(arrForConclusion)
+        iJil=1
+        viewDidLoad()
     }
+    
+    override func viewDidLoad() {
+        let group="ktso-01-19"
+        parsingData.onCompletion = {scheduleForWeek in
+            self.schedeleForConclusion(schudele:scheduleForWeek)
+        }
+        parsingData.broadcastData(group: group)
+        super.viewDidLoad()
+        tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
+        
+        
+    }
+    
 }
