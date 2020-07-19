@@ -64,9 +64,10 @@ struct schedulePerWeek {
                                 monday[idMn].week.sort()
                             }else{
                                 if (tempSchedule.schedule[i].info[k].weeks=="even"){
-                                monday[idMn].isEven=true
+                                    monday[idMn].week+=[2,4,6,8,10,12,14,16]
                             }
-                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                    monday[idMn].isOdd=true
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){
+                                    monday[idMn].week+=[1,3,5,7,9,11,13,15]
                                 }
                             }
                             j+=1
@@ -109,10 +110,12 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 tuesday[idTd].week+=StringRecordedArr.map { Int($0)!}
                                 tuesday[idTd].week.sort()
-                            }else {
+                            }else{
                                 if (tempSchedule.schedule[i].info[k].weeks=="even"){
-                                tuesday[idTd].isEven=true}
-                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                   tuesday[idTd].isOdd=true
+                                    tuesday[idTd].week+=[2,4,6,8,10,12,14,16]
+                            }
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){
+                                    tuesday[idTd].week+=[1,3,5,7,9,11,13,15]
                                 }
                             }
                             j+=1
@@ -155,12 +158,12 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 wednesday[idWd].week+=StringRecordedArr.map { Int($0)!}
                                 wednesday[idWd].week.sort()
-                            }else {
+                            }else{
                                 if (tempSchedule.schedule[i].info[k].weeks=="even"){
-                                wednesday[idWd].isEven=true
+                                    wednesday[idWd].week+=[2,4,6,8,10,12,14,16]
                             }
-                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     wednesday[idWd].isOdd=true
-                                    
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){
+                                    wednesday[idWd].week+=[1,3,5,7,9,11,13,15]
                                 }
                             }
                             j+=1
@@ -204,9 +207,10 @@ struct schedulePerWeek {
                                 thursday[idTh].week.sort()
                             }else{
                                 if (tempSchedule.schedule[i].info[k].weeks=="even"){
-                                thursday[idTh].isEven=true
+                                    thursday[idTh].week+=[2,4,6,8,10,12,14,16]
                             }
-                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     thursday[idTh].isOdd=true
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){
+                                    thursday[idTh].week+=[1,3,5,7,9,11,13,15]
                                 }
                             }
                             j+=1
@@ -251,9 +255,10 @@ struct schedulePerWeek {
                                 friday[idFd].week.sort()
                             }else{
                                 if (tempSchedule.schedule[i].info[k].weeks=="even"){
-                                friday[idFd].isEven=true
+                                    friday[idFd].week+=[2,4,6,8,10,12,14,16]
                             }
-                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     friday[idFd].isOdd=true
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){
+                                    friday[idFd].week+=[1,3,5,7,9,11,13,15]
                                 }
                             }
                             j+=1
@@ -298,9 +303,10 @@ struct schedulePerWeek {
                                 saturday[idSt].week.sort()
                             }else{
                                 if (tempSchedule.schedule[i].info[k].weeks=="even"){
-                                saturday[idSt].isEven=true
+                                    saturday[idSt].week+=[2,4,6,8,10,12,14,16]
                             }
-                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     saturday[idSt].isOdd=true
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){
+                                    saturday[idSt].week+=[1,3,5,7,9,11,13,15]
                                 }
                             }
                             j+=1
@@ -334,14 +340,11 @@ struct task {
     var nameLesson:String
     var numberAudince:String
     var nameTeacher:String
-    var isOdd:Bool
-    var isEven:Bool
+    
     var week: Array<Int>
     init() {
         timeStart=""
         timeEnd=""
-        isOdd=false
-        isEven=false
         typeLesson=""
         nameLesson=""
         numberAudince=""
