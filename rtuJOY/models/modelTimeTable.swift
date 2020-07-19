@@ -62,9 +62,12 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 monday[idMn].week+=StringRecordedArr.map { Int($0)!}
                                 monday[idMn].week.sort()
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                            }else{
+                                if (tempSchedule.schedule[i].info[k].weeks=="even"){
                                 monday[idMn].isEven=true
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                    monday[idMn].isOdd=true
+                            }
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                    monday[idMn].isOdd=true
+                                }
                             }
                             j+=1
                         }
@@ -106,9 +109,11 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 tuesday[idTd].week+=StringRecordedArr.map { Int($0)!}
                                 tuesday[idTd].week.sort()
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
-                                tuesday[idTd].isEven=true
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                   tuesday[idTd].isOdd=true
+                            }else {
+                                if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                                tuesday[idTd].isEven=true}
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                   tuesday[idTd].isOdd=true
+                                }
                             }
                             j+=1
                         }
@@ -150,9 +155,13 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 wednesday[idWd].week+=StringRecordedArr.map { Int($0)!}
                                 wednesday[idWd].week.sort()
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                            }else {
+                                if (tempSchedule.schedule[i].info[k].weeks=="even"){
                                 wednesday[idWd].isEven=true
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     wednesday[idWd].isOdd=true
+                            }
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     wednesday[idWd].isOdd=true
+                                    
+                                }
                             }
                             j+=1
                             
@@ -193,9 +202,12 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 thursday[idTh].week+=StringRecordedArr.map { Int($0)!}
                                 thursday[idTh].week.sort()
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                            }else{
+                                if (tempSchedule.schedule[i].info[k].weeks=="even"){
                                 thursday[idTh].isEven=true
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     thursday[idTh].isOdd=true
+                            }
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     thursday[idTh].isOdd=true
+                                }
                             }
                             j+=1
                             
@@ -237,9 +249,12 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 friday[idFd].week+=StringRecordedArr.map { Int($0)!}
                                 friday[idFd].week.sort()
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                            }else{
+                                if (tempSchedule.schedule[i].info[k].weeks=="even"){
                                 friday[idFd].isEven=true
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     friday[idFd].isOdd=true
+                            }
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     friday[idFd].isOdd=true
+                                }
                             }
                             j+=1
                             
@@ -281,9 +296,12 @@ struct schedulePerWeek {
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
                                 saturday[idSt].week+=StringRecordedArr.map { Int($0)!}
                                 saturday[idSt].week.sort()
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
+                            }else{
+                                if (tempSchedule.schedule[i].info[k].weeks=="even"){
                                 saturday[idSt].isEven=true
-                            }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     saturday[idSt].isOdd=true
+                            }
+                                if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     saturday[idSt].isOdd=true
+                                }
                             }
                             j+=1
                             
