@@ -39,9 +39,23 @@ struct schedulePerWeek {
                         monday[idMn].timeStart+=tempSchedule.schedule[i].interval.startTime
                         monday[idMn].timeEnd+=tempSchedule.schedule[i].interval.endTime
                         monday[idMn].nameLesson+=tempSchedule.schedule[i].info[k].name
-                        monday[idMn].typeLesson+=tempSchedule.schedule[i].info[k].type
                         monday[idMn].nameTeacher+=tempSchedule.schedule[i].info[k].professor
                         monday[idMn].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        switch tempSchedule.schedule[i].info[k].type {
+                        case "пр":
+                            monday[idMn].typeLesson+="семинар"
+                        case "лк":
+                            monday[idMn].typeLesson+="лекция"
+                        case "лаб":
+                            monday[idMn].typeLesson+="лабараторная работа"
+                        case "экз":
+                            monday[idMn].typeLesson+="Экзамен"
+                        case "зач":
+                            monday[idMn].typeLesson+="Зачет"
+                            
+                        default:
+                            monday[idMn].typeLesson+=""
+                        }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
                             if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
@@ -68,10 +82,24 @@ struct schedulePerWeek {
                         tuesday[idTd].timeStart+=tempSchedule.schedule[i].interval.startTime
                         tuesday[idTd].timeEnd+=tempSchedule.schedule[i].interval.endTime
                         tuesday[idTd].nameLesson+=tempSchedule.schedule[i].info[k].name
-                        tuesday[idTd].typeLesson+=tempSchedule.schedule[i].info[k].type
                         tuesday[idTd].nameTeacher+=tempSchedule.schedule[i].info[k].professor
                         tuesday[idTd].numberAudince+=tempSchedule.schedule[i].info[k].room
-
+                        switch tempSchedule.schedule[i].info[k].type {
+                        case "пр":
+                            tuesday[idTd].typeLesson+="семинар"
+                        case "лк":
+                            tuesday[idTd].typeLesson+="лекция"
+                        case "лаб":
+                            tuesday[idTd].typeLesson+="лабараторная работа"
+                        case "экз":
+                            tuesday[idTd].typeLesson+="Экзамен"
+                        case "зач":
+                            tuesday[idTd].typeLesson+="Зачет"
+                            
+                        default:
+                            tuesday[idTd].typeLesson+=""
+                        }
+                        
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
                             if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
@@ -85,7 +113,7 @@ struct schedulePerWeek {
                             j+=1
                         }
                         idTd+=1
-
+                        
                         break
                     }
                     k+=1
@@ -98,10 +126,24 @@ struct schedulePerWeek {
                         wednesday[idWd].timeStart+=tempSchedule.schedule[i].interval.startTime
                         wednesday[idWd].timeEnd+=tempSchedule.schedule[i].interval.endTime
                         wednesday[idWd].nameLesson+=tempSchedule.schedule[i].info[k].name
-                        wednesday[idWd].typeLesson+=tempSchedule.schedule[i].info[k].type
                         wednesday[idWd].nameTeacher+=tempSchedule.schedule[i].info[k].professor
                         wednesday[idWd].numberAudince+=tempSchedule.schedule[i].info[k].room
-
+                        switch tempSchedule.schedule[i].info[k].type {
+                        case "пр":
+                            wednesday[idWd].typeLesson+="семинар"
+                        case "лк":
+                            wednesday[idWd].typeLesson+="лекция"
+                        case "лаб":
+                            wednesday[idWd].typeLesson+="лабараторная работа"
+                        case "экз":
+                            wednesday[idWd].typeLesson+="Экзамен"
+                        case "зач":
+                            wednesday[idWd].typeLesson+="Зачет"
+                            
+                        default:
+                            wednesday[idWd].typeLesson+=""
+                        }
+                        
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
                             if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
@@ -128,9 +170,23 @@ struct schedulePerWeek {
                         thursday[idTh].timeStart+=tempSchedule.schedule[i].interval.startTime
                         thursday[idTh].timeEnd+=tempSchedule.schedule[i].interval.endTime
                         thursday[idTh].nameLesson+=tempSchedule.schedule[i].info[k].name
-                        thursday[idTh].typeLesson+=tempSchedule.schedule[i].info[k].type
                         thursday[idTh].nameTeacher+=tempSchedule.schedule[i].info[k].professor
                         thursday[idTh].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        switch tempSchedule.schedule[i].info[k].type {
+                        case "пр":
+                            thursday[idTh].typeLesson+="семинар"
+                        case "лк":
+                            thursday[idTh].typeLesson+="лекция"
+                        case "лаб":
+                            thursday[idTh].typeLesson+="лабараторная работа"
+                        case "экз":
+                            thursday[idTh].typeLesson+="Экзамен"
+                        case "зач":
+                            thursday[idTh].typeLesson+="Зачет"
+                            
+                        default:
+                            thursday[idTh].typeLesson+=""
+                        }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
                             if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
@@ -152,22 +208,35 @@ struct schedulePerWeek {
                 
             case 5:
                 var k=0
-                var id=0
                 while (k != tempSchedule.schedule[i].info.count-1){
                     if tempSchedule.schedule[i].info[k].name != ""{
                         friday.append(.init())
                         friday[idFd].timeStart+=tempSchedule.schedule[i].interval.startTime
                         friday[idFd].timeEnd+=tempSchedule.schedule[i].interval.endTime
                         friday[idFd].nameLesson+=tempSchedule.schedule[i].info[k].name
-                        friday[idFd].typeLesson+=tempSchedule.schedule[i].info[k].type
                         friday[idFd].nameTeacher+=tempSchedule.schedule[i].info[k].professor
                         friday[idFd].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        switch tempSchedule.schedule[i].info[k].type {
+                        case "пр":
+                            friday[idFd].typeLesson+="семинар"
+                        case "лк":
+                            friday[idFd].typeLesson+="лекция"
+                        case "лаб":
+                            friday[idFd].typeLesson+="лабараторная работа"
+                        case "экз":
+                            friday[idFd].typeLesson+="Экзамен"
+                        case "зач":
+                            friday[idFd].typeLesson+="Зачет"
+                            
+                        default:
+                            friday[idFd].typeLesson+=""
+                        }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
                             if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
                                 let StringRecordedArr = tempSchedule.schedule[i].info[j].weeks.components(separatedBy: ",")
-                                friday[id].week+=StringRecordedArr.map { Int($0)!}
-                                friday[id].week.sort()
+                                friday[idFd].week+=StringRecordedArr.map { Int($0)!}
+                                friday[idFd].week.sort()
                             }else if (tempSchedule.schedule[i].info[k].weeks=="even"){
                                 friday[idFd].isEven=true
                             }else if (tempSchedule.schedule[i].info[k].weeks=="odd"){                                     friday[idFd].isOdd=true
@@ -189,9 +258,23 @@ struct schedulePerWeek {
                         saturday[idSt].timeStart+=tempSchedule.schedule[i].interval.startTime
                         saturday[idSt].timeEnd+=tempSchedule.schedule[i].interval.endTime
                         saturday[idSt].nameLesson+=tempSchedule.schedule[i].info[k].name
-                        saturday[idSt].typeLesson+=tempSchedule.schedule[i].info[k].type
                         saturday[idSt].nameTeacher+=tempSchedule.schedule[i].info[k].professor
                         saturday[idSt].numberAudince+=tempSchedule.schedule[i].info[k].room
+                        switch tempSchedule.schedule[i].info[k].type {
+                        case "пр":
+                            saturday[idSt].typeLesson+="семинар"
+                        case "лк":
+                            saturday[idSt].typeLesson+="лекция"
+                        case "лаб":
+                            saturday[idSt].typeLesson+="лабараторная работа"
+                        case "экз":
+                            saturday[idSt].typeLesson+="Экзамен"
+                        case "зач":
+                            saturday[idSt].typeLesson+="Зачет"
+                            
+                        default:
+                            saturday[idSt].typeLesson+=""
+                        }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
                             if ((tempSchedule.schedule[i].info[j].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
@@ -216,6 +299,14 @@ struct schedulePerWeek {
             i+=1
         }
     }
+    //    init(){
+    //        monday = []
+    //        tuesday = []
+    //        wednesday = []
+    //        thursday = []
+    //        friday = []
+    //        saturday = []
+    //    }
 }
 
 struct task {

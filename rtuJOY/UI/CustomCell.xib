@@ -9,10 +9,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
         <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
         <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CustomCell" rowHeight="96" id="Rhv-so-mYu" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
-            <rect key="frame" x="0.0" y="0.0" width="343" height="96"/>
+            <rect key="frame" x="0.0" y="0.0" width="312" height="96"/>
             <autoresizingMask key="autoresizingMask"/>
             <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rhv-so-mYu" id="I2S-Xz-ZOs">
-                <rect key="frame" x="0.0" y="0.0" width="343" height="96"/>
+                <rect key="frame" x="0.0" y="0.0" width="312" height="96"/>
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="hq1-Kc-SSU">
@@ -34,21 +34,30 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="43.5" id="lpw-mE-3mS"/>
+                                </constraints>
                             </stackView>
                             <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-cW-JJ7">
                                 <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                             </imageView>
-                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wic-5V-FHK">
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="3" translatesAutoresizingMaskIntoConstraints="NO" id="wic-5V-FHK">
                                 <rect key="frame" x="65.5" y="0.0" width="223" height="80"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="33f-93-r9S">
-                                        <rect key="frame" x="0.0" y="0.0" width="223" height="19.5"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="223" height="16.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="16.5" id="DtG-XT-9SV"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="15"/>
                                         <color key="textColor" red="0.16442847250000001" green="0.54919213060000005" blue="0.93386751410000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Линейная алгебра и АГ" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRt-fl-SG4">
-                                        <rect key="frame" x="0.0" y="27.5" width="223" height="24"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Линейная алгебра и АГ" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZRt-fl-SG4">
+                                        <rect key="frame" x="0.0" y="19.5" width="223" height="37"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="37" id="O3S-g3-Cys"/>
+                                        </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
@@ -74,16 +83,24 @@
                                         </constraints>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="ZRt-fl-SG4" firstAttribute="top" secondItem="33f-93-r9S" secondAttribute="bottom" constant="3" id="7p9-Nl-X4s"/>
+                                    <constraint firstItem="Cha-Rm-JKd" firstAttribute="top" secondItem="ZRt-fl-SG4" secondAttribute="bottom" constant="3" id="8oz-GE-7xZ"/>
+                                    <constraint firstAttribute="bottom" secondItem="Cha-Rm-JKd" secondAttribute="bottom" id="sVo-m8-Xhh"/>
+                                    <constraint firstItem="33f-93-r9S" firstAttribute="top" secondItem="wic-5V-FHK" secondAttribute="top" id="wFW-Uu-AY3"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="FYj-cW-JJ7" firstAttribute="leading" secondItem="Drl-1r-2ak" secondAttribute="trailing" constant="6" id="OGf-0R-FC6"/>
                             <constraint firstAttribute="bottom" secondItem="Drl-1r-2ak" secondAttribute="bottom" id="WHY-zi-2Ev"/>
+                            <constraint firstItem="wic-5V-FHK" firstAttribute="top" secondItem="hq1-Kc-SSU" secondAttribute="top" id="Z3r-UX-vP4"/>
                             <constraint firstItem="Drl-1r-2ak" firstAttribute="leading" secondItem="hq1-Kc-SSU" secondAttribute="leading" id="ckb-jw-fSX"/>
                             <constraint firstAttribute="bottom" secondItem="FYj-cW-JJ7" secondAttribute="bottom" id="eqe-KA-8Vc"/>
                             <constraint firstItem="wic-5V-FHK" firstAttribute="top" secondItem="hq1-Kc-SSU" secondAttribute="top" id="esa-bY-2iD"/>
                             <constraint firstAttribute="bottom" secondItem="wic-5V-FHK" secondAttribute="bottom" id="guK-97-Iud"/>
                             <constraint firstItem="FYj-cW-JJ7" firstAttribute="top" secondItem="hq1-Kc-SSU" secondAttribute="top" id="hO9-7s-dU8"/>
+                            <constraint firstAttribute="bottom" secondItem="wic-5V-FHK" secondAttribute="bottom" id="oBB-3A-quW"/>
                             <constraint firstItem="wic-5V-FHK" firstAttribute="leading" secondItem="FYj-cW-JJ7" secondAttribute="trailing" constant="6" id="vY5-4v-kul"/>
                             <constraint firstItem="Drl-1r-2ak" firstAttribute="top" secondItem="hq1-Kc-SSU" secondAttribute="top" id="vex-nS-eqY"/>
                         </constraints>
@@ -103,7 +120,7 @@
                 <outlet property="timeStart" destination="LQe-3H-G6y" id="Ve0-pt-XUw"/>
                 <outlet property="typeLesson" destination="33f-93-r9S" id="fbb-RS-jzL"/>
             </connections>
-            <point key="canvasLocation" x="785" y="102"/>
+            <point key="canvasLocation" x="762.31884057971024" y="101.78571428571428"/>
         </tableViewCell>
     </objects>
     <resources>
