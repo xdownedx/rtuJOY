@@ -8,7 +8,7 @@
 
 import UIKit
 
-let week = 8
+let week = 9
 var group="ktso-01-19"
 
 class TableViewController: UITableViewController {
@@ -119,7 +119,7 @@ class TableViewController: UITableViewController {
         cell.nameLesson?.text = arrForConclusion[indexPath.section][indexPath.row].nameLesson
         cell.timeEnd?.text = arrForConclusion[indexPath.section][indexPath.row].timeEnd
         cell.typeLesson?.text = arrForConclusion[indexPath.section][indexPath.row].typeLesson
-        cell.numberAudince?.text = "Ауд." + arrForConclusion[indexPath.section][indexPath.row].numberAudince
+        cell.numberAudince?.text = "Ауд." + " " + arrForConclusion[indexPath.section][indexPath.row].numberAudince
         cell.nameTeacher?.text = arrForConclusion[indexPath.section][indexPath.row].nameTeacher
         return cell
         

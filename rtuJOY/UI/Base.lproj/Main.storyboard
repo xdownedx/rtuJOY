@@ -3,20 +3,21 @@
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="16087"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
         <!--Расписание-->
         <scene sceneID="X4G-sG-6ov">
             <objects>
-                <tableViewController id="A0v-mW-ljj" customClass="TableViewController" customModule="rtuJOY" customModuleProvider="target" sceneMemberID="viewController">
+                <tableViewController id="A0v-mW-ljj" customClass="TableViewController" customModule="rtu_app" customModuleProvider="target" sceneMemberID="viewController">
                     <tableView key="view" clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="static" style="insetGrouped" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" id="znw-yz-DCQ">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <sections>
                             <tableViewSection headerTitle="Понедельник 3 сентября" id="Z5T-Je-lls">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="36E-m0-Z7C" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="36E-m0-Z7C" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="55.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="36E-m0-Z7C" id="uMa-GR-OCa">
@@ -97,7 +98,7 @@
                                             <outlet property="typeLesson" destination="IQ0-rd-0zb" id="UAO-am-c5N"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="iMf-md-cSq" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="iMf-md-cSq" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="151.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iMf-md-cSq" id="w6R-Wq-Yg3">
@@ -178,7 +179,7 @@
                                             <outlet property="typeLesson" destination="gun-zm-PTS" id="MLX-jF-vBp"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Yjo-dW-4fH" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Yjo-dW-4fH" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="247.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Yjo-dW-4fH" id="VcT-O8-aKm">
@@ -259,7 +260,7 @@
                                             <outlet property="typeLesson" destination="x77-Lz-MGk" id="eVH-p5-dry"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Rpt-yk-LRx" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Rpt-yk-LRx" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="343.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rpt-yk-LRx" id="kEQ-NO-L2I">
@@ -340,7 +341,7 @@
                                             <outlet property="typeLesson" destination="eb0-zO-Ojl" id="pB0-dk-cLI"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="ddH-lW-SwL" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="ddH-lW-SwL" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="439.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="ddH-lW-SwL" id="aBI-VZ-LdO">
@@ -421,7 +422,7 @@
                                             <outlet property="typeLesson" destination="wfz-dX-gEu" id="GWQ-Vq-WS4"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="1Wn-w7-3Ta" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="1Wn-w7-3Ta" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="535.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="1Wn-w7-3Ta" id="qpL-vI-P2S">
@@ -502,7 +503,7 @@
                                             <outlet property="typeLesson" destination="O60-eU-LoK" id="5hH-bz-PGw"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Cym-SS-IU3" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Cym-SS-IU3" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="631.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Cym-SS-IU3" id="vss-jw-ZDG">
@@ -583,7 +584,7 @@
                                             <outlet property="typeLesson" destination="Lbu-OA-RGK" id="4rH-gd-KGz"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="iXZ-6s-RkY" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="iXZ-6s-RkY" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="727.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="iXZ-6s-RkY" id="gE8-ko-iSk">
@@ -668,7 +669,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Понедельник 3 сентября" id="Cfc-YB-qqs">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="q5z-6D-RKM" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="q5z-6D-RKM" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="879.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="q5z-6D-RKM" id="Xqy-md-kf1">
@@ -749,7 +750,7 @@
                                             <outlet property="typeLesson" destination="aOo-qO-asi" id="LAQ-Ix-eEZ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="v6s-Ju-xnI" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="v6s-Ju-xnI" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="975.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="v6s-Ju-xnI" id="iL8-qq-IpI">
@@ -830,7 +831,7 @@
                                             <outlet property="typeLesson" destination="cgk-Kv-VTn" id="mVa-t3-9iq"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Rkt-Ra-P9Z" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Rkt-Ra-P9Z" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1071.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Rkt-Ra-P9Z" id="sG6-gA-Bzb">
@@ -911,7 +912,7 @@
                                             <outlet property="typeLesson" destination="br1-nb-Xb1" id="KXe-sf-wV8"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Ja0-Os-SCp" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="Ja0-Os-SCp" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1167.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ja0-Os-SCp" id="BY0-Pj-KDL">
@@ -992,7 +993,7 @@
                                             <outlet property="typeLesson" destination="Zga-Ca-FNn" id="OSo-qX-oNM"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="6qY-ks-8nr" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="6qY-ks-8nr" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1263.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6qY-ks-8nr" id="AUA-u2-BBM">
@@ -1073,7 +1074,7 @@
                                             <outlet property="typeLesson" destination="pWU-ce-ViW" id="OZE-cm-eaY"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="hky-7E-X8g" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="hky-7E-X8g" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1359.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="hky-7E-X8g" id="dF3-9G-eok">
@@ -1154,7 +1155,7 @@
                                             <outlet property="typeLesson" destination="a7v-sN-eRU" id="Y5b-SS-GDS"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="zBY-rC-AZ4" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="zBY-rC-AZ4" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1455.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="zBY-rC-AZ4" id="fe0-p5-boQ">
@@ -1235,7 +1236,7 @@
                                             <outlet property="typeLesson" destination="qDu-UI-N3V" id="7qE-5W-K0F"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="avs-Hc-KqI" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="avs-Hc-KqI" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1551.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="avs-Hc-KqI" id="Tex-hb-feE">
@@ -1320,7 +1321,7 @@
                             </tableViewSection>
                             <tableViewSection headerTitle="Понедельник 3 сентября" id="DtJ-xB-eVb">
                                 <cells>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="pJm-s6-BNG" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="pJm-s6-BNG" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1703.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pJm-s6-BNG" id="pdD-sH-yU2">
@@ -1401,7 +1402,7 @@
                                             <outlet property="typeLesson" destination="NS9-3C-8Cv" id="jSB-ZQ-du0"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="vJO-YJ-KBi" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="vJO-YJ-KBi" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1799.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="vJO-YJ-KBi" id="9wm-wx-6qw">
@@ -1482,7 +1483,7 @@
                                             <outlet property="typeLesson" destination="FQs-Es-Kaa" id="8MF-y6-ypJ"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="faV-i3-IwL" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="faV-i3-IwL" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1895.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="faV-i3-IwL" id="Z4P-21-uo7">
@@ -1563,7 +1564,7 @@
                                             <outlet property="typeLesson" destination="UHl-WQ-ZT0" id="5gY-46-tim"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="xIK-Sm-lQf" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="xIK-Sm-lQf" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="1991.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="xIK-Sm-lQf" id="BLo-96-U9t">
@@ -1644,7 +1645,7 @@
                                             <outlet property="typeLesson" destination="pRo-cE-pRl" id="b3Z-9b-GU4"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="6aU-CD-v7c" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="6aU-CD-v7c" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="2087.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="6aU-CD-v7c" id="kA9-Qb-J73">
@@ -1725,7 +1726,7 @@
                                             <outlet property="typeLesson" destination="bIb-LZ-G1J" id="91n-eC-BSy"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="59h-Hf-NPr" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="59h-Hf-NPr" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="2183.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="59h-Hf-NPr" id="87O-lB-cyu">
@@ -1806,7 +1807,7 @@
                                             <outlet property="typeLesson" destination="eGG-u4-dE3" id="nQX-SN-W0E"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="pOw-Ls-yBg" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="pOw-Ls-yBg" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="2279.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="pOw-Ls-yBg" id="fKv-nj-ZFE">
@@ -1887,7 +1888,7 @@
                                             <outlet property="typeLesson" destination="wR6-Th-0IN" id="y3I-Ku-J4j"/>
                                         </connections>
                                     </tableViewCell>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="X9F-Aq-CHe" customClass="CustomCell" customModule="rtuJOY" customModuleProvider="target">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Cell" rowHeight="96" id="X9F-Aq-CHe" customClass="CustomCell" customModule="rtu_app" customModuleProvider="target">
                                         <rect key="frame" x="16" y="2375.5" width="343" height="96"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="X9F-Aq-CHe" id="6eX-Dw-dQH">
@@ -1983,11 +1984,202 @@
             </objects>
             <point key="canvasLocation" x="3652" y="70"/>
         </scene>
+        <!--Профиль-->
+        <scene sceneID="bzk-Ci-3dL">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dfT-4g-jWe" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <viewController id="wU3-cl-tDX" customClass="SettingViewController" customModule="rtu_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="VkK-m7-lbA">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="grouped" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="18" sectionFooterHeight="18" translatesAutoresizingMaskIntoConstraints="NO" id="PIS-1E-xzt">
+                                <rect key="frame" x="0.0" y="44" width="375" height="574"/>
+                                <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="none" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="85" id="nOr-1R-wbF">
+                                        <rect key="frame" x="0.0" y="55.5" width="375" height="85"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="nOr-1R-wbF" id="RrV-2i-uZO">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="85"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Группа: КТСО-01-19" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cRO-OM-3iK">
+                                                    <rect key="frame" x="90" y="44.5" width="195" height="21.5"/>
+                                                    <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="18"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Институт Кибернетики" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6uQ-zA-Yfp">
+                                                    <rect key="frame" x="90" y="11" width="195" height="20.5"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="trailingMargin" secondItem="6uQ-zA-Yfp" secondAttribute="trailing" constant="75" id="FPH-84-a3T"/>
+                                                <constraint firstItem="cRO-OM-3iK" firstAttribute="top" secondItem="6uQ-zA-Yfp" secondAttribute="bottom" constant="13" id="LjZ-aY-DHJ"/>
+                                                <constraint firstItem="cRO-OM-3iK" firstAttribute="leading" secondItem="RrV-2i-uZO" secondAttribute="leadingMargin" constant="75" id="MsP-G1-fA7"/>
+                                                <constraint firstAttribute="trailingMargin" secondItem="cRO-OM-3iK" secondAttribute="trailing" constant="75" id="Yho-aH-Uh2"/>
+                                                <constraint firstItem="6uQ-zA-Yfp" firstAttribute="top" secondItem="RrV-2i-uZO" secondAttribute="topMargin" id="bcx-JM-lKf"/>
+                                                <constraint firstItem="6uQ-zA-Yfp" firstAttribute="leading" secondItem="RrV-2i-uZO" secondAttribute="leadingMargin" constant="75" id="k7o-PW-mr0"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="50" id="Kj5-HI-yJc">
+                                        <rect key="frame" x="0.0" y="140.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kj5-HI-yJc" id="rgh-Oi-Tsw">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="QIo-7G-TBQ">
+                                                    <rect key="frame" x="10" y="15" width="173" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.3.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="nUh-96-Na0">
+                                                            <rect key="frame" x="0.0" y="1.5" width="35.5" height="17"/>
+                                                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Сменить группу" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="N4b-Fe-Qe0">
+                                                            <rect key="frame" x="50.5" y="0.0" width="122.5" height="20"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="QIo-7G-TBQ" firstAttribute="leading" secondItem="rgh-Oi-Tsw" secondAttribute="leading" constant="10" id="tLA-pl-7yr"/>
+                                                <constraint firstItem="QIo-7G-TBQ" firstAttribute="centerY" secondItem="rgh-Oi-Tsw" secondAttribute="centerY" id="vax-OY-nWx"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="50" id="tnu-SO-P6X">
+                                        <rect key="frame" x="0.0" y="190.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tnu-SO-P6X" id="Eal-7q-2SK">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="yM6-WL-lpV">
+                                                    <rect key="frame" x="15" y="15" width="146" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bell.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="lEn-vl-M8F">
+                                                            <rect key="frame" x="0.0" y="0.5" width="20" height="19.5"/>
+                                                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Уведомления" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jhh-OF-zc6">
+                                                            <rect key="frame" x="44" y="0.0" width="102" height="20"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="yM6-WL-lpV" firstAttribute="leading" secondItem="Eal-7q-2SK" secondAttribute="leadingMargin" id="Huw-72-6sO"/>
+                                                <constraint firstItem="yM6-WL-lpV" firstAttribute="top" secondItem="Eal-7q-2SK" secondAttribute="topMargin" constant="4" id="U2n-MT-Wb8"/>
+                                                <constraint firstAttribute="bottomMargin" secondItem="yM6-WL-lpV" secondAttribute="bottom" constant="4" id="vXU-nX-d71"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="cell" rowHeight="50" id="fO6-pg-7xr">
+                                        <rect key="frame" x="0.0" y="240.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="fO6-pg-7xr" id="G2y-um-MSm">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="25" translatesAutoresizingMaskIntoConstraints="NO" id="Lnr-9t-ipY">
+                                                    <rect key="frame" x="15" y="15" width="226" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="info.circle" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="19o-TO-40z">
+                                                            <rect key="frame" x="0.0" y="0.5" width="20" height="19"/>
+                                                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Условия использования" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="J0Y-QE-iWv">
+                                                            <rect key="frame" x="45" y="0.0" width="181" height="20"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstAttribute="bottomMargin" secondItem="Lnr-9t-ipY" secondAttribute="bottom" constant="4" id="L6t-z2-Vts"/>
+                                                <constraint firstItem="Lnr-9t-ipY" firstAttribute="leading" secondItem="G2y-um-MSm" secondAttribute="leadingMargin" id="O6X-Dg-OIU"/>
+                                                <constraint firstItem="Lnr-9t-ipY" firstAttribute="top" secondItem="G2y-um-MSm" secondAttribute="topMargin" constant="4" id="UTQ-Ow-3Te"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" rowHeight="50" id="Kme-5y-iJ8">
+                                        <rect key="frame" x="0.0" y="290.5" width="375" height="50"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Kme-5y-iJ8" id="qvS-UC-i2D">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="50"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" spacing="24" translatesAutoresizingMaskIntoConstraints="NO" id="tLJ-PS-JoK">
+                                                    <rect key="frame" x="15" y="18" width="177.5" height="20"/>
+                                                    <subviews>
+                                                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="icons8-vk-в-круге-50" translatesAutoresizingMaskIntoConstraints="NO" id="zZC-OT-Okg">
+                                                            <rect key="frame" x="0.0" y="0.0" width="20" height="20"/>
+                                                            <color key="tintColor" systemColor="secondaryLabelColor" red="0.23529411759999999" green="0.23529411759999999" blue="0.26274509800000001" alpha="0.59999999999999998" colorSpace="custom" customColorSpace="sRGB"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" constant="20" id="NA9-Ba-ob3"/>
+                                                                <constraint firstAttribute="height" constant="20" id="h51-gT-rVS"/>
+                                                            </constraints>
+                                                        </imageView>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Связаться с нами" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MxQ-QT-gMw">
+                                                            <rect key="frame" x="44" y="0.0" width="133.5" height="20"/>
+                                                            <fontDescription key="fontDescription" style="UICTFontTextStyleCallout"/>
+                                                            <nil key="textColor"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                    </subviews>
+                                                </stackView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="tLJ-PS-JoK" firstAttribute="leading" secondItem="qvS-UC-i2D" secondAttribute="leading" constant="15" id="Fr2-XZ-uYc"/>
+                                                <constraint firstItem="tLJ-PS-JoK" firstAttribute="top" secondItem="qvS-UC-i2D" secondAttribute="topMargin" constant="7" id="b1Y-wr-Sau"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <inset key="separatorInset" minX="60" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                    </tableViewCell>
+                                </prototypes>
+                                <sections/>
+                            </tableView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="PIS-1E-xzt" firstAttribute="top" secondItem="nwD-72-wzc" secondAttribute="top" id="4Lf-ae-5VO"/>
+                            <constraint firstItem="PIS-1E-xzt" firstAttribute="trailing" secondItem="nwD-72-wzc" secondAttribute="trailing" id="Mos-Hi-ZfI"/>
+                            <constraint firstItem="PIS-1E-xzt" firstAttribute="bottom" secondItem="nwD-72-wzc" secondAttribute="bottom" id="Y52-1u-6Mf"/>
+                            <constraint firstItem="PIS-1E-xzt" firstAttribute="leading" secondItem="nwD-72-wzc" secondAttribute="leading" id="h8K-ub-VaN"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="nwD-72-wzc"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Профиль" id="Sad-Gk-3hI"/>
+                    <connections>
+                        <outlet property="settingTableView" destination="PIS-1E-xzt" id="tUJ-aX-ZOv"/>
+                    </connections>
+                </viewController>
+            </objects>
+            <point key="canvasLocation" x="3652" y="848.72563718140941"/>
+        </scene>
         <!--Расписание-->
         <scene sceneID="h6e-NV-9vy">
             <objects>
                 <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gDY-50-Zkn" sceneMemberID="viewController">
-                    <tabBarItem key="tabBarItem" title="Расписание" image="doc.plaintext" catalog="system" id="0Lb-ad-Jmg"/>
+                    <tabBarItem key="tabBarItem" title="Расписание" image="calendar" catalog="system" id="0Lb-ad-Jmg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="xlD-bH-eK0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
@@ -1995,7 +2187,7 @@
                     </navigationBar>
                     <nil name="viewControllers"/>
                     <connections>
-                        <segue destination="A0v-mW-ljj" kind="relationship" relationship="rootViewController" id="vdl-wa-1Y0"/>
+                        <segue destination="A0v-mW-ljj" kind="relationship" relationship="rootViewController" id="tU2-Bt-4i8"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwk-7h-qrL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -2014,15 +2206,40 @@
                     </tabBar>
                     <connections>
                         <segue destination="gDY-50-Zkn" kind="relationship" relationship="viewControllers" id="4PT-aP-ysZ"/>
+                        <segue destination="AXn-sC-c1p" kind="relationship" relationship="viewControllers" id="Ijf-qs-sw5"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKI-ws-3qV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1197.5999999999999" y="69.715142428785612"/>
         </scene>
+        <!--Профиль-->
+        <scene sceneID="d5L-Er-whm">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="FwH-na-w1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AXn-sC-c1p" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="Профиль" image="person.fill" catalog="system" id="p4v-gV-nXv"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="R9z-3P-KAb">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="wU3-cl-tDX" kind="relationship" relationship="rootViewController" id="qPn-Sq-shp"/>
+                    </connections>
+                </navigationController>
+            </objects>
+            <point key="canvasLocation" x="2137" y="849"/>
+        </scene>
     </scenes>
     <resources>
-        <image name="doc.plaintext" catalog="system" width="115" height="128"/>
+        <image name="bell.fill" catalog="system" width="128" height="124"/>
+        <image name="calendar" catalog="system" width="128" height="106"/>
+        <image name="icons8-vk-в-круге-50" width="25" height="25"/>
+        <image name="info.circle" catalog="system" width="128" height="121"/>
+        <image name="person.3.fill" catalog="system" width="128" height="61"/>
+        <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="stick_blue" width="10" height="80"/>
     </resources>
 </document>
