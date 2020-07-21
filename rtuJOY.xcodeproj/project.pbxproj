@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		72098DD824C71915009352A0 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DD624C71915009352A0 /* settingCell.swift */; };
+		72098DD924C71915009352A0 /* settingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72098DD724C71915009352A0 /* settingCell.xib */; };
+		72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DDA24C74398009352A0 /* SettingTableViewController.swift */; };
+		72098DDD24C7521F009352A0 /* ChangeGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DDC24C7521E009352A0 /* ChangeGroupViewController.swift */; };
 		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		723672A624B66B9700844118 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723672A524B66B9700844118 /* TableViewController.swift */; };
 		724F597A24BB3216004D328A /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F597924BB3216004D328A /* network.swift */; };
@@ -23,6 +27,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		72098DD624C71915009352A0 /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
+		72098DD724C71915009352A0 /* settingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = settingCell.xib; sourceTree = "<group>"; };
+		72098DDA24C74398009352A0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		72098DDC24C7521E009352A0 /* ChangeGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeGroupViewController.swift; sourceTree = "<group>"; };
 		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		723672A524B66B9700844118 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		724F597924BB3216004D328A /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
@@ -67,6 +75,8 @@
 				727F0C2F24B6FB190029A4D3 /* CustomCell.xib */,
 				72A1EBA824B32ACC00BDD9DA /* Main.storyboard */,
 				72A1EBAD24B32AD000BDD9DA /* LaunchScreen.storyboard */,
+				72098DD624C71915009352A0 /* settingCell.swift */,
+				72098DD724C71915009352A0 /* settingCell.xib */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -85,6 +95,8 @@
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
 				72AB3A9424C5CF00004666DA /* SettingViewController.swift */,
+				72098DDC24C7521E009352A0 /* ChangeGroupViewController.swift */,
+				72098DDA24C74398009352A0 /* SettingTableViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -186,6 +198,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				72098DD924C71915009352A0 /* settingCell.xib in Resources */,
 				72A1EBAF24B32AD000BDD9DA /* LaunchScreen.storyboard in Resources */,
 				72A1EBAC24B32AD000BDD9DA /* Assets.xcassets in Resources */,
 				727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */,
@@ -204,10 +217,13 @@
 				725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */,
 				724F597A24BB3216004D328A /* network.swift in Sources */,
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
+				72098DDD24C7521F009352A0 /* ChangeGroupViewController.swift in Sources */,
 				723672A624B66B9700844118 /* TableViewController.swift in Sources */,
 				72AB3A9524C5CF00004666DA /* SettingViewController.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
+				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,
+				72098DD824C71915009352A0 /* settingCell.swift in Sources */,
 				72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

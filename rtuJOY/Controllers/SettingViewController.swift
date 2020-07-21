@@ -10,25 +10,16 @@ import UIKit
 
 class SettingViewController: UIViewController {
     
-    
-    @IBOutlet weak var settingTableView: UITableView!
+   
+    @IBOutlet weak var labelOfInstitut: UILabel!
+    @IBOutlet weak var labelOfGroup: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
+       
         
     }
     
     
-    func numberOfSections(in settingTableView: UITableView) -> Int {
-        return 5
-    }
-    
-    func tableView(_ settingTableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 5
-    }
-    
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let  cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
-        return cell
-    }
+  
 }
