@@ -10,11 +10,11 @@
 		72098DD824C71915009352A0 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DD624C71915009352A0 /* settingCell.swift */; };
 		72098DD924C71915009352A0 /* settingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72098DD724C71915009352A0 /* settingCell.xib */; };
 		72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DDA24C74398009352A0 /* SettingTableViewController.swift */; };
-		72098DDD24C7521F009352A0 /* ChangeGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DDC24C7521E009352A0 /* ChangeGroupViewController.swift */; };
 		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		723672A624B66B9700844118 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723672A524B66B9700844118 /* TableViewController.swift */; };
 		724F597A24BB3216004D328A /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F597924BB3216004D328A /* network.swift */; };
 		725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F565224B9CACD007930A6 /* modelTimeTable.swift */; };
+		727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */; };
 		727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727F0C2F24B6FB190029A4D3 /* CustomCell.xib */; };
 		72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */; };
 		72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */; };
@@ -30,11 +30,11 @@
 		72098DD624C71915009352A0 /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		72098DD724C71915009352A0 /* settingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = settingCell.xib; sourceTree = "<group>"; };
 		72098DDA24C74398009352A0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
-		72098DDC24C7521E009352A0 /* ChangeGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeGroupViewController.swift; sourceTree = "<group>"; };
 		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		723672A524B66B9700844118 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		724F597924BB3216004D328A /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
 		725F565224B9CACD007930A6 /* modelTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelTimeTable.swift; sourceTree = "<group>"; };
+		727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGroupViewController.swift; sourceTree = "<group>"; };
 		727F0C2F24B6FB190029A4D3 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		72A1EB9F24B32ACC00BDD9DA /* rtu app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rtu app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -95,7 +95,7 @@
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
 				72AB3A9424C5CF00004666DA /* SettingViewController.swift */,
-				72098DDC24C7521E009352A0 /* ChangeGroupViewController.swift */,
+				727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */,
 				72098DDA24C74398009352A0 /* SettingTableViewController.swift */,
 			);
 			path = Controllers;
@@ -217,13 +217,13 @@
 				725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */,
 				724F597A24BB3216004D328A /* network.swift in Sources */,
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
-				72098DDD24C7521F009352A0 /* ChangeGroupViewController.swift in Sources */,
 				723672A624B66B9700844118 /* TableViewController.swift in Sources */,
 				72AB3A9524C5CF00004666DA /* SettingViewController.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,
 				72098DD824C71915009352A0 /* settingCell.swift in Sources */,
+				727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */,
 				72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

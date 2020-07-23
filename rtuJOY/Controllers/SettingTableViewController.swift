@@ -49,7 +49,12 @@ class SettingTableViewController: UITableViewController {
         return cell
     }
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        <#code#>
+        switch indexPath.row {
+        case 0:
+            self.performSegue(withIdentifier: "segueForChangeGroup", sender: nil)
+        default:
+            return
+        }
     }
     
 }

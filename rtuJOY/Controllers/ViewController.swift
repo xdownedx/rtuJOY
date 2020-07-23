@@ -1,14 +1,14 @@
 //
-//  ChangeGroupViewController.swift
+//  ViewController.swift
 //  rtuJOY
 //
-//  Created by Максим Палёхин on 21.07.2020.
+//  Created by Максим Палёхин on 23.07.2020.
 //  Copyright © 2020 Максим Палёхин. All rights reserved.
 //
 
 import UIKit
 
-class ChangeGroupViewController: UIViewController {
+class ViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()

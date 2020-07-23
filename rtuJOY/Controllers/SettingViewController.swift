@@ -11,12 +11,14 @@ import UIKit
 class SettingViewController: UIViewController {
     
    
+    
+    @IBOutlet weak var backgroundImage: UIImageView!
     @IBOutlet weak var labelOfInstitut: UILabel!
     @IBOutlet weak var labelOfGroup: UILabel!
     
     override func viewDidLoad() {
         super.viewDidLoad()
-       
+        backgroundImage.layer.cornerRadius = 20
         
     }
     
