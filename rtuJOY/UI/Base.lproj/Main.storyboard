@@ -2089,7 +2089,7 @@
                                             <constraint firstAttribute="height" constant="45.5" id="ep7-7e-R3K"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
                                         <connections>
                                             <action selector="edingTF:" destination="VXg-pa-x3B" eventType="editingChanged" id="HkY-HL-8wp"/>
                                         </connections>
@@ -2111,6 +2111,14 @@
                                     </button>
                                 </subviews>
                             </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Неверно введен номер группы. Проверьте номер группы и попробуйте ввести его еще раз, например, КТСО-01-19." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TBO-Gl-VdX">
+                                <rect key="frame" x="16" y="476" width="343" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -2128,12 +2136,13 @@
                     <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <connections>
                         <outlet property="buttonToSave" destination="kyp-xk-Xdk" id="oIn-cr-yy9"/>
+                        <outlet property="errorTextView" destination="TBO-Gl-VdX" id="LIM-O8-aui"/>
                         <outlet property="labelGroup" destination="jM3-kb-O7L" id="cn9-IO-2gf"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6i-xb-WZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5354" y="849"/>
+            <point key="canvasLocation" x="5352.8000000000002" y="848.72563718140941"/>
         </scene>
         <!--Расписание-->
         <scene sceneID="h6e-NV-9vy">
@@ -2342,6 +2351,7 @@
                     <nil key="simulatedBottomBarMetrics"/>
                     <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
                     <refreshControl key="refreshControl" opaque="NO" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" id="Iep-zL-wub">
+                        <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
                     </refreshControl>
                     <connections>

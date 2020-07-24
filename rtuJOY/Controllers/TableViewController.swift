@@ -19,7 +19,7 @@ class TableViewController: UITableViewController {
     
     var arrForCell:Array<Array<Int>> = []
     override func viewDidLoad() {
-        group="ktso-01-19"
+        group=currentGroup
         arrForConclusion.append(Array<task>())
         arrForConclusion[0].append(.init())
         arrForConclusion[0][0].nameLesson="test"
@@ -39,6 +39,9 @@ class TableViewController: UITableViewController {
         
     }
     
+    override func viewWillAppear(_ animated: Bool) {
+        viewDidLoad()
+    }
     
     // Получим количество секций в таблице
     override func numberOfSections(in tableView: UITableView) -> Int {
