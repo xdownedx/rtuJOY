@@ -32,6 +32,24 @@ struct schedulePerWeek {
         while(i<(tempSchedule.schedule.count-1)){
             switch tempSchedule.schedule[i].day {
             case 1:
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
                 var k=0
                 while (k < tempSchedule.schedule[i].info.count-1){
                     if tempSchedule.schedule[i].info[k].name != ""{
@@ -47,14 +65,14 @@ struct schedulePerWeek {
                         case "лк":
                             monday[idMn].typeLesson+="лекция"
                         case "лаб":
-                            monday[idMn].typeLesson+="лабараторная работа"
+                            monday[idMn].typeLesson+="лабораторная работа"
                         case "экз":
                             monday[idMn].typeLesson+="Экзамен"
                         case "зач":
                             monday[idMn].typeLesson+="Зачет"
                             
                         default:
-                            monday[idMn].typeLesson+=""
+                            monday[idMn].typeLesson+="занятие"
                         }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
@@ -94,14 +112,14 @@ struct schedulePerWeek {
                         case "лк":
                             tuesday[idTd].typeLesson+="лекция"
                         case "лаб":
-                            tuesday[idTd].typeLesson+="лабараторная работа"
+                            tuesday[idTd].typeLesson+="лабораторная работа"
                         case "экз":
                             tuesday[idTd].typeLesson+="Экзамен"
                         case "зач":
                             tuesday[idTd].typeLesson+="Зачет"
                             
                         default:
-                            tuesday[idTd].typeLesson+=""
+                            tuesday[idTd].typeLesson+="занятие"
                         }
                         
                         var j = 0
@@ -142,14 +160,14 @@ struct schedulePerWeek {
                         case "лк":
                             wednesday[idWd].typeLesson+="лекция"
                         case "лаб":
-                            wednesday[idWd].typeLesson+="лабараторная работа"
+                            wednesday[idWd].typeLesson+="лабораторная работа"
                         case "экз":
                             wednesday[idWd].typeLesson+="Экзамен"
                         case "зач":
                             wednesday[idWd].typeLesson+="Зачет"
                             
                         default:
-                            wednesday[idWd].typeLesson+=""
+                            wednesday[idWd].typeLesson+="занятие"
                         }
                         
                         var j = 0
@@ -190,14 +208,14 @@ struct schedulePerWeek {
                         case "лк":
                             thursday[idTh].typeLesson+="лекция"
                         case "лаб":
-                            thursday[idTh].typeLesson+="лабараторная работа"
+                            thursday[idTh].typeLesson+="лабораторная работа"
                         case "экз":
                             thursday[idTh].typeLesson+="Экзамен"
                         case "зач":
                             thursday[idTh].typeLesson+="Зачет"
                             
                         default:
-                            thursday[idTh].typeLesson+=""
+                            thursday[idTh].typeLesson+="занятие"
                         }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
@@ -238,14 +256,14 @@ struct schedulePerWeek {
                         case "лк":
                             friday[idFd].typeLesson+="лекция"
                         case "лаб":
-                            friday[idFd].typeLesson+="лабараторная работа"
+                            friday[idFd].typeLesson+="лабораторная работа"
                         case "экз":
                             friday[idFd].typeLesson+="Экзамен"
                         case "зач":
                             friday[idFd].typeLesson+="Зачет"
                             
                         default:
-                            friday[idFd].typeLesson+=""
+                            friday[idFd].typeLesson+="занятие"
                         }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {
@@ -286,14 +304,14 @@ struct schedulePerWeek {
                         case "лк":
                             saturday[idSt].typeLesson+="лекция"
                         case "лаб":
-                            saturday[idSt].typeLesson+="лабараторная работа"
+                            saturday[idSt].typeLesson+="лабораторная работа"
                         case "экз":
                             saturday[idSt].typeLesson+="Экзамен"
                         case "зач":
                             saturday[idSt].typeLesson+="Зачет"
                             
                         default:
-                            saturday[idSt].typeLesson+=""
+                            saturday[idSt].typeLesson+="занятие"
                         }
                         var j = 0
                         while  (j<tempSchedule.schedule[i].info.count-1) {

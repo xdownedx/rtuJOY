@@ -22,7 +22,6 @@
 		72A1EBAC24B32AD000BDD9DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBAB24B32AD000BDD9DA /* Assets.xcassets */; };
 		72A1EBAF24B32AD000BDD9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBAD24B32AD000BDD9DA /* LaunchScreen.storyboard */; };
 		72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */; };
-		72AB3A9524C5CF00004666DA /* SettingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72AB3A9424C5CF00004666DA /* SettingViewController.swift */; };
 		72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1710624BB23BA0015CC8C /* CalendarMethod.swift */; };
 /* End PBXBuildFile section */
 
@@ -44,7 +43,6 @@
 		72A1EBAE24B32AD000BDD9DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A1EBB024B32AD000BDD9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternativeModel.swift; sourceTree = "<group>"; };
-		72AB3A9424C5CF00004666DA /* SettingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingViewController.swift; sourceTree = "<group>"; };
 		72D1710624BB23BA0015CC8C /* CalendarMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethod.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -94,7 +92,6 @@
 			isa = PBXGroup;
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
-				72AB3A9424C5CF00004666DA /* SettingViewController.swift */,
 				727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */,
 				72098DDA24C74398009352A0 /* SettingTableViewController.swift */,
 			);
@@ -218,7 +215,6 @@
 				724F597A24BB3216004D328A /* network.swift in Sources */,
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
 				723672A624B66B9700844118 /* TableViewController.swift in Sources */,
-				72AB3A9524C5CF00004666DA /* SettingViewController.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,

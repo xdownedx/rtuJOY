@@ -132,7 +132,6 @@ class TableViewController: UITableViewController {
     
     func schedeleForConclusion(schudele:schedulePerWeek){
         arrForConclusion=[]
-        arrForCell=[]
         switch calendar.component(.weekday, from: date) {
         case 1:
             var i=0
@@ -364,13 +363,12 @@ class TableViewController: UITableViewController {
                     arrForConclusion[0][id]=schudele.saturday[i]
                     id+=1
                 }
-                i=0
+                i+=1
             }
             id=0
+            i=0
             arrForConclusion.append(Array<task>())
             while(i<schudele.monday.count-1){
-                
-                
                 if(schudele.monday[i].week.contains(week)){
                     arrForConclusion[1].append(.init())
                     arrForConclusion[1][id]=schudele.monday[i]

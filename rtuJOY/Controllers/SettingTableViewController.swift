@@ -14,13 +14,15 @@ class SettingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        
+        self.navigationItem.title = currentGroup
         self.tableView.register(UINib(nibName: String(describing: settingCell.self), bundle: nil),forCellReuseIdentifier:String(describing: settingCell.self))
         
     }
     
     // MARK: - Table view data source
-    
+    override func viewWillAppear(_ animated: Bool) {
+        viewDidLoad()
+    }
     override func numberOfSections(in tableView: UITableView) -> Int {
         return 1
     }
@@ -51,7 +53,8 @@ class SettingTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         switch indexPath.row {
         case 0:
-            self.performSegue(withIdentifier: "segueForChangeGroup", sender: nil)
+            let vc = storyboard?.instantiateViewController(identifier: "groupChangeVC")
+            self.navigationController?.pushViewController(vc!, animated: true)
         default:
             return
         }

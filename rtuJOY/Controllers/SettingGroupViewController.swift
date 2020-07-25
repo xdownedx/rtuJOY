@@ -19,7 +19,6 @@ class SettingGroupViewController: UIViewController {
              let urlString="http://api.mirea-assistant.ru/schedule?group=\(group)"
              guard let url=URL(string: urlString) else {
                 self.errorTextView.alpha=1
-
                 return
              }
              let session=URLSession(configuration: .default)
@@ -33,7 +32,7 @@ class SettingGroupViewController: UIViewController {
                     }else{
                         DispatchQueue.main.async(execute: {
                             self.errorTextView.alpha=1
-
+                        
                         })
                     }
                  }
@@ -80,9 +79,21 @@ class SettingGroupViewController: UIViewController {
         if errorTextView.alpha==0{
             currentGroup=groupID
             DispatchQueue.main.async(execute: {
+                self.tabBarController?.selectedIndex=1
                 self.tabBarController?.selectedIndex=0
                 
             })
         }
+    }
+}
+extension UIViewController {
+    func hideKeyboardWhenTappedAround() {
+        let tapGesture = UITapGestureRecognizer(target: self,
+                         action: #selector(hideKeyboard))
+        view.addGestureRecognizer(tapGesture)
+    }
+
+    @objc func hideKeyboard() {
+        view.endEditing(true)
     }
 }
