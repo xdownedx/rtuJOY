@@ -9,7 +9,6 @@
 import UIKit
 
 let week = 10
-var group="ktso-01-19"
 
 class TableViewController: UITableViewController {
     var parsingData = ParsingData()
@@ -19,16 +18,7 @@ class TableViewController: UITableViewController {
     
     var arrForCell:Array<Array<Int>> = []
     override func viewDidLoad() {
-        group=currentGroup
-        arrForConclusion.append(Array<task>())
-        arrForConclusion[0].append(.init())
-        arrForConclusion[0][0].nameLesson="test"
-        arrForConclusion[0][0].nameTeacher="test"
-        arrForConclusion[0][0].numberAudince="test"
-        arrForConclusion[0][0].timeEnd="test"
-        arrForConclusion[0][0].timeStart="test"
-        arrForConclusion[0][0].typeLesson="test"
-        
+        let group=currentGroup
         self.parsingData.onCompletion = {scheduleForWeek in
             self.schedeleForConclusion(schudele:scheduleForWeek)
         }
@@ -45,10 +35,10 @@ class TableViewController: UITableViewController {
     
     // Получим количество секций в таблице
     override func numberOfSections(in tableView: UITableView) -> Int {
-        var o=0
-        while o<arrForConclusion.count{
-            if arrForConclusion[o].isEmpty{arrForConclusion.remove(at: o)}
-            o+=1
+        var idConclusion=0
+        while idConclusion<arrForConclusion.count{
+            if arrForConclusion[idConclusion].isEmpty{arrForConclusion.remove(at: idConclusion)}
+            idConclusion+=1
         }
         return arrForConclusion.count
     }
@@ -66,7 +56,11 @@ class TableViewController: UITableViewController {
         guard weekday>1 else {
             switch section {
             case 0:
-                return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
+                if arrForConclusion[section].isEmpty{
+                    return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
+                }else{
+                    return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
+                }
             case 1:
                 return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
             default:
@@ -80,7 +74,11 @@ class TableViewController: UITableViewController {
             case 6:
                 switch section {
                 case 0:
-                    return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
+                    if arrForConclusion[section].isEmpty{
+                        return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
+                    }else{
+                        return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
+                    }
                 case 1:
                     return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
                 default:
@@ -89,7 +87,11 @@ class TableViewController: UITableViewController {
             case 7:
                 switch section {
                 case 0:
-                    return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
+                    if arrForConclusion[section].isEmpty{
+                        return "\(days[0]), \(currentData(day: curDayInMonth+2, month: curMonth))"
+                    }else{
+                        return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
+                    }
                 case 1:
                     return "\(days[0]), \(currentData(day: curDayInMonth+2, month: curMonth))"
                 default:
@@ -103,9 +105,19 @@ class TableViewController: UITableViewController {
         
         switch section {
         case 0:
-            return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
+            if (arrForConclusion[section].isEmpty)&&(arrForConclusion[section+1].isEmpty){
+                return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
+            }else if arrForConclusion[section].isEmpty{
+                return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
+            }else{
+                return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
+            }
         case 1:
-            return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
+            if arrForConclusion[section].isEmpty{
+                return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
+            }else{
+                return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
+            }
         case 2:
             return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
         default:
