@@ -10,6 +10,7 @@
 		72098DD824C71915009352A0 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DD624C71915009352A0 /* settingCell.swift */; };
 		72098DD924C71915009352A0 /* settingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72098DD724C71915009352A0 /* settingCell.xib */; };
 		72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DDA24C74398009352A0 /* SettingTableViewController.swift */; };
+		721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DB0C824CC77AE00B310F3 /* helpMethod.swift */; };
 		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		723672A624B66B9700844118 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723672A524B66B9700844118 /* TableViewController.swift */; };
 		724F597A24BB3216004D328A /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F597924BB3216004D328A /* network.swift */; };
@@ -29,6 +30,7 @@
 		72098DD624C71915009352A0 /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		72098DD724C71915009352A0 /* settingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = settingCell.xib; sourceTree = "<group>"; };
 		72098DDA24C74398009352A0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
+		721DB0C824CC77AE00B310F3 /* helpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpMethod.swift; sourceTree = "<group>"; };
 		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		723672A524B66B9700844118 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		724F597924BB3216004D328A /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				724F597924BB3216004D328A /* network.swift */,
+				721DB0C824CC77AE00B310F3 /* helpMethod.swift */,
 				72D1710624BB23BA0015CC8C /* CalendarMethod.swift */,
 			);
 			path = Methods;
@@ -215,6 +218,7 @@
 				724F597A24BB3216004D328A /* network.swift in Sources */,
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
 				723672A624B66B9700844118 /* TableViewController.swift in Sources */,
+				721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,

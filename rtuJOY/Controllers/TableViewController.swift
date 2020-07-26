@@ -8,7 +8,7 @@
 
 import UIKit
 
-let week = 9
+let week = 10
 var group="ktso-01-19"
 
 class TableViewController: UITableViewController {
@@ -122,7 +122,7 @@ class TableViewController: UITableViewController {
         cell.nameLesson?.text = arrForConclusion[indexPath.section][indexPath.row].nameLesson
         cell.timeEnd?.text = arrForConclusion[indexPath.section][indexPath.row].timeEnd
         cell.typeLesson?.text = arrForConclusion[indexPath.section][indexPath.row].typeLesson
-        cell.numberAudince?.text = "Ауд." + " " + arrForConclusion[indexPath.section][indexPath.row].numberAudince
+        cell.numberAudince?.text = arrForConclusion[indexPath.section][indexPath.row].numberAudince
         cell.nameTeacher?.text = arrForConclusion[indexPath.section][indexPath.row].nameTeacher
         return cell
         
@@ -131,254 +131,26 @@ class TableViewController: UITableViewController {
     
     
     func schedeleForConclusion(schudele:schedulePerWeek){
-        arrForConclusion=[]
-        switch calendar.component(.weekday, from: date) {
-        case 1:
-            var i=0
-            var id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.monday.count-1){
-                if(schudele.monday[i].week.contains(week)){
-                    arrForConclusion[0].append(.init())
-                    arrForConclusion[0][id]=schudele.monday[i]
-                    id+=1
+        arrForConclusion=quanity()
+        var i=0
+        var j = 0
+        var k = 0
+        while i<arrForConclusion.count {
+            j = 0
+            k = 0
+            while j < schudele.day[today()+i].count{
+                if schudele.day[today()+i][j].week.contains(week){
+                    arrForConclusion[i].append(task())
+                    arrForConclusion[i][k]=schudele.day[today()+i][j]
+                    k+=1
                 }
-                i+=1
+                j+=1
             }
-            
-            i=0
-            id=0
-            
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.tuesday.count-1){
-                
-                if(schudele.tuesday[i].week.contains(week)){
-                    arrForConclusion[1].append(.init())
-                    arrForConclusion[1][id]=schudele.tuesday[i]
-                    id+=1
-                }
-                i+=1
-            }
-        case 2:
-            var i=0
-            var id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.monday.count-1){
-                
-                if(schudele.monday[i].week.contains(week)){
-                    arrForConclusion[0].append(.init())
-                    arrForConclusion[0][id]=schudele.monday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.tuesday.count-1){
-                
-                
-                if(schudele.tuesday[i].week.contains(week)){
-                    arrForConclusion[1].append(.init())
-                    arrForConclusion[1][id]=schudele.tuesday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.thursday.count-1){
-                
-                if(schudele.thursday[i].week.contains(week)){
-                    arrForConclusion[2].append(.init())
-                    arrForConclusion[2][id]=schudele.thursday[i]
-                    id+=1
-                }
-                i+=1
-            }
-        case 3:
-            var i=0
-            var id=0
-            
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.tuesday.count-1){
-                
-                if(schudele.tuesday[i].week.contains(week)){
-                    arrForConclusion[0].append(.init())
-                    arrForConclusion[0][id]=schudele.tuesday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            i=0
-            id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.thursday.count-1){
-                
-                
-                if(schudele.thursday[i].week.contains(week)){
-                    arrForConclusion[1].append(.init())
-                    arrForConclusion[1][id]=schudele.thursday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.wednesday.count-1){
-                
-                
-                if(schudele.wednesday[i].week.contains(week)){
-                    arrForConclusion[2].append(.init())
-                    arrForConclusion[2][id]=schudele.wednesday[i]
-                    id+=1
-                }
-                i+=1
-            }
-        case 4:
-            var i=0
-            var id=0
-            
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.thursday.count-1){
-                
-                
-                if(schudele.thursday[i].week.contains(week)){
-                    arrForConclusion[0].append(.init())
-                    arrForConclusion[0][id]=schudele.thursday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.wednesday.count-1){
-                
-                if(schudele.wednesday[i].week.contains(week)){
-                    arrForConclusion[1].append(.init())
-                    arrForConclusion[1][id]=schudele.wednesday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.friday.count-1){
-                
-                
-                if(schudele.friday[i].week.contains(week)){
-                    arrForConclusion[2].append(.init())
-                    arrForConclusion[2][id]=schudele.friday[i]
-                    id+=1
-                }
-                i+=1
-            }
-        case 5:
-            var i=0
-            var id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.wednesday.count-1){
-                
-                
-                if(schudele.wednesday[i].week.contains(week)){
-                    arrForConclusion[0].append(.init())
-                    arrForConclusion[0][id]=schudele.wednesday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.friday.count-1){
-                
-                
-                if(schudele.friday[i].week.contains(week)){
-                    arrForConclusion[1].append(.init())
-                    arrForConclusion[1][id]=schudele.friday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.saturday.count-1){
-                if(schudele.saturday[i].week.contains(week)){
-                    arrForConclusion[2].append(.init())
-                    arrForConclusion[2][id]=schudele.saturday[i]
-                    id+=1
-                }
-                i+=1
-            }
-        case 6:
-            var i=0
-            var id=0
-            
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.friday.count-1){
-                
-                if(schudele.friday[i].week.contains(week)){
-                    arrForConclusion[0].append(.init())
-                    arrForConclusion[0][id]=schudele.friday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            
-            i=0
-            id=0
-            
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.saturday.count-1){
-                if(schudele.saturday[i].week.contains(week)){
-                    arrForConclusion[1].append(.init())
-                    arrForConclusion[1][id]=schudele.saturday[i]
-                    id+=1
-                }
-                i+=1
-            }
-        case 7:
-            
-            var i=0
-            var id=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.saturday.count-1){
-                
-                
-                if(schudele.saturday[i].week.contains(week)){
-                    arrForConclusion[0].append(.init())
-                    arrForConclusion[0][id]=schudele.saturday[i]
-                    id+=1
-                }
-                i+=1
-            }
-            id=0
-            i=0
-            arrForConclusion.append(Array<task>())
-            while(i<schudele.monday.count-1){
-                if(schudele.monday[i].week.contains(week)){
-                    arrForConclusion[1].append(.init())
-                    arrForConclusion[1][id]=schudele.monday[i]
-                    id+=1
-                }
-                i+=1
-            }
-        default:
-            return
+            arrForConclusion[i].sort{$0.number < $1.number}
+            i+=1
         }
+        
+    
         print(arrForConclusion)
         DispatchQueue.main.async(execute: {
             self.tableView.reloadData()
