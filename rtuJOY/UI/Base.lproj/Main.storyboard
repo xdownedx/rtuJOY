@@ -1984,7 +1984,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="txT-6e-gM6" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3652" y="70"/>
+            <point key="canvasLocation" x="3799" y="-79"/>
         </scene>
         <!--Setting Group View Controller-->
         <scene sceneID="4uy-fD-7JD">
@@ -2009,6 +2009,7 @@
                                 <subviews>
                                     <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите номер группы" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="jM3-kb-O7L">
                                         <rect key="frame" x="0.0" y="0.0" width="343" height="45.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="343" id="SYI-kM-zaD"/>
                                             <constraint firstAttribute="height" constant="45.5" id="ep7-7e-R3K"/>
@@ -2027,7 +2028,7 @@
                                             <constraint firstAttribute="width" constant="343" id="m1c-Q4-wdd"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
-                                        <state key="normal" title="Перейти к расписанию">
+                                        <state key="normal" title="Cменить группу">
                                             <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
                                         </state>
                                         <connections>
@@ -2067,12 +2068,12 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="A6i-xb-WZG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4193" y="849"/>
+            <point key="canvasLocation" x="4254" y="699"/>
         </scene>
         <!--Расписание-->
         <scene sceneID="h6e-NV-9vy">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="gDY-50-Zkn" sceneMemberID="viewController">
+                <navigationController storyboardIdentifier="sheduleVC" automaticallyAdjustsScrollViewInsets="NO" useStoryboardIdentifierAsRestorationIdentifier="YES" id="gDY-50-Zkn" sceneMemberID="viewController">
                     <tabBarItem key="tabBarItem" title="Расписание" image="calendar" catalog="system" id="0Lb-ad-Jmg"/>
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" largeTitles="YES" id="xlD-bH-eK0">
@@ -2086,7 +2087,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uwk-7h-qrL" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2136.8000000000002" y="69.715142428785612"/>
+            <point key="canvasLocation" x="2284" y="-79"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="HMn-qR-t9f">
@@ -2105,7 +2106,7 @@
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="lKI-ws-3qV" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1197.5999999999999" y="69.715142428785612"/>
+            <point key="canvasLocation" x="1345" y="-79"/>
         </scene>
         <!--Профиль-->
         <scene sceneID="d5L-Er-whm">
@@ -2124,7 +2125,7 @@
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FwH-na-w1x" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2137" y="849"/>
+            <point key="canvasLocation" x="2284" y="700"/>
         </scene>
         <!--КТСО-01-19-->
         <scene sceneID="npv-j6-C0L">
@@ -2289,7 +2290,7 @@
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HZn-EJ-i4W" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3161" y="849"/>
+            <point key="canvasLocation" x="3308" y="700"/>
         </scene>
     </scenes>
     <resources>
@@ -2314,6 +2315,9 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemGray6Color">
+            <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="systemRedColor">
             <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

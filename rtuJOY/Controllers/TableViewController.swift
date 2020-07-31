@@ -45,7 +45,7 @@ class TableViewController: UITableViewController {
     
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        guard arrForConclusion.isEmpty==false else {
+        guard arrForConclusion[section].isEmpty==false else {
             return 0
         }
         return arrForConclusion[section].count

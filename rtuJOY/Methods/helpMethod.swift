@@ -11,7 +11,7 @@ import Foundation
 func disclosure(closureName:String) -> String {
     switch closureName {
     case "пр":
-        return "практика"
+        return "практическое занятие"
     case "лк":
         return "лекция"
     case "лаб":
@@ -21,7 +21,7 @@ func disclosure(closureName:String) -> String {
     case "экз":
         return "экзамен"
     default:
-        return "занятике"
+        return "занятие"
     }
 }
 

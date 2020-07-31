@@ -40,7 +40,7 @@ struct schedulePerWeek {
                     
                     if ((tempSchedule.schedule[idTask].info[idInfo].weeks.rangeOfCharacter(from: decimalCharacters)) != nil){
                         let StringRecordedArr = tempSchedule.schedule[idTask].info[idInfo].weeks.components(separatedBy: ",")
-                        day[tempSchedule.schedule[idTask].day-1][idLesson[tempSchedule.schedule[idTask].day-1]].week=StringRecordedArr.map { Int($0)!}
+                        day[tempSchedule.schedule[idTask].day-1][idLesson[tempSchedule.schedule[idTask].day-1]].week=StringRecordedArr.map { (Int($0) ?? 0)}
                         day[tempSchedule.schedule[idTask].day-1][idLesson[tempSchedule.schedule[idTask].day-1]].week.sort()
                     }else{
                         if (tempSchedule.schedule[idTask].info[idInfo].weeks=="even"){

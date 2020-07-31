@@ -21,6 +21,7 @@ class SettingTableViewController: UITableViewController {
     
     // MARK: - Table view data source
     override func viewWillAppear(_ animated: Bool) {
+        tableView.reloadData()
         viewDidLoad()
     }
     override func numberOfSections(in tableView: UITableView) -> Int {
