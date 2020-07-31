@@ -35,7 +35,7 @@
                                     </label>
                                 </subviews>
                             </stackView>
-                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="moms-1" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-cW-JJ7">
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="FYj-cW-JJ7">
                                 <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                             </imageView>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wic-5V-FHK">
@@ -92,6 +92,6 @@
         </tableViewCell>
     </objects>
     <resources>
-        <image name="moms-1" width="10" height="80"/>
+        <image name="stick_blue" width="10" height="80"/>
     </resources>
 </document>
