@@ -1,24 +1,27 @@
 import Foundation
+import RealmSwift
 
 
 struct ParsingData {
     
     var onCompletion: ((schedulePerWeek)->Void)?
-    
+   
     func broadcastData(group: String){
-        let urlString="http://api.mirea-assistant.ru/schedule?group=\(group)"
-        guard let url=URL(string: urlString) else {
-            return
-        }
-        let session=URLSession(configuration: .default)
-        let task = session.dataTask(with: url){data, response, error in
-            if let data=data{
-                if let scheduleForWeek = self.parseJSON(with: data){
-                    self.onCompletion?(scheduleForWeek)
+        DispatchQueue.main.async(execute: {
+            let urlString="http://api.mirea-assistant.ru/schedule?group=\(group)"
+            guard let url=URL(string: urlString) else {
+                return
+            }
+            let session=URLSession(configuration: .default)
+            let task = session.dataTask(with: url){data, response, error in
+                if let data=data{
+                    if let scheduleForWeek = self.parseJSON(with: data){
+                        self.onCompletion?(scheduleForWeek)
+                    }
                 }
             }
-        }
-        task.resume()
+            task.resume()
+        })
         return
     }
     
@@ -39,8 +42,3 @@ struct ParsingData {
         return nil
     }
 }
-
-
-
-
-

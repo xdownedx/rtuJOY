@@ -24,9 +24,11 @@
 		72A1EBAF24B32AD000BDD9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBAD24B32AD000BDD9DA /* LaunchScreen.storyboard */; };
 		72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */; };
 		72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1710624BB23BA0015CC8C /* CalendarMethod.swift */; };
+		E50B694ADE4BDCC07899C10D /* libPods-rtuJOY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rtuJOY.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72098DD624C71915009352A0 /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		72098DD724C71915009352A0 /* settingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = settingCell.xib; sourceTree = "<group>"; };
 		72098DDA24C74398009352A0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		72A1EBB024B32AD000BDD9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternativeModel.swift; sourceTree = "<group>"; };
 		72D1710624BB23BA0015CC8C /* CalendarMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethod.swift; sourceTree = "<group>"; };
+		7D7A534ABFDE3AB0F990312D /* Pods-rtuJOY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.release.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.release.xcconfig"; sourceTree = "<group>"; };
+		B630DCDFAF1FF33061EC0B91 /* Pods-rtuJOY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.debug.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -53,6 +57,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E50B694ADE4BDCC07899C10D /* libPods-rtuJOY.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -115,6 +120,8 @@
 			children = (
 				72A1EBA124B32ACC00BDD9DA /* rtuJOY */,
 				72A1EBA024B32ACC00BDD9DA /* Products */,
+				7413E0D3B859503A63DF2C27 /* Pods */,
+				E822F52E7DCF22C7ED6F7FB8 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -140,6 +147,23 @@
 			path = rtuJOY;
 			sourceTree = "<group>";
 		};
+		7413E0D3B859503A63DF2C27 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				B630DCDFAF1FF33061EC0B91 /* Pods-rtuJOY.debug.xcconfig */,
+				7D7A534ABFDE3AB0F990312D /* Pods-rtuJOY.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E822F52E7DCF22C7ED6F7FB8 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -147,6 +171,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 72A1EBB324B32AD000BDD9DA /* Build configuration list for PBXNativeTarget "rtuJOY" */;
 			buildPhases = (
+				CC5A40B3224DA8814BBA6F3C /* [CP] Check Pods Manifest.lock */,
 				72A1EB9B24B32ACC00BDD9DA /* Sources */,
 				72A1EB9C24B32ACC00BDD9DA /* Frameworks */,
 				72A1EB9D24B32ACC00BDD9DA /* Resources */,
@@ -207,6 +232,31 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		CC5A40B3224DA8814BBA6F3C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-rtuJOY-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		72A1EB9B24B32ACC00BDD9DA /* Sources */ = {
@@ -366,6 +416,7 @@
 		};
 		72A1EBB424B32AD000BDD9DA /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B630DCDFAF1FF33061EC0B91 /* Pods-rtuJOY.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -385,6 +436,7 @@
 		};
 		72A1EBB524B32AD000BDD9DA /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7D7A534ABFDE3AB0F990312D /* Pods-rtuJOY.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;

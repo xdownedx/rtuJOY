@@ -8,6 +8,15 @@
 
 import Foundation
 import UIKit
+import RealmSwift
+
+
+class scheduleForGroup: Object{
+    
+    dynamic var day:Array<Array<task>> = []
+    
+}
+
 
 
 struct schedulePerWeek {
@@ -58,6 +67,8 @@ struct schedulePerWeek {
         }
     }
 }
+
+
 
 struct task {
     var timeStart:String

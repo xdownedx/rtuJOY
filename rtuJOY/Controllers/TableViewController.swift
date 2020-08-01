@@ -7,22 +7,26 @@
 //
 
 import UIKit
+import RealmSwift
 
-let week = 10
+
+let week = 9
+var scheduleInWeek: Results<scheduleForGroup>!
 
 class TableViewController: UITableViewController {
+    
     var parsingData = ParsingData()
     var arrForConclusion:Array<Array<task>> = []
     var cell = CustomCell()
-    
-    
     var arrForCell:Array<Array<Int>> = []
+    
+    
     override func viewDidLoad() {
         let group=currentGroup
         self.parsingData.onCompletion = {scheduleForWeek in
-            self.schedeleForConclusion(schudele:scheduleForWeek)
+            reloadSchedule(schedule: scheduleForWeek)
+            self.schedeleForConclusion(schudele: scheduleInWeek[0])
         }
-        
         self.parsingData.broadcastData(group: group)
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
@@ -43,6 +47,8 @@ class TableViewController: UITableViewController {
         return arrForConclusion.count
     }
     
+    
+    
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard arrForConclusion[section].isEmpty==false else {
@@ -50,6 +56,9 @@ class TableViewController: UITableViewController {
         }
         return arrForConclusion[section].count
     }
+    
+    
+    
     
     // Получим заголовок для секции
     override func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -142,7 +151,8 @@ class TableViewController: UITableViewController {
     
     
     
-    func schedeleForConclusion(schudele:schedulePerWeek){
+    func schedeleForConclusion(schudele:scheduleForGroup){
+        print(schudele)
         arrForConclusion=quanity()
         var i=0
         var j = 0
@@ -161,8 +171,6 @@ class TableViewController: UITableViewController {
             arrForConclusion[i].sort{$0.number < $1.number}
             i+=1
         }
-        
-    
         print(arrForConclusion)
         DispatchQueue.main.async(execute: {
             self.tableView.reloadData()

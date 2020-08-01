@@ -7,6 +7,10 @@
 //
 
 import Foundation
+import RealmSwift
+
+var realm = try! Realm()
+let tableExemplar = scheduleForGroup()
 
 func disclosure(closureName:String) -> String {
     switch closureName {
@@ -37,39 +41,30 @@ func today()->Int{
 func quanity()->Array<Array<task>>{
     var arrayForReturn:Array<Array<task>> = []
     switch weekday {
-    case 1:
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        return arrayForReturn
-    case 2:
+    case 2...5:
         arrayForReturn.append(Array<task>())
         arrayForReturn.append(Array<task>())
         arrayForReturn.append(Array<task>())
         return arrayForReturn
-    case 3:
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        return arrayForReturn
-    case 4:
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        return arrayForReturn
-    case 5:
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        return arrayForReturn
-    case 6:
-        arrayForReturn.append(Array<task>())
-        arrayForReturn.append(Array<task>())
-        return arrayForReturn
-    case 7:
+    case 1,6,7:
         arrayForReturn.append(Array<task>())
         arrayForReturn.append(Array<task>())
         return arrayForReturn
     default:
         return arrayForReturn
     }
+}
+
+func reloadSchedule(schedule:schedulePerWeek){
+    tableExemplar.day=schedule.day
+    
+    DispatchQueue.main.async(execute: {
+        try! realm.write{
+            realm.deleteAll()
+        }
+        try! realm.write{
+            realm.add(tableExemplar)
+        }
+    })
+    
 }
