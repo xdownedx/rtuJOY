@@ -55,16 +55,18 @@ func quanity()->Array<Array<task>>{
     }
 }
 
-func reloadSchedule(schedule:schedulePerWeek){
+func reloadSchedule(schedule:scheduleForGroup){
     tableExemplar.day=schedule.day
-    
-    DispatchQueue.main.async(execute: {
-        try! realm.write{
-            realm.deleteAll()
+        if scheduleInWeek.count==0{
+            try! realm.write{
+                realm.add(tableExemplar)
+            }
+        }else{
+            try! realm.write{
+                realm.deleteAll()
+                realm.add(tableExemplar)
+            }
         }
-        try! realm.write{
-            realm.add(tableExemplar)
-        }
-    })
+        scheduleInWeek=realm.objects(scheduleForGroup.self)
     
 }

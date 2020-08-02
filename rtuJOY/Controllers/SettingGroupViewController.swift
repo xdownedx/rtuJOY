@@ -26,14 +26,15 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
         }
         let session=URLSession(configuration: .default)
         let task = session.dataTask(with: url){data, response, error in
-            if let data=data{
-                if  data.count > 100{
+                if  data!.count > 100{
                     jopa=true
                 }
                 self.onCompletion?(jopa)
-            }
         }
-        task.resume()
+        DispatchQueue.main.async(execute: {
+            task.resume()
+        })
+        
         return
     }
     

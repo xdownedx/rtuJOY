@@ -12,9 +12,7 @@ import RealmSwift
 
 
 class scheduleForGroup: Object{
-    
     dynamic var day:Array<Array<task>> = []
-    
 }
 
 
