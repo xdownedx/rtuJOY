@@ -7,10 +7,7 @@
 //
 
 import Foundation
-import RealmSwift
 
-var realm = try! Realm()
-let tableExemplar = scheduleForGroup()
 
 func disclosure(closureName:String) -> String {
     switch closureName {
@@ -55,18 +52,10 @@ func quanity()->Array<Array<task>>{
     }
 }
 
-func reloadSchedule(schedule:scheduleForGroup){
-    tableExemplar.day=schedule.day
-        if scheduleInWeek.count==0{
-            try! realm.write{
-                realm.add(tableExemplar)
-            }
-        }else{
-            try! realm.write{
-                realm.deleteAll()
-                realm.add(tableExemplar)
-            }
-        }
-        scheduleInWeek=realm.objects(scheduleForGroup.self)
-    
+func transliterate(nonLatin: String) -> String {
+    return nonLatin
+        .applyingTransform(.toLatin, reverse: false)?
+        .applyingTransform(.stripDiacritics, reverse: false)?
+        .lowercased()
+        .replacingOccurrences(of: "Х", with: "x") ?? nonLatin
 }

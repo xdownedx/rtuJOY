@@ -7,9 +7,7 @@
 //
 
 import UIKit
-import RealmSwift
 
-var scheduleInWeek: Results<scheduleForGroup> = {realm.objects(scheduleForGroup.self) }()
 let week = 9
 
 class TableViewController: UITableViewController {
@@ -17,15 +15,14 @@ class TableViewController: UITableViewController {
     var cell = CustomCell()
 
     var arrForConclusion:Array<Array<task>> = []
-    var arrForAll:scheduleForGroup = scheduleForGroup.init()
     
     
     override func viewDidLoad() {
-        let group=currentGroup
+        let group=GroupSettings.groupName
         self.parsingData.onCompletion = {scheduleForWeek in
             self.schedeleForConclusion(schudele: scheduleForWeek)
         }
-        self.parsingData.broadcastData(group: group)
+        self.parsingData.broadcastData(group: group!)
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
         
@@ -146,16 +143,7 @@ class TableViewController: UITableViewController {
         return cell
         
     }
-    
-//    func carryoverData(data:schedulePerWeek){
-//        arrForAll.day=data.day
-//        reloadSchedule(schedule: arrForAll)
-//        if scheduleInWeek.count != 0{
-//            self.schedeleForConclusion(schudele: scheduleInWeek[0])
-//        }
-//    }
-//    
-    
+
     func schedeleForConclusion(schudele:schedulePerWeek){
         print(schudele)
         arrForConclusion=quanity()

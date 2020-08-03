@@ -1,15 +1,15 @@
 //
-//  SettingGroupViewController.swift
+//  ChoiceGroupViewController.swift
 //  rtuJOY
 //
-//  Created by Максим Палёхин on 23.07.2020.
+//  Created by Максим Палёхин on 03.08.2020.
 //  Copyright © 2020 Максим Палёхин. All rights reserved.
 //
 
 import UIKit
 
-class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate {
-    
+class ChoiceGroupViewController: UIViewController {
+
     @IBOutlet weak var errorTextView: UITextView!
     @IBOutlet weak var buttonToSave: UIButton!
     @IBOutlet weak var labelGroup: UITextField!
@@ -42,17 +42,19 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        goTo()
+        
         errorTextView.layer.cornerRadius=20
         errorTextView.alpha=0
         buttonToSave.layer.cornerRadius=5
         buttonToSave.isEnabled=false
         buttonToSave.alpha=0.4
-        let swipeDown = UISwipeGestureRecognizer(target: self, action: #selector(self.hideKeyboardOnSwipeDown))
-                swipeDown.delegate = self
-        swipeDown.direction =  UISwipeGestureRecognizer.Direction.down
-                self.view.addGestureRecognizer(swipeDown)
     }
-    
+    func goTo(){
+        if GroupSettings.groupName != nil{
+        performSegue(withIdentifier: "startSegue", sender: self)
+        }
+    }
     
     @IBAction func edingTF(_ sender: Any) {
         if labelGroup.text==""{
@@ -85,20 +87,10 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
         if test{
             self.errorTextView.alpha=0
             GroupSettings.groupName=groupID
-            self.navigationController?.popViewController(animated: true)
+            self.performSegue(withIdentifier: "startSegue", sender: self)
         }else{
             self.errorTextView.alpha=1
         }
     }
 }
-extension UIViewController {
-    func hideKeyboardWhenTappedAround() {
-        let tapGesture = UITapGestureRecognizer(target: self,
-                                                action: #selector(hideKeyboard))
-        view.addGestureRecognizer(tapGesture)
-    }
-    
-    @objc func hideKeyboard() {
-        view.endEditing(true)
-    }
-}
+

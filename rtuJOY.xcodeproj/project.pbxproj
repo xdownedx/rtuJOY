@@ -14,6 +14,8 @@
 		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		723672A624B66B9700844118 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723672A524B66B9700844118 /* TableViewController.swift */; };
 		724F597A24BB3216004D328A /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F597924BB3216004D328A /* network.swift */; };
+		7256553224D81FBD0033831A /* userSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7256553124D81FBD0033831A /* userSettings.swift */; };
+		7256553424D823140033831A /* ChoiceGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7256553324D823140033831A /* ChoiceGroupViewController.swift */; };
 		725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F565224B9CACD007930A6 /* modelTimeTable.swift */; };
 		727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */; };
 		727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727F0C2F24B6FB190029A4D3 /* CustomCell.xib */; };
@@ -36,6 +38,8 @@
 		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		723672A524B66B9700844118 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		724F597924BB3216004D328A /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
+		7256553124D81FBD0033831A /* userSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettings.swift; sourceTree = "<group>"; };
+		7256553324D823140033831A /* ChoiceGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceGroupViewController.swift; sourceTree = "<group>"; };
 		725F565224B9CACD007930A6 /* modelTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelTimeTable.swift; sourceTree = "<group>"; };
 		727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGroupViewController.swift; sourceTree = "<group>"; };
 		727F0C2F24B6FB190029A4D3 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
@@ -91,6 +95,7 @@
 			children = (
 				72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */,
 				725F565224B9CACD007930A6 /* modelTimeTable.swift */,
+				7256553124D81FBD0033831A /* userSettings.swift */,
 			);
 			path = models;
 			sourceTree = "<group>";
@@ -99,6 +104,7 @@
 			isa = PBXGroup;
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
+				7256553324D823140033831A /* ChoiceGroupViewController.swift */,
 				727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */,
 				72098DDA24C74398009352A0 /* SettingTableViewController.swift */,
 			);
@@ -273,8 +279,10 @@
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,
 				72098DD824C71915009352A0 /* settingCell.swift in Sources */,
+				7256553424D823140033831A /* ChoiceGroupViewController.swift in Sources */,
 				727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */,
 				72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */,
+				7256553224D81FBD0033831A /* userSettings.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

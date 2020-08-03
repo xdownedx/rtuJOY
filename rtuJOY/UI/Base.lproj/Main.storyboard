@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="kac-Xo-hNt">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="17140" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait" appearance="light"/>
     <dependencies>
         <deployment identifier="iOS"/>
@@ -27,7 +27,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="SyA-zE-QhU">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="GYe-Qe-STn">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -47,10 +47,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="SL4-E9-SWf">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="3H0-aq-iZe">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IQ0-rd-0zb">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -108,7 +108,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="L2z-XV-xTS">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="hMU-31-0P4">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -128,10 +128,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="6CB-Kz-kkG">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Qbq-MX-zBx">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gun-zm-PTS">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -189,7 +189,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="aSc-oX-Ijy">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="Qe5-pp-upS">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -209,10 +209,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="wob-jM-Mwc">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="9qS-1j-d4J">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="x77-Lz-MGk">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -270,7 +270,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="m04-m7-hwZ">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="JCP-08-npQ">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -290,10 +290,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="5Hm-OY-HzK">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="ukG-uh-i4s">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eb0-zO-Ojl">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -351,7 +351,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="sFs-g8-of8">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="fP5-bz-Tmu">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -371,10 +371,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="lEo-vr-MBw">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="X66-bq-9QY">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wfz-dX-gEu">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -432,7 +432,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BYe-Qd-TBY">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="4at-Ux-7Bs">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -452,10 +452,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Eqq-5e-qTr">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="hZb-lm-2Gn">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="O60-eU-LoK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -513,7 +513,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="VJt-LU-lpi">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="jHB-12-KdA">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -533,10 +533,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="cgT-dn-92f">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="iXM-7t-WR4">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Lbu-OA-RGK">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -594,7 +594,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="6P5-hf-0xI">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="AhG-X8-QXE">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -614,10 +614,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="8Ya-OM-sAQ">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="5Wa-fj-qBx">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yTG-RR-2RU">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -679,7 +679,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="PEl-QY-aSK">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="hmj-cY-7Fy">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -699,10 +699,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="s7s-kv-pHq">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="gbu-u4-V3d">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="aOo-qO-asi">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -760,7 +760,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="67X-Cl-oST">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="PKG-Z9-8AV">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -780,10 +780,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="OuU-d7-kyp">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="yI8-4c-cjZ">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="cgk-Kv-VTn">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -841,7 +841,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="2CB-2j-vvx">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="iZu-Ud-A6L">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -861,10 +861,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Sbo-2Q-f0H">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="I1N-0M-m8O">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="br1-nb-Xb1">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -922,7 +922,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="R8d-qq-kc0">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="soZ-0n-EIC">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -942,10 +942,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="tHF-Kk-SKO">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="jvx-hn-n5P">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Zga-Ca-FNn">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1003,7 +1003,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="3dR-aN-tKL">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="uVT-F8-gYL">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1023,10 +1023,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="rUG-G2-bBN">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="PDc-xp-TIj">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pWU-ce-ViW">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1084,7 +1084,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Gth-11-EUD">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="2DU-y9-TX3">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1104,10 +1104,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="fg1-tm-ErG">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="eI8-Px-K6T">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a7v-sN-eRU">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1165,7 +1165,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="ZCz-BR-y3N">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="YAb-gv-UV0">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1185,10 +1185,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="SRc-VY-MVF">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="KWL-c9-4Lq">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qDu-UI-N3V">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1246,7 +1246,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="7yB-rs-xfO">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="qE6-cy-72P">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1266,10 +1266,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="vTH-6h-i8x">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="J90-75-mcC">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="jpQ-9E-6s2">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1331,7 +1331,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="Qkr-n2-v0b">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="LHo-MQ-ZmB">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1351,10 +1351,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="0E0-a5-GLG">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="WrP-y4-MOd">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="NS9-3C-8Cv">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1412,7 +1412,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="y1q-Jg-TfH">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="gRG-CL-rJe">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1432,10 +1432,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="1O1-pL-lOq">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="itg-CZ-ujH">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="FQs-Es-Kaa">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1493,7 +1493,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="4w2-W1-sde">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="IXP-a9-P3Y">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1513,10 +1513,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="Fqy-KO-tCW">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="u7e-fR-e8N">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UHl-WQ-ZT0">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1574,7 +1574,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="xL3-fS-ipX">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="YFm-Q8-ip1">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1594,10 +1594,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="8YZ-a8-ecq">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="wfM-HK-3oY">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="pRo-cE-pRl">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1655,7 +1655,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="bLt-l5-Tsr">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="o0J-nI-vUW">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1675,10 +1675,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="zGs-TY-kI8">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="fLp-fI-Fb0">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="bIb-LZ-G1J">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1736,7 +1736,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="koH-zn-KTC">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="dV4-U6-jfg">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1756,10 +1756,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="cqc-Oh-eqf">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="lsm-rt-u9N">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="eGG-u4-dE3">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1817,7 +1817,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="BxA-KJ-WeR">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="6Vi-9F-pXi">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1837,10 +1837,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="O3b-10-DHi">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="1mW-Bm-GMc">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="wR6-Th-0IN">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -1898,7 +1898,7 @@
                                             <autoresizingMask key="autoresizingMask"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="JuO-X0-A5d">
-                                                    <rect key="frame" x="10" y="8" width="288" height="80"/>
+                                                    <rect key="frame" x="10" y="8" width="293" height="80"/>
                                                     <subviews>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="36" translatesAutoresizingMaskIntoConstraints="NO" id="QEM-wz-pSq">
                                                             <rect key="frame" x="0.0" y="0.0" width="43.5" height="80"/>
@@ -1918,10 +1918,10 @@
                                                             </subviews>
                                                         </stackView>
                                                         <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stick_blue" translatesAutoresizingMaskIntoConstraints="NO" id="UFa-45-ccF">
-                                                            <rect key="frame" x="49.5" y="0.0" width="5" height="80"/>
+                                                            <rect key="frame" x="49.5" y="0.0" width="10" height="80"/>
                                                         </imageView>
                                                         <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="Lll-Rg-Yc3">
-                                                            <rect key="frame" x="60.5" y="0.0" width="227.5" height="80"/>
+                                                            <rect key="frame" x="65.5" y="0.0" width="227.5" height="80"/>
                                                             <subviews>
                                                                 <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" text="лекция" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MPa-LE-q4z">
                                                                     <rect key="frame" x="0.0" y="0.0" width="227.5" height="19.5"/>
@@ -2092,8 +2092,9 @@
         <!--Tab Bar Controller-->
         <scene sceneID="HMn-qR-t9f">
             <objects>
-                <tabBarController automaticallyAdjustsScrollViewInsets="NO" id="kac-Xo-hNt" sceneMemberID="viewController">
+                <tabBarController storyboardIdentifier="startVC" automaticallyAdjustsScrollViewInsets="NO" id="kac-Xo-hNt" sceneMemberID="viewController">
                     <toolbarItems/>
+                    <navigationItem key="navigationItem" id="DYG-At-hHW"/>
                     <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="Er3-Gw-NFh">
                         <rect key="frame" x="0.0" y="0.0" width="1000" height="1000"/>
                         <autoresizingMask key="autoresizingMask"/>
@@ -2326,18 +2327,106 @@
             </objects>
             <point key="canvasLocation" x="3021.5999999999999" y="698.5007496251875"/>
         </scene>
+        <!--Choice Group View Controller-->
+        <scene sceneID="Uyx-2Y-jiI">
+            <objects>
+                <viewController storyboardIdentifier="groupChoiceVC" autoresizesArchivedViewToFullSize="NO" automaticallyAdjustsScrollViewInsets="NO" modalPresentationStyle="fullScreen" hidesBottomBarWhenPushed="YES" id="6hp-3K-hd7" customClass="ChoiceGroupViewController" customModule="rtu_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleAspectFill" id="H8C-CG-jSp">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Российский технологический университет" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dPt-ih-pvx">
+                                <rect key="frame" x="16" y="95" width="250" height="154"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="154" id="RjQ-pn-IzB"/>
+                                    <constraint firstAttribute="width" constant="250" id="fpL-Qu-VSd"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="29"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="17" translatesAutoresizingMaskIntoConstraints="NO" id="v30-LY-6FO">
+                                <rect key="frame" x="16" y="284" width="343" height="108.5"/>
+                                <subviews>
+                                    <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Введите номер группы" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="FCE-YE-a1c">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="45.5"/>
+                                        <color key="backgroundColor" systemColor="systemGray6Color"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="45.5" id="RWH-po-OMr"/>
+                                            <constraint firstAttribute="width" constant="343" id="bjK-J1-Pej"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no" enablesReturnKeyAutomatically="YES"/>
+                                        <connections>
+                                            <action selector="edingTF:" destination="6hp-3K-hd7" eventType="editingChanged" id="zoN-fK-L78"/>
+                                        </connections>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="headTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="hdj-5o-RGs">
+                                        <rect key="frame" x="0.0" y="62.5" width="343" height="46"/>
+                                        <color key="backgroundColor" systemColor="linkColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="1Dh-j9-br6"/>
+                                            <constraint firstAttribute="height" constant="46" id="642-6B-p5c"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="18"/>
+                                        <state key="normal" title="Перейти к расписанию">
+                                            <color key="titleColor" systemColor="groupTableViewBackgroundColor"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="buttonToSavePressed:" destination="6hp-3K-hd7" eventType="touchUpInside" id="k0x-vy-aCz"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" text="Неверно введен номер группы. Проверьте номер группы и попробуйте ввести его еще раз, например, КТСО-01-19." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jfv-sW-R4G">
+                                <rect key="frame" x="16" y="476" width="343" height="113"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemRedColor"/>
+                                <color key="textColor" systemColor="labelColor"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="KLO-Fa-uNr"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="v30-LY-6FO" secondAttribute="trailing" constant="16" id="8Fc-rX-qIV"/>
+                            <constraint firstItem="v30-LY-6FO" firstAttribute="leading" secondItem="H8C-CG-jSp" secondAttribute="leading" constant="16" id="Sfj-yj-NLP"/>
+                            <constraint firstItem="v30-LY-6FO" firstAttribute="top" secondItem="dPt-ih-pvx" secondAttribute="bottom" constant="35" id="eje-40-tbG"/>
+                            <constraint firstItem="dPt-ih-pvx" firstAttribute="top" secondItem="H8C-CG-jSp" secondAttribute="top" constant="95" id="mF6-BH-KRX"/>
+                            <constraint firstItem="dPt-ih-pvx" firstAttribute="leading" secondItem="H8C-CG-jSp" secondAttribute="leading" constant="16" id="maK-Yn-nIw"/>
+                            <constraint firstAttribute="trailing" secondItem="dPt-ih-pvx" secondAttribute="trailing" constant="109" id="rpe-K5-ivq"/>
+                        </constraints>
+                    </view>
+                    <extendedEdge key="edgesForExtendedLayout" top="YES"/>
+                    <navigationItem key="navigationItem" id="acv-yp-Jvc"/>
+                    <modalPageSheetSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+                    <connections>
+                        <outlet property="buttonToSave" destination="hdj-5o-RGs" id="3jw-f7-aeh"/>
+                        <outlet property="errorTextView" destination="Jfv-sW-R4G" id="hJx-I6-Jxg"/>
+                        <outlet property="labelGroup" destination="FCE-YE-a1c" id="mjo-E7-x9r"/>
+                        <segue destination="kac-Xo-hNt" kind="presentation" identifier="startSegue" modalPresentationStyle="fullScreen" id="aUN-dd-idt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="ZNh-Qe-gNE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="324" y="-80"/>
+        </scene>
     </scenes>
     <resources>
         <image name="bell.fill" catalog="system" width="128" height="128"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="info.circle" catalog="system" width="128" height="121"/>
-        <image name="mireaLogo1" width="1024" height="1024"/>
+        <image name="mireaLogo1" width="512" height="512"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
         <image name="person.fill" catalog="system" width="128" height="120"/>
         <image name="stick_blue" width="10" height="80"/>
         <image name="vk" width="25" height="25"/>
         <systemColor name="groupTableViewBackgroundColor">
             <color red="0.94901960784313721" green="0.94901960784313721" blue="0.96862745098039216" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </systemColor>
+        <systemColor name="groupTableViewBackgroundColor">
+            <color red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
         <systemColor name="labelColor">
             <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
