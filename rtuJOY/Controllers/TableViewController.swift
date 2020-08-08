@@ -13,7 +13,7 @@ let week = 9
 class TableViewController: UITableViewController {
     var parsingData = ParsingData()
     var cell = CustomCell()
-
+    
     var arrForConclusion:Array<Array<task>> = []
     
     
@@ -140,29 +140,60 @@ class TableViewController: UITableViewController {
         cell.typeLesson?.text = arrForConclusion[indexPath.section][indexPath.row].typeLesson
         cell.numberAudince?.text = arrForConclusion[indexPath.section][indexPath.row].numberAudince
         cell.nameTeacher?.text = arrForConclusion[indexPath.section][indexPath.row].nameTeacher
+        if cell.nameTeacher?.text == ""{
+            cell.nameTeacher.isHidden=true
+        }else{
+            cell.nameTeacher.isHidden=false
+        }
         return cell
         
     }
-
+    
     func schedeleForConclusion(schudele:schedulePerWeek){
         print(schudele)
         arrForConclusion=quanity()
         var i=0
         var j = 0
         var k = 0
-        while i<arrForConclusion.count {
-            j = 0
-            k = 0
-            while j < schudele.day[today()+i].count{
-                if schudele.day[today()+i][j].week.contains(week){
-                    arrForConclusion[i].append(task())
-                    arrForConclusion[i][k]=schudele.day[today()+i][j]
+        switch weekday {
+        case 1...6:
+            while i<arrForConclusion.count
+            {
+                j = 0
+                k = 0
+                while j < schudele.day[today()+i].count{
+                    if schudele.day[today()+i][j].week.contains(week){
+                        arrForConclusion[i].append(task())
+                        arrForConclusion[i][k]=schudele.day[today()+i][j]
+                        k+=1
+                    }
+                    j+=1
+                }
+                arrForConclusion[i].sort{$0.number < $1.number}
+                i+=1
+            }
+        default:
+            while j < schudele.day[5].count{
+                if schudele.day[5][j].week.contains(week){
+                    arrForConclusion[0].append(task())
+                    arrForConclusion[0][k]=schudele.day[5][j]
                     k+=1
                 }
                 j+=1
             }
-            arrForConclusion[i].sort{$0.number < $1.number}
-            i+=1
+            arrForConclusion[0].sort{$0.number < $1.number}
+            j = 0
+            k = 0
+            while j < schudele.day[0].count{
+                if schudele.day[0][j].week.contains(week){
+                    arrForConclusion[1].append(task())
+                    arrForConclusion[1][k]=schudele.day[0][j]
+                    k+=1
+                }
+                j+=1
+            }
+            arrForConclusion[1].sort{$0.number < $1.number}
+            
         }
         print(arrForConclusion)
         DispatchQueue.main.async(execute: {

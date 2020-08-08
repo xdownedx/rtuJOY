@@ -14,7 +14,7 @@ class SettingTableViewController: UITableViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.navigationItem.title = GroupSettings.groupName!
+        self.navigationItem.title = GroupSettings.groupNameRU!
         self.tableView.register(UINib(nibName: String(describing: settingCell.self), bundle: nil),forCellReuseIdentifier:String(describing: settingCell.self))
         
     }

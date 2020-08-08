@@ -52,10 +52,49 @@ func quanity()->Array<Array<task>>{
     }
 }
 
-func transliterate(nonLatin: String) -> String {
-    return nonLatin
-        .applyingTransform(.toLatin, reverse: false)?
-        .applyingTransform(.stripDiacritics, reverse: false)?
-        .lowercased()
-        .replacingOccurrences(of: "Х", with: "x") ?? nonLatin
+func transliteToRu(rus: String) -> String {
+    return rus
+        .uppercased()
+        .replacingOccurrences(of: " ", with: "-") ?? rus
 }
+
+func transliteToEng(russian:String) -> String {
+    var english = ""
+    let dictionary: [Character:String] = ["a":"a",
+                                          "б":"b",
+                                          "в":"v",
+                                          "г":"g",
+                                          "д":"d",
+                                          "е":"e",
+                                          "ё":"e",
+                                          "ж":"zh",
+                                          "з":"z",
+                                          "и":"i",
+                                          "й":"i",
+                                          "л":"l",
+                                          "к":"k",
+                                          "м":"m",
+                                          "н":"n",
+                                          "о":"o",
+                                          "п":"p",
+                                          "р":"r",
+                                          "с":"s",
+                                          "т":"t",
+                                          "у":"u",
+                                          "ф":"f",
+                                          "х":"x",
+                                          "ц":"c",
+                                          "ч":"ch",
+                                          "ш":"sh",
+                                          "э":"e%60",
+                                          "ю":"yu",
+                                          "я":"ya",
+                                          "-":"-",
+                                          " ":"-"
+    ]
+    for char in russian {
+        english.append(dictionary[char] ?? String(char))
+    }
+    return english
+}
+

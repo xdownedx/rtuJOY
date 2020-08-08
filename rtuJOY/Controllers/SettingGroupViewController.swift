@@ -31,10 +31,7 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
                 }
                 self.onCompletion?(jopa)
         }
-        DispatchQueue.main.async(execute: {
-            task.resume()
-        })
-        
+        task.resume()
         return
     }
 
@@ -75,7 +72,7 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
         test=bool
     }
     @IBAction func buttonToSavePressed(_ sender: Any) {
-        let groupID=transliterate(nonLatin: labelGroup.text!)
+        let groupID=transliteToEng(russian: labelGroup.text!)
         DispatchQueue.main.async(execute: {
             self.onCompletion = {jopa in
                 self.checkBool(bool: jopa)
@@ -85,6 +82,7 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
         if test{
             self.errorTextView.alpha=0
             GroupSettings.groupName=groupID
+            GroupSettings.groupNameRU=transliteToRu(rus:labelGroup.text!)
             self.navigationController?.popViewController(animated: true)
         }else{
             self.errorTextView.alpha=1

@@ -77,7 +77,7 @@ class ChoiceGroupViewController: UIViewController {
         test=bool
     }
     @IBAction func buttonToSavePressed(_ sender: Any) {
-        let groupID=transliterate(nonLatin: labelGroup.text!)
+        let groupID=transliteToEng(russian: labelGroup.text!)
         DispatchQueue.main.async(execute: {
             self.onCompletion = {jopa in
                 self.checkBool(bool: jopa)
@@ -87,6 +87,7 @@ class ChoiceGroupViewController: UIViewController {
         if test{
             self.errorTextView.alpha=0
             GroupSettings.groupName=groupID
+            GroupSettings.groupNameRU=transliteToRu(rus:labelGroup.text!)
             self.performSegue(withIdentifier: "startSegue", sender: self)
         }else{
             self.errorTextView.alpha=1
