@@ -150,7 +150,6 @@ class TableViewController: UITableViewController {
     }
     
     func schedeleForConclusion(schudele:schedulePerWeek){
-        print(schudele)
         arrForConclusion=quanity()
         var i=0
         var j = 0
@@ -195,7 +194,6 @@ class TableViewController: UITableViewController {
             arrForConclusion[1].sort{$0.number < $1.number}
             
         }
-        print(arrForConclusion)
         DispatchQueue.main.async(execute: {
             self.tableView.reloadData()
         })
