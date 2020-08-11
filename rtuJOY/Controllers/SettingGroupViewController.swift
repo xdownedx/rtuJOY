@@ -13,7 +13,7 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
     @IBOutlet weak var errorTextView: UITextView!
     @IBOutlet weak var buttonToSave: UIButton!
     @IBOutlet weak var labelGroup: UITextField!
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         errorTextView.layer.cornerRadius=20
@@ -37,13 +37,30 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
     
     @IBAction func buttonToSavePressed(_ sender: Any) {
         let groupID=transliteToEng(russian: labelGroup.text!)
-        if checkGroup(group: groupID){
-            self.errorTextView.alpha=0
-            GroupSettings.groupName=groupID
-            GroupSettings.groupNameRU=transliteToRu(rus:labelGroup.text!)
-            self.navigationController?.popViewController(animated: true)
+        let urlString="http://api.mirea-assistant.ru/schedule?group=\(groupID)"
+        guard let url=URL(string: urlString) else {
+            return
+        }
+        let session=URLSession(configuration: .default)
+        let task = session.dataTask(with: url){data, response, error in
+            self.editVC(dataCountEver: data!.count, groupID: groupID)
+        }
+        
+        task.resume()
+    }
+    
+    func editVC(dataCountEver:Int,groupID:String){
+        if dataCountEver>100{
+            DispatchQueue.main.async(execute: {
+                self.errorTextView.alpha=0
+                GroupSettings.groupName=groupID
+                GroupSettings.groupNameRU=transliteToRu(rus:self.labelGroup.text!)
+                self.navigationController?.popViewController(animated: true)
+            })
         }else{
-            self.errorTextView.alpha=1
+            DispatchQueue.main.async(execute: {
+                self.errorTextView.alpha=1
+            })
         }
     }
 }

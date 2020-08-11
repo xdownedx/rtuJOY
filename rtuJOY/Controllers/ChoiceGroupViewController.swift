@@ -9,7 +9,7 @@
 import UIKit
 
 class ChoiceGroupViewController: UIViewController {
-
+    
     @IBOutlet weak var errorTextView: UITextView!
     @IBOutlet weak var buttonToSave: UIButton!
     @IBOutlet weak var labelGroup: UITextField!
@@ -26,7 +26,7 @@ class ChoiceGroupViewController: UIViewController {
     }
     func goTo(){
         if GroupSettings.groupName != nil{
-        performSegue(withIdentifier: "startSegue", sender: self)
+            performSegue(withIdentifier: "startSegue", sender: self)
         }
     }
     
@@ -40,17 +40,34 @@ class ChoiceGroupViewController: UIViewController {
         }
     }
     
-
+    
     @IBAction func buttonToSavePressed(_ sender: Any) {
         let groupID=transliteToEng(russian: labelGroup.text!)
+        let urlString="http://api.mirea-assistant.ru/schedule?group=\(groupID)"
+        guard let url=URL(string: urlString) else {
+            return
+        }
+        let session=URLSession(configuration: .default)
+        let task = session.dataTask(with: url){data, response, error in
+            self.editVC(dataCountEver: data!.count, groupID: groupID)
+        }
         
-        if checkGroup(group: groupID){
-            self.errorTextView.alpha=0
-            GroupSettings.groupName=groupID
-            GroupSettings.groupNameRU=transliteToRu(rus:labelGroup.text!)
-            self.performSegue(withIdentifier: "startSegue", sender: self)
+        task.resume()
+        
+    }
+    
+    func editVC(dataCountEver:Int,groupID:String){
+        if dataCountEver>100{
+            DispatchQueue.main.async(execute: {
+                self.errorTextView.alpha=0
+                GroupSettings.groupName=groupID
+                GroupSettings.groupNameRU=transliteToRu(rus:self.labelGroup.text!)
+                self.performSegue(withIdentifier: "startSegue", sender: self)
+            })
         }else{
-            self.errorTextView.alpha=1
+            DispatchQueue.main.async(execute: {
+                self.errorTextView.alpha=1
+            })
         }
     }
 }
