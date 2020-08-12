@@ -16,6 +16,10 @@ class TableViewController: UITableViewController {
     
     var arrForConclusion:Array<Array<task>> = []
     
+    @IBOutlet weak var viewForImage: UIView!
+    @IBOutlet weak var image: UIImageView!
+    @IBOutlet weak var sheduleNotFoundMajor: UILabel!
+    @IBOutlet weak var sheduleNotFoundSecondary: UILabel!
     
     override func viewDidLoad() {
         let group=GroupSettings.groupName
@@ -25,6 +29,17 @@ class TableViewController: UITableViewController {
         self.parsingData.broadcastData(group: group!)
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
+        if arrForConclusion.isEmpty{
+            viewForImage.isHidden=false
+            image.isHidden=false
+            sheduleNotFoundMajor.isHidden=false
+            sheduleNotFoundSecondary.isHidden=false
+        }else{
+            viewForImage.isHidden=true
+            image.isHidden=true
+            sheduleNotFoundMajor.isHidden=true
+            sheduleNotFoundSecondary.isHidden=true
+        }
         
     }
     
