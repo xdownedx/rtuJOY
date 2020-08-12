@@ -11,7 +11,11 @@ import UIKit
 
 struct schedulePerWeek {
     var day: Array<Array<task>> = []
+    var startSemester:String=""
+    var endSemester:String=""
     init?(tempSchedule:gg){
+        startSemester=tempSchedule.semester.startDate
+        endSemester=tempSchedule.semester.endDate
         let letters = NSCharacterSet.letters
         let decimalCharacters = CharacterSet.decimalDigits
         var idTask=0

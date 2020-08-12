@@ -9,6 +9,11 @@
 import Foundation
 struct gg:Decodable {
     var schedule:Array<schedule>
+    var semester:semester
+}
+struct semester:Codable {
+    var startDate:String
+    var endDate:String
 }
 struct schedule:Codable {
     var day:Int

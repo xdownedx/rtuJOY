@@ -8,7 +8,7 @@
 
 import UIKit
 
-let week = 9
+var week = 0
 
 class TableViewController: UITableViewController {
     var parsingData = ParsingData()
@@ -150,6 +150,10 @@ class TableViewController: UITableViewController {
     }
     
     func schedeleForConclusion(schudele:schedulePerWeek){
+        week=currentSemesterWeek(date: schudele.startSemester)
+        guard week<17 else{
+            return 
+        }
         arrForConclusion=quanity()
         var i=0
         var j = 0

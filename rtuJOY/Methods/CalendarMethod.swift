@@ -17,6 +17,7 @@ var weekday = calendar.component(.weekday, from: date)
 var curDayInMonth = calendar.component(.day, from: date)
 var curMonth = calendar.component(.month, from: date)
 var curYear = calendar.component(.year, from: date)
+var currentWeek = calendar.component(.weekOfYear, from: date)
 func currentData(day: Int, month: Int)->String {
     var currentDay=day
     switch curMonth {
@@ -69,3 +70,12 @@ func currentData(day: Int, month: Int)->String {
         return "\(currentDay) \(monthTable[curMonth-1])"
     }
 
+func currentSemesterWeek(date:String)->Int{
+    var updateDate=date
+    print(date)
+    let formatter = DateFormatter()
+    formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"
+    guard let someDateTime = formatter.date(from: updateDate) else { return 1 }
+    let startWeekInYear = calendar.component(.weekOfYear, from: someDateTime)
+    return (currentWeek-startWeekInYear+1)
+}
