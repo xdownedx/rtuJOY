@@ -26,6 +26,7 @@
 		72A1EBAF24B32AD000BDD9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBAD24B32AD000BDD9DA /* LaunchScreen.storyboard */; };
 		72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */; };
 		72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1710624BB23BA0015CC8C /* CalendarMethod.swift */; };
+		72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8E1E024E993B8004A7925 /* Reachability.swift */; };
 		E50B694ADE4BDCC07899C10D /* libPods-rtuJOY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +53,7 @@
 		72A1EBB024B32AD000BDD9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternativeModel.swift; sourceTree = "<group>"; };
 		72D1710624BB23BA0015CC8C /* CalendarMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethod.swift; sourceTree = "<group>"; };
+		72D8E1E024E993B8004A7925 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		7D7A534ABFDE3AB0F990312D /* Pods-rtuJOY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.release.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.release.xcconfig"; sourceTree = "<group>"; };
 		B630DCDFAF1FF33061EC0B91 /* Pods-rtuJOY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.debug.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -111,14 +113,15 @@
 			path = Controllers;
 			sourceTree = "<group>";
 		};
-		725F565824B9D448007930A6 /* Methods */ = {
+		725F565824B9D448007930A6 /* HelpMethods */ = {
 			isa = PBXGroup;
 			children = (
 				724F597924BB3216004D328A /* network.swift */,
+				72D8E1E024E993B8004A7925 /* Reachability.swift */,
 				721DB0C824CC77AE00B310F3 /* helpMethod.swift */,
 				72D1710624BB23BA0015CC8C /* CalendarMethod.swift */,
 			);
-			path = Methods;
+			path = HelpMethods;
 			sourceTree = "<group>";
 		};
 		72A1EB9624B32ACC00BDD9DA = {
@@ -146,7 +149,7 @@
 				725F565624B9D33D007930A6 /* models */,
 				725F565524B9D2FA007930A6 /* UI */,
 				725F565724B9D437007930A6 /* Controllers */,
-				725F565824B9D448007930A6 /* Methods */,
+				725F565824B9D448007930A6 /* HelpMethods */,
 				72A1EBAB24B32AD000BDD9DA /* Assets.xcassets */,
 				72A1EBB024B32AD000BDD9DA /* Info.plist */,
 			);
@@ -277,6 +280,7 @@
 				721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
+				72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,
 				72098DD824C71915009352A0 /* settingCell.swift in Sources */,
 				7256553424D823140033831A /* ChoiceGroupViewController.swift in Sources */,
