@@ -7,10 +7,12 @@
 //
 
 import UIKit
+import RealmSwift
 
-var week = 0
+var week = 10
 
 class TableViewController: UITableViewController {
+
     var parsingData = ParsingData()
     var cell = CustomCell()
     
@@ -22,24 +24,25 @@ class TableViewController: UITableViewController {
     @IBOutlet weak var sheduleNotFoundSecondary: UILabel!
     
     override func viewDidLoad() {
+        let realm = try! Realm()
+        var scheduleTemp: Results<scheduleDatabase>! = realm.objects(scheduleDatabase.self)
+
         let group=GroupSettings.groupName
-        self.parsingData.onCompletion = {scheduleForWeek in
-            self.schedeleForConclusion(schudele: scheduleForWeek)
+        if CheckInternet.isConnectedToNetwork(){
+            self.parsingData.onCompletion = {scheduleForWeek in
+                self.schedeleForConclusion(schudele: scheduleForWeek)
+            }
+        }else{
+            
+            let scheduleForTable=(parsingData.parseJSON(with: scheduleTemp[0].schedule))!
+            self.schedeleForConclusion(schudele: scheduleForTable)
+            
         }
+        
         self.parsingData.broadcastData(group: group!)
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
-        if arrForConclusion.isEmpty{
-            viewForImage.isHidden=false
-            image.isHidden=false
-            sheduleNotFoundMajor.isHidden=false
-            sheduleNotFoundSecondary.isHidden=false
-        }else{
-            viewForImage.isHidden=true
-            image.isHidden=true
-            sheduleNotFoundMajor.isHidden=true
-            sheduleNotFoundSecondary.isHidden=true
-        }
+
         
     }
     
@@ -61,6 +64,17 @@ class TableViewController: UITableViewController {
     
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        if arrForConclusion.isEmpty{
+            viewForImage.isHidden=false
+            image.isHidden=false
+            sheduleNotFoundMajor.isHidden=false
+            sheduleNotFoundSecondary.isHidden=false
+        }else{
+            viewForImage.isHidden=true
+            image.isHidden=true
+            sheduleNotFoundMajor.isHidden=true
+            sheduleNotFoundSecondary.isHidden=true
+        }
         guard arrForConclusion[section].isEmpty==false else {
             return 0
         }
@@ -165,10 +179,10 @@ class TableViewController: UITableViewController {
     }
     
     func schedeleForConclusion(schudele:schedulePerWeek){
-        week=currentSemesterWeek(date: schudele.startSemester)
-        guard week<17 else{
-            return 
-        }
+//        week=currentSemesterWeek(date: schudele.startSemester)
+//        guard week<17 else{
+//            return
+//        }
         arrForConclusion=quanity()
         var i=0
         var j = 0

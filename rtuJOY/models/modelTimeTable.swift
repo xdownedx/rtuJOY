@@ -8,12 +8,12 @@
 
 import Foundation
 import UIKit
-
 struct schedulePerWeek {
     var day: Array<Array<task>> = []
     var startSemester:String=""
     var endSemester:String=""
-    init?(tempSchedule:gg){
+    
+    init?(tempSchedule:globalSchedule){
         startSemester=tempSchedule.semester.startDate
         endSemester=tempSchedule.semester.endDate
         let letters = NSCharacterSet.letters
@@ -65,6 +65,7 @@ struct schedulePerWeek {
 
 
 struct task {
+    
     var timeStart:String
     var timeEnd:String
     var typeLesson:String

@@ -16,7 +16,7 @@ class ChoiceGroupViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        goTo()
+        goToStartScreen()
         
         errorTextView.layer.cornerRadius=20
         errorTextView.alpha=0
@@ -24,7 +24,7 @@ class ChoiceGroupViewController: UIViewController {
         buttonToSave.isEnabled=false
         buttonToSave.alpha=0.4
     }
-    func goTo(){
+    func goToStartScreen(){
         if GroupSettings.groupName != nil{
             performSegue(withIdentifier: "startSegue", sender: self)
         }

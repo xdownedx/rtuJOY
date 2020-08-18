@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7209667A24EAAB4B0002B05D /* StorageManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209667924EAAB4B0002B05D /* StorageManager.swift */; };
+		7209667C24EAE32F0002B05D /* realmModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7209667B24EAE32F0002B05D /* realmModel.swift */; };
 		72098DD824C71915009352A0 /* settingCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DD624C71915009352A0 /* settingCell.swift */; };
 		72098DD924C71915009352A0 /* settingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72098DD724C71915009352A0 /* settingCell.xib */; };
 		72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DDA24C74398009352A0 /* SettingTableViewController.swift */; };
@@ -32,6 +34,8 @@
 
 /* Begin PBXFileReference section */
 		2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-rtuJOY.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7209667924EAAB4B0002B05D /* StorageManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageManager.swift; sourceTree = "<group>"; };
+		7209667B24EAE32F0002B05D /* realmModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = realmModel.swift; sourceTree = "<group>"; };
 		72098DD624C71915009352A0 /* settingCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = settingCell.swift; sourceTree = "<group>"; };
 		72098DD724C71915009352A0 /* settingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = settingCell.xib; sourceTree = "<group>"; };
 		72098DDA24C74398009352A0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
@@ -96,6 +100,7 @@
 			isa = PBXGroup;
 			children = (
 				72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */,
+				7209667B24EAE32F0002B05D /* realmModel.swift */,
 				725F565224B9CACD007930A6 /* modelTimeTable.swift */,
 				7256553124D81FBD0033831A /* userSettings.swift */,
 			);
@@ -117,6 +122,7 @@
 			isa = PBXGroup;
 			children = (
 				724F597924BB3216004D328A /* network.swift */,
+				7209667924EAAB4B0002B05D /* StorageManager.swift */,
 				72D8E1E024E993B8004A7925 /* Reachability.swift */,
 				721DB0C824CC77AE00B310F3 /* helpMethod.swift */,
 				72D1710624BB23BA0015CC8C /* CalendarMethod.swift */,
@@ -287,6 +293,8 @@
 				727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */,
 				72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */,
 				7256553224D81FBD0033831A /* userSettings.swift in Sources */,
+				7209667A24EAAB4B0002B05D /* StorageManager.swift in Sources */,
+				7209667C24EAE32F0002B05D /* realmModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

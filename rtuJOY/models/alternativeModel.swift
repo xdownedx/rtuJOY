@@ -7,7 +7,7 @@
 //
 
 import Foundation
-struct gg:Decodable {
+struct globalSchedule:Decodable {
     var schedule:Array<schedule>
     var semester:semester
 }
