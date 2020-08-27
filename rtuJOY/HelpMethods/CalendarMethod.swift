@@ -71,7 +71,7 @@ func currentData(day: Int, month: Int)->String {
     }
 
 func currentSemesterWeek(date:String)->Int{
-    var updateDate=date
+    let updateDate=date
     print(date)
     let formatter = DateFormatter()
     formatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSSZ"

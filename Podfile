@@ -6,5 +6,5 @@ target 'rtuJOY' do
   use_modular_headers!
 
   pod 'RealmSwift'
-
+  pod 'BEMCheckBox'
 end

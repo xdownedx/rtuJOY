@@ -10,7 +10,7 @@ import RealmSwift
 
  
 public class storageManager {
-    
+     
 
     static func saveObject (_ schedule: scheduleDatabase){
         let realm = try! Realm()
@@ -25,6 +25,20 @@ public class storageManager {
 
         try! realm.write {
             realm.delete(schedule)
+        }
+    }
+    static func saveObjectTask(_ task: deadlineTask){
+        let realm = try! Realm()
+
+        try! realm.write {
+            realm.add(task)
+        }
+    }
+    static func deleteObjectTak(_ task: deadlineTask){
+        let realm = try! Realm()
+
+        try! realm.write {
+            realm.delete(task)
         }
     }
 }

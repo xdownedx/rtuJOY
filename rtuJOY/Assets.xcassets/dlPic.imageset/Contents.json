@@ -1,17 +1,17 @@
 {
   "images" : [
     {
-      "filename" : "расписаниеIMAGE.png",
+      "filename" : "dlPic.png",
       "idiom" : "universal",
       "scale" : "1x"
     },
     {
-      "filename" : "расписаниеIMAGE-1.png",
+      "filename" : "dlPic-1.png",
       "idiom" : "universal",
       "scale" : "2x"
     },
     {
-      "filename" : "расписаниеIMAGE-2.png",
+      "filename" : "dlPic-2.png",
       "idiom" : "universal",
       "scale" : "3x"
     }

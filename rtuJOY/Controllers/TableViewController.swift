@@ -9,7 +9,7 @@
 import UIKit
 import RealmSwift
 
-var week = 10
+var week = 1
 
 class TableViewController: UITableViewController {
 
@@ -25,7 +25,7 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         let realm = try! Realm()
-        var scheduleTemp: Results<scheduleDatabase>! = realm.objects(scheduleDatabase.self)
+        let scheduleTemp: Results<scheduleDatabase>! = realm.objects(scheduleDatabase.self)
 
         let group=GroupSettings.groupName
         if CheckInternet.isConnectedToNetwork(){
@@ -43,7 +43,6 @@ class TableViewController: UITableViewController {
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
 
-        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -65,12 +64,12 @@ class TableViewController: UITableViewController {
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if arrForConclusion.isEmpty{
-            viewForImage.isHidden=false
+            viewForImage.frame.size.height=446
             image.isHidden=false
             sheduleNotFoundMajor.isHidden=false
             sheduleNotFoundSecondary.isHidden=false
         }else{
-            viewForImage.isHidden=true
+            viewForImage.frame.size.height=0
             image.isHidden=true
             sheduleNotFoundMajor.isHidden=true
             sheduleNotFoundSecondary.isHidden=true
@@ -205,10 +204,10 @@ class TableViewController: UITableViewController {
                 i+=1
             }
         default:
-            while j < schudele.day[5].count{
-                if schudele.day[5][j].week.contains(week){
+            while j < schudele.day[6].count{
+                if schudele.day[6][j].week.contains(week){
                     arrForConclusion[0].append(task())
-                    arrForConclusion[0][k]=schudele.day[5][j]
+                    arrForConclusion[0][k]=schudele.day[6][j]
                     k+=1
                 }
                 j+=1

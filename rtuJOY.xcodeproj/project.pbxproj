@@ -15,10 +15,18 @@
 		721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DB0C824CC77AE00B310F3 /* helpMethod.swift */; };
 		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		723672A624B66B9700844118 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723672A524B66B9700844118 /* TableViewController.swift */; };
+		724D65F424EDC0EC0076B5CC /* DeadlineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */; };
 		724F597A24BB3216004D328A /* network.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724F597924BB3216004D328A /* network.swift */; };
 		7256553224D81FBD0033831A /* userSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7256553124D81FBD0033831A /* userSettings.swift */; };
 		7256553424D823140033831A /* ChoiceGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7256553324D823140033831A /* ChoiceGroupViewController.swift */; };
+		725A80CC24F12EA100A92FF1 /* AddDeadlineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725A80CB24F12EA100A92FF1 /* AddDeadlineVC.swift */; };
 		725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 725F565224B9CACD007930A6 /* modelTimeTable.swift */; };
+		7261E54824EFF0D8007B8E98 /* DeadlineCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261E54624EFF0D8007B8E98 /* DeadlineCell.swift */; };
+		7261E54924EFF0D8007B8E98 /* DeadlineCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7261E54724EFF0D8007B8E98 /* DeadlineCell.xib */; };
+		7261E54F24F01E74007B8E98 /* BEMPathManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261E54B24F01E73007B8E98 /* BEMPathManager.swift */; };
+		7261E55024F01E74007B8E98 /* BEMAnimationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261E54C24F01E73007B8E98 /* BEMAnimationManager.swift */; };
+		7261E55124F01E74007B8E98 /* BEMCheckBox.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261E54D24F01E73007B8E98 /* BEMCheckBox.swift */; };
+		7261E55224F01E74007B8E98 /* BEMCheckBoxGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261E54E24F01E73007B8E98 /* BEMCheckBoxGroup.swift */; };
 		727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */; };
 		727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727F0C2F24B6FB190029A4D3 /* CustomCell.xib */; };
 		72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */; };
@@ -42,10 +50,19 @@
 		721DB0C824CC77AE00B310F3 /* helpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpMethod.swift; sourceTree = "<group>"; };
 		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		723672A524B66B9700844118 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineVC.swift; sourceTree = "<group>"; };
 		724F597924BB3216004D328A /* network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = network.swift; sourceTree = "<group>"; };
 		7256553124D81FBD0033831A /* userSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = userSettings.swift; sourceTree = "<group>"; };
 		7256553324D823140033831A /* ChoiceGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChoiceGroupViewController.swift; sourceTree = "<group>"; };
+		725A80CB24F12EA100A92FF1 /* AddDeadlineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeadlineVC.swift; sourceTree = "<group>"; };
 		725F565224B9CACD007930A6 /* modelTimeTable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = modelTimeTable.swift; sourceTree = "<group>"; };
+		7261E54624EFF0D8007B8E98 /* DeadlineCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineCell.swift; sourceTree = "<group>"; };
+		7261E54724EFF0D8007B8E98 /* DeadlineCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DeadlineCell.xib; sourceTree = "<group>"; };
+		7261E54B24F01E73007B8E98 /* BEMPathManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMPathManager.swift; sourceTree = "<group>"; };
+		7261E54C24F01E73007B8E98 /* BEMAnimationManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMAnimationManager.swift; sourceTree = "<group>"; };
+		7261E54D24F01E73007B8E98 /* BEMCheckBox.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCheckBox.swift; sourceTree = "<group>"; };
+		7261E54E24F01E73007B8E98 /* BEMCheckBoxGroup.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BEMCheckBoxGroup.swift; sourceTree = "<group>"; };
+		7261E55924F02AA8007B8E98 /* CheckMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckMark.h; sourceTree = "<group>"; };
 		727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGroupViewController.swift; sourceTree = "<group>"; };
 		727F0C2F24B6FB190029A4D3 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
 		72A1EB9F24B32ACC00BDD9DA /* rtu app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rtu app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -86,12 +103,10 @@
 		725F565524B9D2FA007930A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
-				7236729D24B6487400844118 /* CustomCell.swift */,
-				727F0C2F24B6FB190029A4D3 /* CustomCell.xib */,
-				72A1EBA824B32ACC00BDD9DA /* Main.storyboard */,
-				72A1EBAD24B32AD000BDD9DA /* LaunchScreen.storyboard */,
-				72098DD624C71915009352A0 /* settingCell.swift */,
-				72098DD724C71915009352A0 /* settingCell.xib */,
+				7261E55624F01F0A007B8E98 /* CellSetting */,
+				7261E55324F01EA9007B8E98 /* CellDeadline */,
+				7261E55524F01EF5007B8E98 /* CellLesson */,
+				7261E55424F01ED5007B8E98 /* Main */,
 			);
 			path = UI;
 			sourceTree = "<group>";
@@ -112,6 +127,8 @@
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
 				7256553324D823140033831A /* ChoiceGroupViewController.swift */,
+				724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */,
+				725A80CB24F12EA100A92FF1 /* AddDeadlineVC.swift */,
 				727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */,
 				72098DDA24C74398009352A0 /* SettingTableViewController.swift */,
 			);
@@ -130,9 +147,57 @@
 			path = HelpMethods;
 			sourceTree = "<group>";
 		};
+		7261E54A24F01E73007B8E98 /* HelpClasses */ = {
+			isa = PBXGroup;
+			children = (
+				7261E54B24F01E73007B8E98 /* BEMPathManager.swift */,
+				7261E54C24F01E73007B8E98 /* BEMAnimationManager.swift */,
+				7261E54D24F01E73007B8E98 /* BEMCheckBox.swift */,
+				7261E54E24F01E73007B8E98 /* BEMCheckBoxGroup.swift */,
+			);
+			path = HelpClasses;
+			sourceTree = "<group>";
+		};
+		7261E55324F01EA9007B8E98 /* CellDeadline */ = {
+			isa = PBXGroup;
+			children = (
+				7261E54624EFF0D8007B8E98 /* DeadlineCell.swift */,
+				7261E54724EFF0D8007B8E98 /* DeadlineCell.xib */,
+			);
+			path = CellDeadline;
+			sourceTree = "<group>";
+		};
+		7261E55424F01ED5007B8E98 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				72A1EBA824B32ACC00BDD9DA /* Main.storyboard */,
+				72A1EBAD24B32AD000BDD9DA /* LaunchScreen.storyboard */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		7261E55524F01EF5007B8E98 /* CellLesson */ = {
+			isa = PBXGroup;
+			children = (
+				7236729D24B6487400844118 /* CustomCell.swift */,
+				727F0C2F24B6FB190029A4D3 /* CustomCell.xib */,
+			);
+			path = CellLesson;
+			sourceTree = "<group>";
+		};
+		7261E55624F01F0A007B8E98 /* CellSetting */ = {
+			isa = PBXGroup;
+			children = (
+				72098DD624C71915009352A0 /* settingCell.swift */,
+				72098DD724C71915009352A0 /* settingCell.xib */,
+			);
+			path = CellSetting;
+			sourceTree = "<group>";
+		};
 		72A1EB9624B32ACC00BDD9DA = {
 			isa = PBXGroup;
 			children = (
+				7261E55924F02AA8007B8E98 /* CheckMark.h */,
 				72A1EBA124B32ACC00BDD9DA /* rtuJOY */,
 				72A1EBA024B32ACC00BDD9DA /* Products */,
 				7413E0D3B859503A63DF2C27 /* Pods */,
@@ -151,6 +216,7 @@
 		72A1EBA124B32ACC00BDD9DA /* rtuJOY */ = {
 			isa = PBXGroup;
 			children = (
+				7261E54A24F01E73007B8E98 /* HelpClasses */,
 				725F565424B9D2D7007930A6 /* Delegate */,
 				725F565624B9D33D007930A6 /* models */,
 				725F565524B9D2FA007930A6 /* UI */,
@@ -207,7 +273,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1150;
-				LastUpgradeCheck = 1150;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Максим Палёхин";
 				TargetAttributes = {
 					72A1EB9E24B32ACC00BDD9DA = {
@@ -243,6 +309,7 @@
 				72A1EBAC24B32AD000BDD9DA /* Assets.xcassets in Resources */,
 				727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */,
 				72A1EBAA24B32ACC00BDD9DA /* Main.storyboard in Resources */,
+				7261E54924EFF0D8007B8E98 /* DeadlineCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -279,11 +346,17 @@
 			buildActionMask = 2147483647;
 			files = (
 				72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */,
+				7261E55224F01E74007B8E98 /* BEMCheckBoxGroup.swift in Sources */,
 				725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */,
 				724F597A24BB3216004D328A /* network.swift in Sources */,
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
+				7261E54824EFF0D8007B8E98 /* DeadlineCell.swift in Sources */,
+				725A80CC24F12EA100A92FF1 /* AddDeadlineVC.swift in Sources */,
+				7261E55124F01E74007B8E98 /* BEMCheckBox.swift in Sources */,
 				723672A624B66B9700844118 /* TableViewController.swift in Sources */,
+				7261E55024F01E74007B8E98 /* BEMAnimationManager.swift in Sources */,
 				721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */,
+				7261E54F24F01E74007B8E98 /* BEMPathManager.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */,
@@ -292,6 +365,7 @@
 				7256553424D823140033831A /* ChoiceGroupViewController.swift in Sources */,
 				727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */,
 				72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */,
+				724D65F424EDC0EC0076B5CC /* DeadlineVC.swift in Sources */,
 				7256553224D81FBD0033831A /* userSettings.swift in Sources */,
 				7209667A24EAAB4B0002B05D /* StorageManager.swift in Sources */,
 				7209667C24EAE32F0002B05D /* realmModel.swift in Sources */,
@@ -346,6 +420,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -376,6 +451,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OBJC_BRIDGING_HEADER = CheckMark.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -406,6 +482,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -429,6 +506,7 @@
 				MTL_FAST_MATH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OBJC_BRIDGING_HEADER = CheckMark.h;
 				SWIFT_OPTIMIZATION_LEVEL = "-O";
 				VALIDATE_PRODUCT = YES;
 			};

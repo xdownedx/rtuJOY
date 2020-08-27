@@ -19,3 +19,19 @@ class scheduleDatabase: Object{
         self.schedule = scheduleWithJson
     }
 }
+
+class deadlineTask: Object{
+    
+    @objc dynamic var nameLesson = ""
+    @objc dynamic var deadlineTask = ""
+    @objc dynamic var deadlineTime = ""
+    @objc dynamic var deadlineIsReady = false
+     
+    convenience init(nameLesson:String, deadlineTask:String, deadlineTime:String, deadlineIsReady:Bool ){
+        self.init()
+        self.nameLesson = nameLesson
+        self.deadlineTask = deadlineTask
+        self.deadlineTime = deadlineTime
+        self.deadlineIsReady = deadlineIsReady
+    }
+}

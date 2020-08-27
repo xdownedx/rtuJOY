@@ -36,6 +36,7 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
     
     
     @IBAction func buttonToSavePressed(_ sender: Any) {
+        labelGroup.resignFirstResponder()
         let groupID=transliteToEng(russian: labelGroup.text!)
         let urlString="http://api.mirea-assistant.ru/schedule?group=\(groupID)"
         guard let url=URL(string: urlString) else {

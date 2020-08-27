@@ -9,7 +9,7 @@ struct ParsingData {
     
     func broadcastData(group: String){
         let realm = try! Realm()
-        var scheduleTemp: Results<scheduleDatabase>! = realm.objects(scheduleDatabase.self)
+        let scheduleTemp: Results<scheduleDatabase>! = realm.objects(scheduleDatabase.self)
         let urlString="http://api.mirea-assistant.ru/schedule?group=\(group)"
         guard let url=URL(string: urlString) else {
             return

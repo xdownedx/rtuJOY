@@ -10,7 +10,6 @@ import UIKit
 import Realm
 import RealmSwift
 
-var currentGroup="ktso-01-19"
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
 

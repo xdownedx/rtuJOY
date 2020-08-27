@@ -110,8 +110,8 @@
             filePath = "rtuJOY/Controllers/SettingGroupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "50"
-            endingLineNumber = "50"
+            startingLineNumber = "51"
+            endingLineNumber = "51"
             landmarkName = "buttonToSavePressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -126,8 +126,8 @@
             filePath = "rtuJOY/Controllers/SettingGroupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "39"
-            endingLineNumber = "39"
+            startingLineNumber = "40"
+            endingLineNumber = "40"
             landmarkName = "buttonToSavePressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -142,8 +142,8 @@
             filePath = "rtuJOY/Controllers/TableViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "232"
-            endingLineNumber = "232"
+            startingLineNumber = "231"
+            endingLineNumber = "231"
             landmarkName = "schedeleForConclusion(schudele:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -158,8 +158,8 @@
             filePath = "rtuJOY/Controllers/SettingGroupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "46"
-            endingLineNumber = "46"
+            startingLineNumber = "47"
+            endingLineNumber = "47"
             landmarkName = "buttonToSavePressed(_:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -174,8 +174,8 @@
             filePath = "rtuJOY/Controllers/SettingGroupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "62"
-            endingLineNumber = "62"
+            startingLineNumber = "63"
+            endingLineNumber = "63"
             landmarkName = "editVC(dataCountEver:groupID:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -190,8 +190,8 @@
             filePath = "rtuJOY/Controllers/SettingGroupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "53"
-            endingLineNumber = "53"
+            startingLineNumber = "54"
+            endingLineNumber = "54"
             landmarkName = "editVC(dataCountEver:groupID:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -222,8 +222,8 @@
             filePath = "rtuJOY/Controllers/SettingGroupViewController.swift"
             startingColumnNumber = "9223372036854775807"
             endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "55"
-            endingLineNumber = "55"
+            startingLineNumber = "56"
+            endingLineNumber = "56"
             landmarkName = "editVC(dataCountEver:groupID:)"
             landmarkType = "7">
          </BreakpointContent>
@@ -248,7 +248,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "6C4D2A4F-F58B-4EA5-AAB4-7D9E16A94D54"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/Controllers/TableViewController.swift"
@@ -264,7 +264,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "2F928228-26CA-418A-A7B0-F31486F7CE96"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/Controllers/TableViewController.swift"
@@ -276,7 +276,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "2F928228-26CA-418A-A7B0-F31486F7CE96 - 9e5a823a72baf585"
+                  uuid = "2F928228-26CA-418A-A7B0-F31486F7CE96 - b22a67438ed9f265"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -288,10 +288,10 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "32"
                   endingLineNumber = "32"
-                  offsetFromSymbolStart = "386">
+                  offsetFromSymbolStart = "347">
                </Location>
                <Location
-                  uuid = "2F928228-26CA-418A-A7B0-F31486F7CE96 - d748a101d3721970"
+                  uuid = "2F928228-26CA-418A-A7B0-F31486F7CE96 - fb3844782f111eb1"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -312,7 +312,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "61111656-D37E-4572-A926-0F95834DEC4F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/Controllers/TableViewController.swift"
@@ -328,7 +328,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "18C76DE1-244D-4238-9A5E-4ACF998AC51F"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/HelpMethods/network.swift"
@@ -344,7 +344,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "7C7A3B6D-D8F8-4C1F-B4D6-E7EA2EE509E8"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/HelpMethods/network.swift"
@@ -360,7 +360,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "09938CB4-F2AF-41E1-9264-ECA10D1B13E5"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/HelpMethods/network.swift"
@@ -372,7 +372,7 @@
             landmarkType = "7">
             <Locations>
                <Location
-                  uuid = "09938CB4-F2AF-41E1-9264-ECA10D1B13E5 - 876893bf119d80d8"
+                  uuid = "09938CB4-F2AF-41E1-9264-ECA10D1B13E5 - a1df8e0dee86aaaa"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -384,10 +384,10 @@
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "18"
                   endingLineNumber = "18"
-                  offsetFromSymbolStart = "982">
+                  offsetFromSymbolStart = "918">
                </Location>
                <Location
-                  uuid = "09938CB4-F2AF-41E1-9264-ECA10D1B13E5 - 9d64f76eadd20c6d"
+                  uuid = "09938CB4-F2AF-41E1-9264-ECA10D1B13E5 - bbd3eadc52c92759"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -397,9 +397,9 @@
                   urlString = "file:///Users/neverlive/project/rtuJOY/rtuJOY/HelpMethods/network.swift"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "12"
-                  endingLineNumber = "12"
-                  offsetFromSymbolStart = "339">
+                  startingLineNumber = "19"
+                  endingLineNumber = "19"
+                  offsetFromSymbolStart = "353">
                </Location>
             </Locations>
          </BreakpointContent>
@@ -408,7 +408,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "D8BA4C6C-F483-4472-B0F3-C96740B1F96E"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/models/realmModel.swift"
@@ -416,11 +416,11 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "15"
             endingLineNumber = "15"
-            landmarkName = "scheduleDatabase"
-            landmarkType = "3">
+            landmarkName = "unknown"
+            landmarkType = "0">
             <Locations>
                <Location
-                  uuid = "D8BA4C6C-F483-4472-B0F3-C96740B1F96E - c7864c01c6f721b8"
+                  uuid = "D8BA4C6C-F483-4472-B0F3-C96740B1F96E - 487f902beb14612b"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -435,7 +435,7 @@
                   offsetFromSymbolStart = "131">
                </Location>
                <Location
-                  uuid = "D8BA4C6C-F483-4472-B0F3-C96740B1F96E - 6048508406d23db4"
+                  uuid = "D8BA4C6C-F483-4472-B0F3-C96740B1F96E - efb18cae2b317d27"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -450,7 +450,7 @@
                   offsetFromSymbolStart = "166">
                </Location>
                <Location
-                  uuid = "D8BA4C6C-F483-4472-B0F3-C96740B1F96E - 77d693e6d8708ca5"
+                  uuid = "D8BA4C6C-F483-4472-B0F3-C96740B1F96E - f82f4fccf593cc36"
                   shouldBeEnabled = "Yes"
                   ignoreCount = "0"
                   continueAfterRunningActions = "No"
@@ -471,7 +471,7 @@
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "FB35F741-21CD-4E20-AEF9-970E1E27568B"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/models/realmModel.swift"
@@ -479,15 +479,15 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "18"
             endingLineNumber = "18"
-            landmarkName = "init(scheduleWithJson:)"
-            landmarkType = "7">
+            landmarkName = "unknown"
+            landmarkType = "0">
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
             uuid = "19EA5C18-D9FB-40B1-9841-C6C5D76460BD"
-            shouldBeEnabled = "Yes"
+            shouldBeEnabled = "No"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
             filePath = "rtuJOY/models/realmModel.swift"
@@ -495,7 +495,179 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "19"
             endingLineNumber = "19"
-            landmarkName = "init(scheduleWithJson:)"
+            landmarkName = "unknown"
+            landmarkType = "0">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "1E0D6BDF-22C3-4B57-BB44-379B95423450"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "17"
+            endingLineNumber = "17"
+            landmarkName = "DeadlineCell"
+            landmarkType = "3">
+            <Locations>
+               <Location
+                  uuid = "1E0D6BDF-22C3-4B57-BB44-379B95423450 - 63bb24b43d727b48"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rtu_app.DeadlineCell.deadlineTime.getter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "rtu app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neverlive/project/rtuJOY/rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "88">
+               </Location>
+               <Location
+                  uuid = "1E0D6BDF-22C3-4B57-BB44-379B95423450 - 103038a11fa48444"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rtu_app.DeadlineCell.deadlineTime.setter : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "rtu app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neverlive/project/rtuJOY/rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "155">
+               </Location>
+               <Location
+                  uuid = "1E0D6BDF-22C3-4B57-BB44-379B95423450 - e5692b9442d9c50b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rtu_app.DeadlineCell.deadlineTime.modify : Swift.Optional&lt;__C.UILabel&gt;"
+                  moduleName = "rtu app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neverlive/project/rtuJOY/rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "0"
+                  endingLineNumber = "0"
+                  offsetFromSymbolStart = "65">
+               </Location>
+               <Location
+                  uuid = "1E0D6BDF-22C3-4B57-BB44-379B95423450 - d8991f7803da08f4"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rtu_app.DeadlineCell.deadlineTime.modify : Swift.Optional&lt;__C.UILabel&gt; with unmangled suffix &quot;.resume.0&quot;"
+                  moduleName = "rtu app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neverlive/project/rtuJOY/rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "80">
+               </Location>
+               <Location
+                  uuid = "1E0D6BDF-22C3-4B57-BB44-379B95423450 - d3bea6c6d8c5a307"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rtu_app.DeadlineCell.init(style: __C.UITableViewCellStyle, reuseIdentifier: Swift.Optional&lt;Swift.String&gt;) -&gt; rtu_app.DeadlineCell"
+                  moduleName = "rtu app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neverlive/project/rtuJOY/rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "623">
+               </Location>
+               <Location
+                  uuid = "1E0D6BDF-22C3-4B57-BB44-379B95423450 - 899f94a988f0300b"
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "rtu_app.DeadlineCell.init(coder: __C.NSCoder) -&gt; Swift.Optional&lt;rtu_app.DeadlineCell&gt;"
+                  moduleName = "rtu app"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/neverlive/project/rtuJOY/rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "17"
+                  endingLineNumber = "17"
+                  offsetFromSymbolStart = "564">
+               </Location>
+            </Locations>
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D5B04DC0-4E3B-4EEF-B460-53DBBBE7A181"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "29"
+            endingLineNumber = "29"
+            landmarkName = "didTap(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "D9499413-8742-4465-90C2-56AA191B9207"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "28"
+            endingLineNumber = "28"
+            landmarkName = "didTap(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "9A9012D4-3CBE-4E8E-BA9E-A4318DDC8848"
+            shouldBeEnabled = "Yes"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "32"
+            endingLineNumber = "32"
+            landmarkName = "checkBoxTapped(_:)"
+            landmarkType = "7">
+         </BreakpointContent>
+      </BreakpointProxy>
+      <BreakpointProxy
+         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
+         <BreakpointContent
+            uuid = "E9E71076-657C-44FD-BB1A-E99482981E29"
+            shouldBeEnabled = "No"
+            ignoreCount = "0"
+            continueAfterRunningActions = "No"
+            filePath = "rtuJOY/UI/CellDeadline/DeadlineCell.swift"
+            startingColumnNumber = "9223372036854775807"
+            endingColumnNumber = "9223372036854775807"
+            startingLineNumber = "27"
+            endingLineNumber = "27"
+            landmarkName = "setSelected(_:animated:)"
             landmarkType = "7">
          </BreakpointContent>
       </BreakpointProxy>
