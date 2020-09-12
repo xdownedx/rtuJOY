@@ -55,7 +55,7 @@ func quanity()->Array<Array<task>>{
 func transliteToRu(rus: String) -> String {
     return rus
         .uppercased()
-        .replacingOccurrences(of: " ", with: "-") ?? rus
+        .replacingOccurrences(of: " ", with: "-")
 }
 
 func transliteToEng(russian:String) -> String {

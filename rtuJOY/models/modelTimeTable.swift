@@ -8,6 +8,7 @@
 
 import Foundation
 import UIKit
+
 struct schedulePerWeek {
     var day: Array<Array<task>> = []
     var startSemester:String=""
@@ -30,7 +31,7 @@ struct schedulePerWeek {
             }
             var idInfo=0
             
-            while idInfo < tempSchedule.schedule[idTask].info.count-1{
+            while idInfo < tempSchedule.schedule[idTask].info.count{
                 if (tempSchedule.schedule[idTask].info[idInfo].name.rangeOfCharacter(from: letters) != nil){
                     day[tempSchedule.schedule[idTask].day-1].append(task())
                     day[tempSchedule.schedule[idTask].day-1][idLesson[tempSchedule.schedule[idTask].day-1]].nameLesson=tempSchedule.schedule[idTask].info[idInfo].name
@@ -74,6 +75,7 @@ struct task {
     var nameTeacher:String
     var week: Array<Int>
     var number:Int
+
     init() {
         timeStart=""
         timeEnd=""

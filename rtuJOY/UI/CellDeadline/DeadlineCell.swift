@@ -26,13 +26,19 @@ class DeadlineCell: UITableViewCell {
         // Configure the view for the selected state
     }
     func didTap(_ checkBox: BEMCheckBox){
-       
+        checkBox.on = true
     }
     @IBAction func checkBoxTapped(_ sender: Any) {
         if checkBox.on{
-            storageManager.deleteObjectTak(task)
+            let realm = try! Realm()
+            try! realm.write {
+                task.deadlineIsReady = true
+            }
         }else{
-            
+            let realm = try! Realm()
+            try! realm.write {
+                task.deadlineIsReady = false
+            }
         }
     }
 }

@@ -37,6 +37,7 @@
 		72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */; };
 		72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1710624BB23BA0015CC8C /* CalendarMethod.swift */; };
 		72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8E1E024E993B8004A7925 /* Reachability.swift */; };
+		72DC06772502506700E68ADE /* AddDeadlineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC06762502506700E68ADE /* AddDeadlineTableViewController.swift */; };
 		E50B694ADE4BDCC07899C10D /* libPods-rtuJOY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */; };
 /* End PBXBuildFile section */
 
@@ -75,6 +76,7 @@
 		72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternativeModel.swift; sourceTree = "<group>"; };
 		72D1710624BB23BA0015CC8C /* CalendarMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethod.swift; sourceTree = "<group>"; };
 		72D8E1E024E993B8004A7925 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		72DC06762502506700E68ADE /* AddDeadlineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeadlineTableViewController.swift; sourceTree = "<group>"; };
 		7D7A534ABFDE3AB0F990312D /* Pods-rtuJOY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.release.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.release.xcconfig"; sourceTree = "<group>"; };
 		B630DCDFAF1FF33061EC0B91 /* Pods-rtuJOY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.debug.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -126,6 +128,7 @@
 			isa = PBXGroup;
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
+				72DC06762502506700E68ADE /* AddDeadlineTableViewController.swift */,
 				7256553324D823140033831A /* ChoiceGroupViewController.swift */,
 				724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */,
 				725A80CB24F12EA100A92FF1 /* AddDeadlineVC.swift */,
@@ -358,6 +361,7 @@
 				721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */,
 				7261E54F24F01E74007B8E98 /* BEMPathManager.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
+				72DC06772502506700E68ADE /* AddDeadlineTableViewController.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,

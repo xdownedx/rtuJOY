@@ -22,45 +22,45 @@ func currentData(day: Int, month: Int)->String {
     var currentDay=day
     switch curMonth {
     case 1, 3, 5, 7, 8, 10:
-        if currentDay==31{
+        if currentDay==32{
             currentDay=1
             return "\(currentDay) \(monthTable[curMonth])"}
-        else if (currentDay==32){
+        else if (currentDay==33){
             currentDay=2
             return"\(currentDay) \(monthTable[curMonth])"
         }
         
     case 4,6,9,11:
-        if currentDay==30{
+        if currentDay==31{
             currentDay=1
             return "\(currentDay) \(monthTable[curMonth])"
-        }else if currentDay==31{
+        }else if currentDay==32{
             currentDay=2
             return "\(currentDay) \(monthTable[curMonth])"
         }
     case 2:
         if curYear%4==0{
+            if currentDay==30{
+                currentDay=1
+                return "\(currentDay) \(monthTable[curMonth])"
+            }else if currentDay==31{
+                currentDay=2
+                return "\(currentDay) \(monthTable[curMonth])"
+            }
+        } else {
             if currentDay==29{
                 currentDay=1
                 return "\(currentDay) \(monthTable[curMonth])"
             }else if currentDay==30{
                 currentDay=2
-                return "\(currentDay) \(monthTable[curMonth])"
-            }
-        } else {
-            if currentDay==28{
-                currentDay=1
-                return "\(currentDay) \(monthTable[curMonth])"
-            }else if currentDay==29{
-                currentDay=2
                 return"\(currentDay) \(monthTable[curMonth])"
             }
         }
     case 12:
-        if currentDay==31{
+        if currentDay==32{
             currentDay=1
             return"\(currentDay) \(monthTable[1])"}
-        else if (currentDay==32){
+        else if (currentDay==33){
             currentDay=2
             return "\(currentDay) \(monthTable[1])"
         }
@@ -69,6 +69,9 @@ func currentData(day: Int, month: Int)->String {
         }
         return "\(currentDay) \(monthTable[curMonth-1])"
     }
+
+
+
 
 func currentSemesterWeek(date:String)->Int{
     let updateDate=date
