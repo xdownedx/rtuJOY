@@ -12,7 +12,7 @@ import Foundation
 func disclosure(closureName:String) -> String {
     switch closureName {
     case "пр":
-        return "практическое занятие"
+        return "семинар"
     case "лк":
         return "лекция"
     case "лаб":

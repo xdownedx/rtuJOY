@@ -17,13 +17,16 @@ class TableViewController: UITableViewController {
     var cell = CustomCell()
     
     var arrForConclusion:Array<Array<task>> = []
-    
+    var vc = AboutLessonTableViewController()
+
     @IBOutlet weak var viewForImage: UIView!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var sheduleNotFoundMajor: UILabel!
     @IBOutlet weak var sheduleNotFoundSecondary: UILabel!
     
     override func viewDidLoad() {
+        vc = storyboard?.instantiateViewController(identifier: "AboutLessonInfo") as! AboutLessonTableViewController
+
         let realm = try! Realm()
         let scheduleTemp: Results<scheduleDatabase>! = realm.objects(scheduleDatabase.self)
 
@@ -90,13 +93,13 @@ class TableViewController: UITableViewController {
             switch section {
             case 0:
                 if arrForConclusion[section].isEmpty{
-                    return ""
+                    return nil
                 }else{
                     return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
                 }
             case 1:
                 if arrForConclusion[section].isEmpty{
-                    return ""
+                    return nil
                 }else{
                     return "\(days[weekday]), \(currentData(day: curDayInMonth+2, month: curMonth))"
                 }
@@ -112,13 +115,13 @@ class TableViewController: UITableViewController {
                 switch section {
                 case 0:
                     if arrForConclusion[section].isEmpty{
-                        return ""
+                        return nil
                     }else{
                         return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
                     }
                 case 1:
                     if arrForConclusion[section].isEmpty{
-                        return ""
+                        return nil
                     }else{
                         return "\(days[weekday-1]), \(currentData(day: curDayInMonth+1, month: curMonth))"
                     }
@@ -129,15 +132,13 @@ class TableViewController: UITableViewController {
                 switch section {
                 case 0:
                     if arrForConclusion[section].isEmpty{
-                        
-                        return ""
+                        return nil
                     }else{
                         return "\(days[weekday-2]), \(currentData(day: curDayInMonth, month: curMonth))"
                     }
                 case 1:
                     if arrForConclusion[section].isEmpty{
-                        
-                        return ""
+                        return nil
                     }else{
                         return "\(days[0]), \(currentData(day: curDayInMonth+2, month: curMonth))"
                     }
@@ -175,6 +176,15 @@ class TableViewController: UITableViewController {
         
     }
     
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+    
+        vc.task = arrForConclusion[indexPath.section][indexPath.row]
+        vc.number = indexPath.row
+        vc.day = tableView.headerView(forSection: indexPath.section)?.textLabel?.text
+        navigationController?.pushViewController(vc, animated: true)
+    }
+
+
     //Заполнение ячеек
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell

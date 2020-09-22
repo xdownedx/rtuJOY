@@ -1,16 +1,15 @@
 //
-//  AddDeadlineVC.swift
+//  AddDeadlineForLessonViewController.swift
 //  rtuJOY
 //
-//  Created by Максим Палёхин on 22.08.2020.
+//  Created by Максим Палёхин on 15.09.2020.
 //  Copyright © 2020 Максим Палёхин. All rights reserved.
 //
 
 import UIKit
-import RealmSwift
 
-class AddDeadlineVC: UIViewController {
-
+class AddDeadlineForLessonViewController: UIViewController {
+    
     @IBOutlet weak var saveButtonOutlet: UIBarButtonItem!
     @IBAction func saveButton(_ sender: Any) {
         let taskForSave = deadlineTask(nameLesson: nameLesson.text!, deadlineTask: taskLabel.text!, deadlineTime:"", deadlineIsReady: false)
@@ -20,35 +19,34 @@ class AddDeadlineVC: UIViewController {
         storageManager.saveObjectTask(taskForSave)
         self.navigationController?.popViewController(animated: true)
 
-    } 
-    @IBOutlet weak var nameLesson: UITextField!
+    }
+    @IBOutlet weak var nameLesson: UILabel!
+    
+    @IBOutlet weak var dateDeadline: UIDatePicker!
+
     @IBOutlet weak var taskLabel: UITextField!
 
-    @IBOutlet weak var dateDeadline: UIDatePicker!
+    
+    var nameLessonText:String?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        nameLesson.text = nameLessonText!
         saveButtonOutlet.isEnabled = false
-        
-    }
-    @IBAction func nameLessonTF(_ sender: Any) {
-        if nameLesson.text != "" && taskLabel.text != ""{
-            saveButtonOutlet.isEnabled = true
-        }else{ 
-            saveButtonOutlet.isEnabled = false
 
-        }
+        // Do any additional setup after loading the view.
     }
     
+    
     @IBAction func taskTF(_ sender: Any) {
-        if nameLesson.text != "" && taskLabel.text != ""{
+        if taskLabel.text != ""{
             saveButtonOutlet.isEnabled = true
         }else{
             saveButtonOutlet.isEnabled = false
 
         }
     }
-    
+
     /*
     // MARK: - Navigation
 

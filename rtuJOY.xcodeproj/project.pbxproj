@@ -29,6 +29,10 @@
 		7261E55224F01E74007B8E98 /* BEMCheckBoxGroup.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7261E54E24F01E73007B8E98 /* BEMCheckBoxGroup.swift */; };
 		727E07BC24C9DACD00AEF615 /* SettingGroupViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */; };
 		727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 727F0C2F24B6FB190029A4D3 /* CustomCell.xib */; };
+		727FFD9F25108D5D00739365 /* AboutLessonTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727FFD9E25108D5D00739365 /* AboutLessonTableViewController.swift */; };
+		727FFDA125108D8700739365 /* AddDeadlineForLessonViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 727FFDA025108D8700739365 /* AddDeadlineForLessonViewController.swift */; };
+		728C151E251892BE004A586D /* AboutTaskTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 728C151C251892BE004A586D /* AboutTaskTableViewCell.swift */; };
+		728C151F251892BE004A586D /* AboutTaskTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 728C151D251892BE004A586D /* AboutTaskTableViewCell.xib */; };
 		72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */; };
 		72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */; };
 		72A1EBAA24B32ACC00BDD9DA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBA824B32ACC00BDD9DA /* Main.storyboard */; };
@@ -37,7 +41,6 @@
 		72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */; };
 		72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1710624BB23BA0015CC8C /* CalendarMethod.swift */; };
 		72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8E1E024E993B8004A7925 /* Reachability.swift */; };
-		72DC06772502506700E68ADE /* AddDeadlineTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72DC06762502506700E68ADE /* AddDeadlineTableViewController.swift */; };
 		E50B694ADE4BDCC07899C10D /* libPods-rtuJOY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */; };
 /* End PBXBuildFile section */
 
@@ -66,6 +69,10 @@
 		7261E55924F02AA8007B8E98 /* CheckMark.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CheckMark.h; sourceTree = "<group>"; };
 		727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingGroupViewController.swift; sourceTree = "<group>"; };
 		727F0C2F24B6FB190029A4D3 /* CustomCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomCell.xib; sourceTree = "<group>"; };
+		727FFD9E25108D5D00739365 /* AboutLessonTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutLessonTableViewController.swift; sourceTree = "<group>"; };
+		727FFDA025108D8700739365 /* AddDeadlineForLessonViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeadlineForLessonViewController.swift; sourceTree = "<group>"; };
+		728C151C251892BE004A586D /* AboutTaskTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AboutTaskTableViewCell.swift; sourceTree = "<group>"; };
+		728C151D251892BE004A586D /* AboutTaskTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AboutTaskTableViewCell.xib; sourceTree = "<group>"; };
 		72A1EB9F24B32ACC00BDD9DA /* rtu app.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "rtu app.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		72A1EBA224B32ACC00BDD9DA /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		72A1EBA424B32ACC00BDD9DA /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -76,7 +83,6 @@
 		72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternativeModel.swift; sourceTree = "<group>"; };
 		72D1710624BB23BA0015CC8C /* CalendarMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethod.swift; sourceTree = "<group>"; };
 		72D8E1E024E993B8004A7925 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
-		72DC06762502506700E68ADE /* AddDeadlineTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddDeadlineTableViewController.swift; sourceTree = "<group>"; };
 		7D7A534ABFDE3AB0F990312D /* Pods-rtuJOY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.release.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.release.xcconfig"; sourceTree = "<group>"; };
 		B630DCDFAF1FF33061EC0B91 /* Pods-rtuJOY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.debug.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -105,6 +111,7 @@
 		725F565524B9D2FA007930A6 /* UI */ = {
 			isa = PBXGroup;
 			children = (
+				728C1521251892D0004A586D /* AboutCell */,
 				7261E55624F01F0A007B8E98 /* CellSetting */,
 				7261E55324F01EA9007B8E98 /* CellDeadline */,
 				7261E55524F01EF5007B8E98 /* CellLesson */,
@@ -128,9 +135,10 @@
 			isa = PBXGroup;
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
-				72DC06762502506700E68ADE /* AddDeadlineTableViewController.swift */,
 				7256553324D823140033831A /* ChoiceGroupViewController.swift */,
 				724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */,
+				727FFD9E25108D5D00739365 /* AboutLessonTableViewController.swift */,
+				727FFDA025108D8700739365 /* AddDeadlineForLessonViewController.swift */,
 				725A80CB24F12EA100A92FF1 /* AddDeadlineVC.swift */,
 				727E07BB24C9DACD00AEF615 /* SettingGroupViewController.swift */,
 				72098DDA24C74398009352A0 /* SettingTableViewController.swift */,
@@ -195,6 +203,15 @@
 				72098DD724C71915009352A0 /* settingCell.xib */,
 			);
 			path = CellSetting;
+			sourceTree = "<group>";
+		};
+		728C1521251892D0004A586D /* AboutCell */ = {
+			isa = PBXGroup;
+			children = (
+				728C151C251892BE004A586D /* AboutTaskTableViewCell.swift */,
+				728C151D251892BE004A586D /* AboutTaskTableViewCell.xib */,
+			);
+			path = AboutCell;
 			sourceTree = "<group>";
 		};
 		72A1EB9624B32ACC00BDD9DA = {
@@ -308,6 +325,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				72098DD924C71915009352A0 /* settingCell.xib in Resources */,
+				728C151F251892BE004A586D /* AboutTaskTableViewCell.xib in Resources */,
 				72A1EBAF24B32AD000BDD9DA /* LaunchScreen.storyboard in Resources */,
 				72A1EBAC24B32AD000BDD9DA /* Assets.xcassets in Resources */,
 				727F0C3024B6FB190029A4D3 /* CustomCell.xib in Resources */,
@@ -348,11 +366,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				728C151E251892BE004A586D /* AboutTaskTableViewCell.swift in Sources */,
+				727FFDA125108D8700739365 /* AddDeadlineForLessonViewController.swift in Sources */,
 				72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */,
 				7261E55224F01E74007B8E98 /* BEMCheckBoxGroup.swift in Sources */,
 				725F565324B9CACD007930A6 /* modelTimeTable.swift in Sources */,
 				724F597A24BB3216004D328A /* network.swift in Sources */,
 				72A1EBA324B32ACC00BDD9DA /* AppDelegate.swift in Sources */,
+				727FFD9F25108D5D00739365 /* AboutLessonTableViewController.swift in Sources */,
 				7261E54824EFF0D8007B8E98 /* DeadlineCell.swift in Sources */,
 				725A80CC24F12EA100A92FF1 /* AddDeadlineVC.swift in Sources */,
 				7261E55124F01E74007B8E98 /* BEMCheckBox.swift in Sources */,
@@ -361,7 +382,6 @@
 				721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */,
 				7261E54F24F01E74007B8E98 /* BEMPathManager.swift in Sources */,
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
-				72DC06772502506700E68ADE /* AddDeadlineTableViewController.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,
