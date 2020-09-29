@@ -12,13 +12,13 @@ import RealmSwift
 var week = 1
 
 class TableViewController: UITableViewController {
-
+    
     var parsingData = ParsingData()
     var cell = CustomCell()
     
     var arrForConclusion:Array<Array<task>> = []
     var vc = AboutLessonTableViewController()
-
+    
     @IBOutlet weak var viewForImage: UIView!
     @IBOutlet weak var image: UIImageView!
     @IBOutlet weak var sheduleNotFoundMajor: UILabel!
@@ -26,10 +26,10 @@ class TableViewController: UITableViewController {
     
     override func viewDidLoad() {
         vc = storyboard?.instantiateViewController(identifier: "AboutLessonInfo") as! AboutLessonTableViewController
-
+        
         let realm = try! Realm()
         let scheduleTemp: Results<scheduleDatabase>! = realm.objects(scheduleDatabase.self)
-
+        
         let group=GroupSettings.groupName
         if CheckInternet.isConnectedToNetwork(){
             self.parsingData.onCompletion = {scheduleForWeek in
@@ -45,7 +45,7 @@ class TableViewController: UITableViewController {
         self.parsingData.broadcastData(group: group!)
         super.viewDidLoad()
         self.tableView.register(UINib(nibName: String(describing: CustomCell.self), bundle: nil),forCellReuseIdentifier:String(describing: CustomCell.self))
-
+        
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -177,14 +177,14 @@ class TableViewController: UITableViewController {
     }
     
     override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-    
+        
         vc.task = arrForConclusion[indexPath.section][indexPath.row]
         vc.number = indexPath.row
         vc.day = tableView.headerView(forSection: indexPath.section)?.textLabel?.text
         navigationController?.pushViewController(vc, animated: true)
     }
-
-
+    
+    
     //Заполнение ячеек
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         cell = tableView.dequeueReusableCell(withIdentifier: "CustomCell", for: indexPath) as! CustomCell
@@ -222,7 +222,24 @@ class TableViewController: UITableViewController {
         var j = 0
         var k = 0
         switch weekday {
-        case 1...6:
+        case 2...6:
+            while i<arrForConclusion.count
+            {
+                j = 0
+                k = 0
+                while j < schudele.day[today()+i].count{
+                    if schudele.day[today()+i][j].week.contains(week){
+                        arrForConclusion[i].append(task())
+                        arrForConclusion[i][k]=schudele.day[today()+i][j]
+                        k+=1
+                    }
+                    j+=1
+                }
+                arrForConclusion[i].sort{$0.number < $1.number}
+                i+=1
+            }
+        case 1:
+            week+=1
             while i<arrForConclusion.count
             {
                 j = 0
@@ -251,7 +268,7 @@ class TableViewController: UITableViewController {
             j = 0
             k = 0
             while j < schudele.day[0].count{
-                if schudele.day[0][j].week.contains(week){
+                if schudele.day[0][j].week.contains(week+1){
                     arrForConclusion[1].append(task())
                     arrForConclusion[1][k]=schudele.day[0][j]
                     k+=1

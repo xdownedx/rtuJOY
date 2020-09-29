@@ -417,7 +417,7 @@
             </objects>
             <point key="canvasLocation" x="3037.5999999999999" y="-80.50974512743629"/>
         </scene>
-        <!--Add Deadline For Lesson View Controller-->
+        <!--Добавить новый дедлайн-->
         <scene sceneID="8mb-xz-QyV">
             <objects>
                 <viewController storyboardIdentifier="AddDeadlineForLesson" id="7nB-Xb-jgd" customClass="AddDeadlineForLessonViewController" customModule="rtu_app" customModuleProvider="target" sceneMemberID="viewController">
@@ -497,12 +497,14 @@
                         <viewLayoutGuide key="safeArea" id="FtC-gc-nFB"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
-                            <constraint firstItem="Bnx-35-5zE" firstAttribute="top" secondItem="Uen-50-icL" secondAttribute="top" constant="60" id="IXF-AN-3wo"/>
+                            <constraint firstItem="FtC-gc-nFB" firstAttribute="trailing" secondItem="Bnx-35-5zE" secondAttribute="trailing" constant="10" id="TgZ-cF-5DB"/>
                             <constraint firstItem="Bnx-35-5zE" firstAttribute="leading" secondItem="FtC-gc-nFB" secondAttribute="leading" constant="10" id="Tn3-4S-Ops"/>
                             <constraint firstItem="FtC-gc-nFB" firstAttribute="trailing" secondItem="Bnx-35-5zE" secondAttribute="trailing" constant="10" id="kYP-n7-UM4"/>
+                            <constraint firstItem="Bnx-35-5zE" firstAttribute="leading" secondItem="FtC-gc-nFB" secondAttribute="leading" constant="10" id="lqU-79-9n8"/>
+                            <constraint firstItem="Bnx-35-5zE" firstAttribute="top" secondItem="FtC-gc-nFB" secondAttribute="top" constant="16" id="vKv-uQ-aaF"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" largeTitleDisplayMode="never" id="6ns-Hv-pRb">
+                    <navigationItem key="navigationItem" title="Добавить новый дедлайн" largeTitleDisplayMode="never" id="6ns-Hv-pRb">
                         <barButtonItem key="rightBarButtonItem" style="plain" systemItem="save" id="Aiw-76-l7x">
                             <connections>
                                 <action selector="saveButton:" destination="7nB-Xb-jgd" id="XjV-y8-8wt"/>
@@ -599,6 +601,7 @@
                     <connections>
                         <outlet property="nameLessonLabel" destination="etO-1W-CbJ" id="CFN-NV-MBg"/>
                         <outlet property="typeLessonLabel" destination="dGB-H3-mZO" id="AfC-ez-Ruu"/>
+                        <segue destination="7nB-Xb-jgd" kind="show" id="UUW-fJ-cSi"/>
                     </connections>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="mwD-hc-9vA" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
@@ -668,7 +671,10 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="TBO-Gl-VdX" secondAttribute="bottom" constant="20" symbolic="YES" id="ADj-Sb-I13"/>
+                                    <constraint firstAttribute="trailing" secondItem="TBO-Gl-VdX" secondAttribute="trailing" id="CKb-dY-9rh"/>
                                     <constraint firstAttribute="width" constant="343" id="TEo-og-fg5"/>
+                                    <constraint firstItem="TBO-Gl-VdX" firstAttribute="leading" secondItem="QPW-yy-tiU" secondAttribute="leading" id="YZb-U1-zdr"/>
                                     <constraint firstAttribute="height" constant="493.5" id="lbn-IZ-7iY"/>
                                 </constraints>
                             </stackView>
@@ -1010,6 +1016,9 @@
                                     </textView>
                                 </subviews>
                                 <constraints>
+                                    <constraint firstItem="Jfv-sW-R4G" firstAttribute="leading" secondItem="c0g-J6-GqA" secondAttribute="leading" id="CfN-Sm-pRR"/>
+                                    <constraint firstAttribute="trailing" secondItem="Jfv-sW-R4G" secondAttribute="trailing" id="IAo-BN-2B6"/>
+                                    <constraint firstAttribute="bottom" secondItem="Jfv-sW-R4G" secondAttribute="bottom" id="QgN-mT-OHe"/>
                                     <constraint firstAttribute="width" constant="343" id="nEt-ht-MZY"/>
                                     <constraint firstAttribute="height" constant="493.5" id="qmZ-Pu-hqI"/>
                                 </constraints>

@@ -8,7 +8,7 @@
 
 import Foundation
 import UIKit
-
+//This model for show schedule on screen
 struct schedulePerWeek {
     var day: Array<Array<task>> = []
     var startSemester:String=""

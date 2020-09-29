@@ -7,6 +7,9 @@
 //
 
 import Foundation
+
+//This Model For Parsing with JSONDecoder
+
 struct globalSchedule:Decodable {
     var schedule:Array<schedule>
     var semester:semester

@@ -7,7 +7,7 @@
 //
 
 import Foundation
-
+//save groupName in phoneMemory
 final class GroupSettings{
     
     private enum SettingKey:String{

@@ -9,7 +9,7 @@
 import Foundation
 import RealmSwift
 import Realm
-
+//This model for saving deadline and json in memory phone
 class scheduleDatabase: Object{
     
     @objc dynamic var schedule = Data()
