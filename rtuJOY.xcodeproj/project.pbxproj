@@ -13,6 +13,7 @@
 		72098DD924C71915009352A0 /* settingCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 72098DD724C71915009352A0 /* settingCell.xib */; };
 		72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72098DDA24C74398009352A0 /* SettingTableViewController.swift */; };
 		721DB0C924CC77AE00B310F3 /* helpMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 721DB0C824CC77AE00B310F3 /* helpMethod.swift */; };
+		721E9AC32528D0C8005BE29D /* WebKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 721E9AC22528D0C8005BE29D /* WebKit.framework */; };
 		7236729E24B6487400844118 /* CustomCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7236729D24B6487400844118 /* CustomCell.swift */; };
 		723672A624B66B9700844118 /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 723672A524B66B9700844118 /* TableViewController.swift */; };
 		724D65F424EDC0EC0076B5CC /* DeadlineVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */; };
@@ -41,6 +42,7 @@
 		72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */; };
 		72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1710624BB23BA0015CC8C /* CalendarMethod.swift */; };
 		72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8E1E024E993B8004A7925 /* Reachability.swift */; };
+		72E4256425279B1100B8BB32 /* SchemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E4256325279B1100B8BB32 /* SchemaViewController.swift */; };
 		E50B694ADE4BDCC07899C10D /* libPods-rtuJOY.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */; };
 /* End PBXBuildFile section */
 
@@ -52,6 +54,7 @@
 		72098DD724C71915009352A0 /* settingCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = settingCell.xib; sourceTree = "<group>"; };
 		72098DDA24C74398009352A0 /* SettingTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingTableViewController.swift; sourceTree = "<group>"; };
 		721DB0C824CC77AE00B310F3 /* helpMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = helpMethod.swift; sourceTree = "<group>"; };
+		721E9AC22528D0C8005BE29D /* WebKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WebKit.framework; path = System/Library/Frameworks/WebKit.framework; sourceTree = SDKROOT; };
 		7236729D24B6487400844118 /* CustomCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomCell.swift; sourceTree = "<group>"; };
 		723672A524B66B9700844118 /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
 		724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeadlineVC.swift; sourceTree = "<group>"; };
@@ -83,6 +86,7 @@
 		72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternativeModel.swift; sourceTree = "<group>"; };
 		72D1710624BB23BA0015CC8C /* CalendarMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethod.swift; sourceTree = "<group>"; };
 		72D8E1E024E993B8004A7925 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
+		72E4256325279B1100B8BB32 /* SchemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaViewController.swift; sourceTree = "<group>"; };
 		7D7A534ABFDE3AB0F990312D /* Pods-rtuJOY.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.release.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.release.xcconfig"; sourceTree = "<group>"; };
 		B630DCDFAF1FF33061EC0B91 /* Pods-rtuJOY.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-rtuJOY.debug.xcconfig"; path = "Target Support Files/Pods-rtuJOY/Pods-rtuJOY.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -92,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				721E9AC32528D0C8005BE29D /* WebKit.framework in Frameworks */,
 				E50B694ADE4BDCC07899C10D /* libPods-rtuJOY.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -135,6 +140,7 @@
 			isa = PBXGroup;
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
+				72E4256325279B1100B8BB32 /* SchemaViewController.swift */,
 				7256553324D823140033831A /* ChoiceGroupViewController.swift */,
 				724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */,
 				727FFD9E25108D5D00739365 /* AboutLessonTableViewController.swift */,
@@ -260,6 +266,7 @@
 		E822F52E7DCF22C7ED6F7FB8 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				721E9AC22528D0C8005BE29D /* WebKit.framework */,
 				2F792A047F6BAECA35E1C02C /* libPods-rtuJOY.a */,
 			);
 			name = Frameworks;
@@ -367,6 +374,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				728C151E251892BE004A586D /* AboutTaskTableViewCell.swift in Sources */,
+				72E4256425279B1100B8BB32 /* SchemaViewController.swift in Sources */,
 				727FFDA125108D8700739365 /* AddDeadlineForLessonViewController.swift in Sources */,
 				72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */,
 				7261E55224F01E74007B8E98 /* BEMCheckBoxGroup.swift in Sources */,

@@ -38,8 +38,8 @@ class SettingTableViewController: UITableViewController {
         case 0:
             cell.label.text = "Сменить группу"
         case 1:
-            cell.label.text = "Уведомления"
-            cell.imageOfCell?.image = UIImage(systemName: "bell.fill")
+            cell.label.text = "Схема университета"
+            cell.imageOfCell?.image = UIImage(systemName: "map.fill")
         case 2:
             cell.label.text = "Условия использования"
             cell.imageOfCell?.image = UIImage(systemName: "info.circle")
@@ -56,6 +56,9 @@ class SettingTableViewController: UITableViewController {
         case 0:
             let vc = storyboard?.instantiateViewController(identifier: "groupChangeVC")
             self.navigationController?.pushViewController(vc!, animated: true)
+        case 1:
+            let schemaVC = storyboard?.instantiateViewController(identifier: "SchemaVC")
+            self.navigationController?.pushViewController(schemaVC!, animated: true)
         default:
             return
         }
