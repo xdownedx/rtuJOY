@@ -30,7 +30,14 @@ class AddDeadlineVC: UIViewController {
         super.viewDidLoad()
         saveButtonOutlet.isEnabled = false
         
+        let tapGestureADVC = UITapGestureRecognizer(target: self, action: #selector(self.tapGesture))
+        view.addGestureRecognizer(tapGestureADVC)
     }
+    
+    @objc func tapGesture() {
+        taskLabel.resignFirstResponder()
+       }
+    
     @IBAction func nameLessonTF(_ sender: Any) {
         if nameLesson.text != "" && taskLabel.text != ""{
             saveButtonOutlet.isEnabled = true

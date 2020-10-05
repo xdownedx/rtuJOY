@@ -40,6 +40,7 @@
 		72A1EBAC24B32AD000BDD9DA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBAB24B32AD000BDD9DA /* Assets.xcassets */; };
 		72A1EBAF24B32AD000BDD9DA /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 72A1EBAD24B32AD000BDD9DA /* LaunchScreen.storyboard */; };
 		72A1EBB924B32CD400BDD9DA /* alternativeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */; };
+		72CAE703252B3D2600723899 /* VKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72CAE702252B3D2600723899 /* VKViewController.swift */; };
 		72D1710724BB23BA0015CC8C /* CalendarMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D1710624BB23BA0015CC8C /* CalendarMethod.swift */; };
 		72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72D8E1E024E993B8004A7925 /* Reachability.swift */; };
 		72E4256425279B1100B8BB32 /* SchemaViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 72E4256325279B1100B8BB32 /* SchemaViewController.swift */; };
@@ -84,6 +85,7 @@
 		72A1EBAE24B32AD000BDD9DA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		72A1EBB024B32AD000BDD9DA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		72A1EBB824B32CD400BDD9DA /* alternativeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = alternativeModel.swift; sourceTree = "<group>"; };
+		72CAE702252B3D2600723899 /* VKViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VKViewController.swift; sourceTree = "<group>"; };
 		72D1710624BB23BA0015CC8C /* CalendarMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CalendarMethod.swift; sourceTree = "<group>"; };
 		72D8E1E024E993B8004A7925 /* Reachability.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reachability.swift; sourceTree = "<group>"; };
 		72E4256325279B1100B8BB32 /* SchemaViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SchemaViewController.swift; sourceTree = "<group>"; };
@@ -140,6 +142,7 @@
 			isa = PBXGroup;
 			children = (
 				723672A524B66B9700844118 /* TableViewController.swift */,
+				72CAE702252B3D2600723899 /* VKViewController.swift */,
 				72E4256325279B1100B8BB32 /* SchemaViewController.swift */,
 				7256553324D823140033831A /* ChoiceGroupViewController.swift */,
 				724D65F324EDC0EC0076B5CC /* DeadlineVC.swift */,
@@ -392,6 +395,7 @@
 				72A1EBA524B32ACC00BDD9DA /* SceneDelegate.swift in Sources */,
 				72098DDB24C74398009352A0 /* SettingTableViewController.swift in Sources */,
 				72D8E1E124E993B8004A7925 /* Reachability.swift in Sources */,
+				72CAE703252B3D2600723899 /* VKViewController.swift in Sources */,
 				7236729E24B6487400844118 /* CustomCell.swift in Sources */,
 				72098DD824C71915009352A0 /* settingCell.swift in Sources */,
 				7256553424D823140033831A /* ChoiceGroupViewController.swift in Sources */,

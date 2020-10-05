@@ -21,8 +21,13 @@ class SettingGroupViewController: UIViewController, UIGestureRecognizerDelegate 
         buttonToSave.layer.cornerRadius=5
         buttonToSave.isEnabled=false
         buttonToSave.alpha=0.4
+        let tapGestureSettingGroupVC = UITapGestureRecognizer(target: self, action: #selector(self.tapGesture))
+        view.addGestureRecognizer(tapGestureSettingGroupVC)
     }
     
+    @objc func tapGesture() {
+        labelGroup.resignFirstResponder()
+       }
     
     @IBAction func edingTF(_ sender: Any) {
         if labelGroup.text==""{

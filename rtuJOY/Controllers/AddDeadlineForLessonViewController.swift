@@ -18,14 +18,14 @@ class AddDeadlineForLessonViewController: UIViewController {
         taskForSave.deadlineTime = dateFormatter.string(from: dateDeadline.date)
         storageManager.saveObjectTask(taskForSave)
         self.navigationController?.popViewController(animated: true)
-
+        
     }
     @IBOutlet weak var nameLesson: UILabel!
     
     @IBOutlet weak var dateDeadline: UIDatePicker!
-
+    
     @IBOutlet weak var taskLabel: UITextField!
-
+    
     
     var nameLessonText:String?
     
@@ -33,17 +33,21 @@ class AddDeadlineForLessonViewController: UIViewController {
         super.viewDidLoad()
         nameLesson.text = nameLessonText!
         saveButtonOutlet.isEnabled = false
-
-        // Do any additional setup after loading the view.
+        
+        let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.tapGesture))
+        view.addGestureRecognizer(tapGesture)
     }
     
+    @objc func tapGesture() {
+        taskLabel.resignFirstResponder()
+       }
     
     @IBAction func taskTF(_ sender: Any) {
         if taskLabel.text != ""{
             saveButtonOutlet.isEnabled = true
         }else{
             saveButtonOutlet.isEnabled = false
-
+            
         }
     }
 }

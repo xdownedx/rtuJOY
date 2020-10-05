@@ -41,7 +41,7 @@ class SettingTableViewController: UITableViewController {
             cell.label.text = "Схема университета"
             cell.imageOfCell?.image = UIImage(systemName: "map.fill")
         case 2:
-            cell.label.text = "Условия использования"
+            cell.label.text = "О нас"
             cell.imageOfCell?.image = UIImage(systemName: "info.circle")
         case 3:
             cell.label.text = "Связаться с нами"
@@ -59,6 +59,12 @@ class SettingTableViewController: UITableViewController {
         case 1:
             let schemaVC = storyboard?.instantiateViewController(identifier: "SchemaVC")
             self.navigationController?.pushViewController(schemaVC!, animated: true)
+        case 2:
+            let aboutVC = storyboard?.instantiateViewController(identifier: "aboutVC")
+            self.navigationController?.pushViewController(aboutVC!, animated: true)
+        case 3:
+            let vkVC = storyboard?.instantiateViewController(identifier: "vkVC")
+            self.navigationController?.pushViewController(vkVC!, animated: true)
         default:
             return
         }

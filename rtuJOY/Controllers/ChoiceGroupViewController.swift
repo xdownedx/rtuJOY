@@ -23,7 +23,13 @@ class ChoiceGroupViewController: UIViewController {
         buttonToSave.layer.cornerRadius=5
         buttonToSave.isEnabled=false
         buttonToSave.alpha=0.4
+        let tapGestureChoiceGroupVC = UITapGestureRecognizer(target: self, action: #selector(self.tapGesture))
+        view.addGestureRecognizer(tapGestureChoiceGroupVC)
     }
+    
+    @objc func tapGesture() {
+        labelGroup.resignFirstResponder()
+       }
     func goToStartScreen(){
         if GroupSettings.groupName != nil{
             performSegue(withIdentifier: "startSegue", sender: self)

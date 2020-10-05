@@ -28,7 +28,7 @@
                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                         </textView>
                         <prototypes>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="Ie4-Lr-4QD">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="Ie4-Lr-4QD">
                                 <rect key="frame" x="16" y="261.5" width="343" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="Ie4-Lr-4QD" id="Mqq-ii-wIZ">
@@ -36,18 +36,18 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="U9i-uc-a9l">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="mOl-eQ-E5l">
                                 <rect key="frame" x="16" y="353.5" width="343" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="U9i-uc-a9l" id="HNt-96-H5H">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="mOl-eQ-E5l" id="Usk-YF-xXh">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
                             </tableViewCell>
-                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="tIa-EO-mIs">
+                            <tableViewCell clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="92" id="WqI-z4-wD8">
                                 <rect key="frame" x="16" y="445.5" width="343" height="92"/>
                                 <autoresizingMask key="autoresizingMask"/>
-                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="tIa-EO-mIs" id="x9T-2U-rFF">
+                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="WqI-z4-wD8" id="Kcj-Gn-sMk">
                                     <rect key="frame" x="0.0" y="0.0" width="343" height="92"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </tableViewCellContentView>
@@ -405,12 +405,15 @@
                                                 <nil key="highlightedColor"/>
                                             </label>
                                             <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="dateAndTime" minuteInterval="10" style="wheels" translatesAutoresizingMaskIntoConstraints="NO" id="kIE-KN-aXm">
-                                                <rect key="frame" x="0.0" y="28.5" width="320" height="216"/>
+                                                <rect key="frame" x="0.0" y="28.5" width="355" height="216"/>
                                                 <locale key="locale" localeIdentifier="ru_RU"/>
                                             </datePicker>
                                         </subviews>
                                     </stackView>
                                 </subviews>
+                                <constraints>
+                                    <constraint firstItem="kIE-KN-aXm" firstAttribute="centerX" secondItem="Bnx-35-5zE" secondAttribute="centerX" id="wD3-LV-qDj"/>
+                                </constraints>
                             </stackView>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="FtC-gc-nFB"/>
@@ -444,17 +447,44 @@
         <!--View Controller-->
         <scene sceneID="ksu-gN-XTY">
             <objects>
-                <viewController id="1Bs-ql-eFU" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="aboutVC" id="1Bs-ql-eFU" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xmj-6j-Lg4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <stackView opaque="NO" contentMode="scaleToFill" misplaced="YES" axis="vertical" alignment="center" spacing="40" translatesAutoresizingMaskIntoConstraints="NO" id="bis-g4-rAv">
+                                <rect key="frame" x="-4" y="41" width="343" height="543"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4mR-qO-yJw">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="203"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="7II-sM-acs"/>
+                                        </constraints>
+                                        <string key="text">Это приложение создано на чистом энтузиазме студентов РТУ МИРЭА. Большая благодарность Руслану Винтеру за консультации и предоставленный api расписания За всеми новостями вы можете следить в нашем паблике ВКонтакте, там же мы принимаем всю обратную связь, уверен багов очень много, но с вашей помощью мы все пофиксим.</string>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="file_13078285" translatesAutoresizingMaskIntoConstraints="NO" id="h6D-5Z-IG9">
+                                        <rect key="frame" x="73.5" y="243" width="196" height="300"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="300" id="r5L-ZS-gCE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                            </stackView>
+                        </subviews>
                         <viewLayoutGuide key="safeArea" id="pyg-AF-71Q"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="bis-g4-rAv" firstAttribute="centerY" secondItem="pyg-AF-71Q" secondAttribute="centerY" id="GcL-71-qVT"/>
+                            <constraint firstItem="bis-g4-rAv" firstAttribute="centerX" secondItem="pyg-AF-71Q" secondAttribute="centerX" id="yp1-l5-M2k"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="fFd-DI-iCv" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="5425" y="690"/>
+            <point key="canvasLocation" x="5424.8000000000002" y="689.5052473763119"/>
         </scene>
         <!--About Lesson Table View Controller-->
         <scene sceneID="Hww-Fv-eOQ">
@@ -599,6 +629,10 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Неверно введен номер группы. Проверьте номер группы и попробуйте ввести его еще раз, например, КТСО-01-19." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="TBO-Gl-VdX">
                                         <rect key="frame" x="0.0" y="380.5" width="343" height="113"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="113" id="A0h-4f-8Tp"/>
+                                            <constraint firstAttribute="width" constant="343" id="wiX-GD-ZfH"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -617,6 +651,7 @@
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                         <constraints>
                             <constraint firstItem="QPW-yy-tiU" firstAttribute="centerY" secondItem="gHV-Fl-4Vh" secondAttribute="centerY" id="AQx-EH-SDR"/>
+                            <constraint firstItem="TBO-Gl-VdX" firstAttribute="centerX" secondItem="gHV-Fl-4Vh" secondAttribute="centerX" id="qUv-Ha-xS0"/>
                             <constraint firstItem="QPW-yy-tiU" firstAttribute="centerX" secondItem="gHV-Fl-4Vh" secondAttribute="centerX" id="tsA-Y4-Krp"/>
                         </constraints>
                     </view>
@@ -665,7 +700,7 @@
                                             <constraint firstAttribute="width" constant="291" id="ls7-W3-87b"/>
                                             <constraint firstAttribute="height" constant="62" id="phN-a7-fMQ"/>
                                         </constraints>
-                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -1006,6 +1041,10 @@
                                     <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" text="Неверно введен номер группы. Проверьте номер группы и попробуйте ввести его еще раз, например, КТСО-01-19." textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="Jfv-sW-R4G">
                                         <rect key="frame" x="0.0" y="380.5" width="343" height="113"/>
                                         <color key="backgroundColor" systemColor="systemRedColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="343" id="RAT-7t-UlF"/>
+                                            <constraint firstAttribute="height" constant="113" id="piT-fY-pQX"/>
+                                        </constraints>
                                         <color key="textColor" systemColor="labelColor"/>
                                         <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
@@ -1025,6 +1064,7 @@
                         <constraints>
                             <constraint firstItem="c0g-J6-GqA" firstAttribute="centerX" secondItem="KLO-Fa-uNr" secondAttribute="centerX" id="4k4-dC-KKe"/>
                             <constraint firstItem="c0g-J6-GqA" firstAttribute="centerY" secondItem="KLO-Fa-uNr" secondAttribute="centerY" id="Rht-g9-c24"/>
+                            <constraint firstItem="Jfv-sW-R4G" firstAttribute="centerX" secondItem="KLO-Fa-uNr" secondAttribute="centerX" id="cWp-hf-Paz"/>
                         </constraints>
                     </view>
                     <extendedEdge key="edgesForExtendedLayout" top="YES"/>
@@ -1060,11 +1100,75 @@
             </objects>
             <point key="canvasLocation" x="2284" y="-834"/>
         </scene>
+        <!--View Controller-->
+        <scene sceneID="6by-6P-UP9">
+            <objects>
+                <viewController storyboardIdentifier="vkVC" id="C3d-HL-h6Q" customClass="VKViewController" customModule="rtu_app" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="LJd-tJ-rQt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <wkWebView contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="bjq-Yd-njH">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                                <color key="backgroundColor" red="0.36078431370000003" green="0.38823529410000002" blue="0.4039215686" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <wkWebViewConfiguration key="configuration">
+                                    <audiovisualMediaTypes key="mediaTypesRequiringUserActionForPlayback" none="YES"/>
+                                    <wkPreferences key="preferences"/>
+                                </wkWebViewConfiguration>
+                            </wkWebView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="12" translatesAutoresizingMaskIntoConstraints="NO" id="fFN-Zr-fdc">
+                                <rect key="frame" x="42" y="181" width="291" height="304.5"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="aaa" translatesAutoresizingMaskIntoConstraints="NO" id="BDS-yg-Ibt">
+                                        <rect key="frame" x="17.5" y="0.0" width="256" height="230.5"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="230.5" id="3VO-qC-tQj"/>
+                                            <constraint firstAttribute="width" constant="256" id="xDO-mK-jSy"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Вконтакте работает только при интернет-соединении" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yb2-Hd-tKH">
+                                        <rect key="frame" x="0.0" y="242.5" width="291" height="62"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="62" id="5FM-V7-iiu"/>
+                                            <constraint firstAttribute="width" constant="291" id="I8N-bC-nE0"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                            </stackView>
+                        </subviews>
+                        <viewLayoutGuide key="safeArea" id="JaX-D0-CUH"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="JaX-D0-CUH" firstAttribute="trailing" secondItem="fFN-Zr-fdc" secondAttribute="trailing" constant="42" id="3Gs-RZ-i3I"/>
+                            <constraint firstItem="JaX-D0-CUH" firstAttribute="bottom" secondItem="bjq-Yd-njH" secondAttribute="bottom" id="9N7-27-0Ey"/>
+                            <constraint firstItem="fFN-Zr-fdc" firstAttribute="leading" secondItem="JaX-D0-CUH" secondAttribute="leading" constant="42" id="9ke-Vq-cBa"/>
+                            <constraint firstItem="JaX-D0-CUH" firstAttribute="trailing" secondItem="bjq-Yd-njH" secondAttribute="trailing" id="VP8-v2-yZO"/>
+                            <constraint firstItem="bjq-Yd-njH" firstAttribute="leading" secondItem="JaX-D0-CUH" secondAttribute="leading" id="ddm-GS-VDJ"/>
+                            <constraint firstItem="JaX-D0-CUH" firstAttribute="bottom" secondItem="fFN-Zr-fdc" secondAttribute="bottom" constant="181.5" id="e6w-a6-68c"/>
+                            <constraint firstItem="bjq-Yd-njH" firstAttribute="top" secondItem="JaX-D0-CUH" secondAttribute="top" id="fhM-gR-KhK"/>
+                            <constraint firstItem="fFN-Zr-fdc" firstAttribute="top" secondItem="JaX-D0-CUH" secondAttribute="top" constant="181" id="zyE-LY-0Lq"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="labelError" destination="fFN-Zr-fdc" id="v4E-Nx-31E"/>
+                        <outlet property="picError" destination="fFN-Zr-fdc" id="tkD-LK-hGv"/>
+                        <outlet property="webview" destination="bjq-Yd-njH" id="bQ3-XD-fjY"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="cd9-P3-fXs" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6255" y="690"/>
+        </scene>
     </scenes>
     <resources>
+        <image name="aaa" width="212" height="256"/>
         <image name="calendar" catalog="system" width="128" height="106"/>
         <image name="deadlinepic" width="256" height="239"/>
         <image name="dlPic" width="25" height="25"/>
+        <image name="file_13078285" width="196" height="256"/>
         <image name="iconDeadline" width="128" height="128"/>
         <image name="mireaLogo1" width="512" height="512"/>
         <image name="person.3.fill" catalog="system" width="128" height="61"/>
