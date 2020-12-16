@@ -68,7 +68,7 @@ class TableViewController: UITableViewController {
     //получим количество ячеек в секции
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         if arrForConclusion.isEmpty{
-            viewForImage.frame.size.height=446
+            viewForImage.frame.size.height=446 //размер ячейки
             image.isHidden=false
             sheduleNotFoundMajor.isHidden=false
             sheduleNotFoundSecondary.isHidden=false

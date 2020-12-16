@@ -25,8 +25,7 @@ class deadlineTask: Object{
     @objc dynamic var nameLesson = ""
     @objc dynamic var deadlineTask = ""
     @objc dynamic var deadlineTime = ""
-    @objc dynamic var deadlineIsReady = false
-     
+    @objc dynamic var deadlineIsReady = false   //переменная для отметки выполненных заданий
     convenience init(nameLesson:String, deadlineTask:String, deadlineTime:String, deadlineIsReady:Bool ){
         self.init()
         self.nameLesson = nameLesson

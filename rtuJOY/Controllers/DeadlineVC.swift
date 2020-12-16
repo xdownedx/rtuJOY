@@ -38,7 +38,7 @@ class DeadlineVC: UITableViewController {
     override func numberOfSections(in tableView: UITableView) -> Int {
         // #warning Incomplete implementation, return the number of sections
         taskArray=realm.objects(deadlineTask.self)
-        for var task in taskArray{
+        for task in taskArray{
             if task.deadlineIsReady{
                 storageManager.deleteObjectTak(task)
             }

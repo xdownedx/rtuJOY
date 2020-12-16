@@ -63,8 +63,6 @@ struct schedulePerWeek {
     }
 }
 
-
-
 struct task {
     
     var timeStart:String
